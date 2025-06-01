@@ -1,0 +1,22 @@
+{
+  "comments": {
+    "dependencies": {},
+    "devDependencies": {
+      "@tailwindcss/cli": "hugo-theme-fluidity",
+      "@tailwindcss/typography": "hugo-theme-fluidity",
+      "prettier": "hugo-theme-fluidity",
+      "prettier-plugin-go-template": "hugo-theme-fluidity",
+      "tailwindcss": "hugo-theme-fluidity"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0-beta.4",
+    "@tailwindcss/typography": "^0.5.15",
+    "prettier": "^3.4.1",
+    "prettier-plugin-go-template": "^0.0.15",
+    "tailwindcss": "^4.0.0-beta.4"
+  },
+  "name": "spectre-pro.github.io",
+  "version": "0.1.0"
+}
