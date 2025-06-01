@@ -1,0 +1,3 @@
+[submodule "themes/hugo-theme-fluidity"]
+	path = themes/hugo-theme-fluidity
+	url = https://github.com/wayjam/hugo-theme-fluidity.git
