@@ -1,6 +1,9 @@
 baseURL = 'https://spectre-pro.github.io/'
-languageCode = 'zh-cn'
+languageCode = 'zh-hk'
+defaultContentLanguage = 'zh-hk'
 title = 'SPECTRE'
+hasCJKLanguage = false
+enableEmoji = true
 theme = 'hugo-theme-fluidity'
 
 [caches]
