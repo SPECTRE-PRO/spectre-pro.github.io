@@ -2,3 +2,7 @@ baseURL = 'https://spectre-pro.github.io/'
 languageCode = 'en-us'
 title = 'SPECTRE'
 theme = 'hugo-theme-fluidity'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
