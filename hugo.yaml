@@ -8,6 +8,10 @@ summaryLength: 100
 hasCJKLanguage: false
 enableEmoji: true
 
+params:
+  search:
+    provider: "pagefind"
+
 caches:
   images:
     dir: ':cacheDir/images'
