@@ -2,10 +2,54 @@ baseURL = 'https://spectre-pro.github.io/'
 languageCode = 'zh-hk'
 defaultContentLanguage = 'zh-hk'
 title = 'SPECTRE'
-hasCJKLanguage = false
 enableEmoji = true
 theme = 'hugo-theme-fluidity'
 
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[[menus.main]]
+identifier = "home"
+pageRef = "/"
+weight = 10
+
+[[menus.main]]
+identifier = "post"
+pageRef = "/posts"
+weight = 20
+
+[[menus.main]]
+identifier = "tag"
+pageRef = "/tags"
+weight = 30
+
+[[menus.main]]
+identifier = "archive"
+pageRef = "/archives"
+weight = 40
+
+[[menus.main]]
+identifier = "about"
+pageRef = "/about"
+weight = 50
+
+[[menus.main]]
+identifier = "search"
+pageRef = "/search"
+weight = 60
+
+[markup]
+defaultMarkdownHandler = "goldmark"
+
+[markup.goldmark]
+  [markup.goldmark.extensions]
+    [passthrough]
+    enable = true
+    block = [
+  ["$$", "$$"],
+  ["\\[", "\\]"],
+]
+inline = [
+  ["\\(", "\\)"],
+]
