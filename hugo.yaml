@@ -16,6 +16,22 @@ caches:
   images:
     dir: ':cacheDir/images'
 
+toc:
+  disabled: false # 是否禁用目錄
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ["$$", "$$"]
+            - ["\\[", "\\]"]
+          inline:
+            - ["\\(", "\\)"]
+
 menus:
   main:
     - identifier: home
