@@ -16,27 +16,25 @@ git submodule add https://github.com/wayjam/hugo-theme-fluidity.git themes/hugo-
 
 **使用 Hugo Modules:**
 
-在你的 `hugo.toml` 中添加：
+在你的 `hugo.toml` 或 `hugo.yaml` 中添加：
 
-```toml
-# 此配置块用于通过 Hugo Modules 导入主题。将其添加到你的 hugo.toml 文件中。
-[module]
-[[module.imports]]
-path = "github.com/wayjam/hugo-theme-fluidity"
+```yaml
+module:
+  imports:
+    - path: github.com/wayjam/hugo-theme-fluidity
 ```
 
 然後執行 `hugo mod tidy` 和 `hugo mod vendor`。
 
-## 2. 配置 `hugo.toml`
+## 2. 配置 `hugo.toml` 或 `hugo.yaml`
 
 將主題名稱添加到你的主配置文件中：
 
-```toml
-# 此配置用于指定你的 Hugo 网站使用的主题。将其添加到你的 hugo.toml 文件中。
-theme = "hugo-theme-fluidity"
+```yaml
+theme: hugo-theme-fluidity
 ```
 
-然後，在配置文件中添加 `[params]` 部分來配置主題的各種選項。以下是一些重要的可自定義選項：
+然後，在配置文件中添加 `params` 部分來配置主題的各種選項。以下是一些重要的可自定義選項：
 
 ### 基本配置
 
@@ -51,102 +49,86 @@ theme = "hugo-theme-fluidity"
 
 ### 菜單配置 (`menus`)
 
-自定義網站頂部導航菜單的項目。以下是 TOML 格式的示例：
+自定義網站頂部導航菜單的項目。
 
-```toml
-# 此配置块用于定义网站顶部的导航菜单项。将其添加到你的 hugo.toml 文件中。
-[[menus.main]]
-identifier = "home"
-pageRef = "/"
-weight = 10
-
-[[menus.main]]
-identifier = "post"
-pageRef = "/posts"
-weight = 20
-
-[[menus.main]]
-identifier = "tag"
-pageRef = "/tags"
-weight = 30
-
-[[menus.main]]
-identifier = "archive"
-pageRef = "/archives"
-weight = 40
-
-[[menus.main]]
-identifier = "about"
-pageRef = "/about"
-weight = 50
-
-[[menus.main]]
-identifier = "search"
-pageRef = "/search"
-weight = 60
+```yaml
+menus:
+  main:
+    - identifier: home
+      pageRef: /
+      weight: 10
+    - identifier: post
+      pageRef: /posts
+      weight: 20
+    - identifier: tag
+      pageRef: /tags
+      weight: 30
+    - identifier: archive
+      pageRef: /archives
+      weight: 40
+    - identifier: about
+      pageRef: /about
+      weight: 50
+    - identifier: search
+      pageRef: /search
+      weight: 60
 ```
 
 ### 輸出配置 (`outputs`)
 
-配置不同頁面類型的輸出格式。以下是 TOML 格式的示例：
+配置不同頁面類型的輸出格式。
 
-```toml
-# 此配置块用于定义不同页面类型（如首页、section 页面、分类页面等）的输出格式。将其添加到你的 hugo.toml 文件中。
-[outputs]
-home = ["html", "rss"]
-section = ["html", "rss"]
-taxonomy = ["html"]
-term = ["html"]
+```yaml
+outputs:
+  home:
+  - html
+  - rss
+  section:
+  - html
+  - rss
+  taxonomy:
+  - html
+  - term:
+  - html
 ```
 
 ### Markdown 配置 (`markup`)
 
-配置 Markdown 渲染選項。以下是 TOML 格式的示例：
+配置 Markdown 渲染選項。
 
-```toml
-# 此配置块用于设置 Markdown 渲染选项，例如启用数学公式支持。将其添加到你的 hugo.toml 文件中。
-[markup]
-defaultMarkdownHandler = "goldmark"
-
-[markup.goldmark]
-[markup.goldmark.extensions]
-passthrough = true
-
-[markup.goldmark.extensions.passthrough]
-enable = true
-block = [
-  ["$$", "$$"],
-  ["\\[", "\\]"],
-]
-inline = [
-  ["\\(", "\\)"],
-]
+```yaml
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ["$$", "$$"]
+            - ["\\[", "\\]"]
+          inline:
+            - ["\\(", "\\)"]
 ```
 
 ### 模塊配置 (`module`)
 
 如果你使用 Hugo Modules，這裡配置模塊的導入和掛載。
 
-```toml
-# 此配置块用于定义 Hugo Modules 的行为，例如指定最低 Hugo 版本和挂载目录。将其添加到你的 hugo.toml 文件中。
-[module]
-[module.hugoVersion]
-min = "0.128.0"
-# [[module.imports]]
-# path = "github.com/wayjam/hugo-theme-fluidity"
-
-[[module.mounts]]
-source = "assets"
-target = "assets"
-
-[[module.mounts]]
-source = "content"
-target = "content"
-
-[[module.mounts]]
-source = "hugo_stats.json"
-disableWatch = true
-target = "assets/notwatching/hugo_stats.json"
+```yaml
+module:
+  hugoVersion:
+    min: 0.128.0
+  # imports:
+  #   - path: github.com/wayjam/hugo-theme-fluidity
+  mounts:
+    - source: assets
+      target: assets
+    - source: content
+      target: content
+    - source: hugo_stats.json
+      disableWatch: true
+      target: assets/notwatching/hugo_stats.json
 ```
 
 ### 主題參數 (`params`)
@@ -156,102 +138,85 @@ target = "assets/notwatching/hugo_stats.json"
 *   `description`: 網站描述。
 *   `fullContentRSS`: RSS 輸出是否包含完整文章內容。
 *   `mainSections`: 在首頁顯示的主要文章分類。
-*   `pageSize`: 控制不同頁面類型顯示的文章數量 (`home`, `list`, `archives`)。以下是 TOML 格式的示例：
-    ```toml
-    # 此配置块用于设置不同页面类型（如首页、列表页、归档页）显示的文章数量。将其添加到你的 hugo.toml 文件中的 [params] 部分。
-    [params.pageSize]
-    home = 5
-    list = 5
-    archives = 20
+*   `pageSize`: 控制不同頁面類型顯示的文章數量 (`home`, `list`, `archives`)。
+    ```yaml
+    pageSize:
+      home: 5
+      list: 5
+      archives: 20
     ```
-*   `listPage`: 自定義列表頁面顯示。以下是 TOML 格式的示例：
-    ```toml
-    # 此配置块用于自定义列表页面的显示方式，例如显示分类和标签的数量。将其添加到你的 hugo.toml 文件中的 [params] 部分。
-    [params.listPage]
-    numCategoriesToShow = 1 # 列表頁面摘要中顯示的分類數量
-    numTagsToShow = 3       # 列表頁面摘要中顯示的標籤數量
-    showSummary = false     # 是否在列表頁面顯示文章摘要
+*   `listPage`: 自定義列表頁面顯示。
+    ```yaml
+    listPage:
+      numCategoriesToShow: 1 # 列表頁面摘要中顯示的分類數量
+      numTagsToShow: 3       # 列表頁面摘要中顯示的標籤數量
+      showSummary: false     # 是否在列表頁面顯示文章摘要
     ```
-*   `social`: 配置社交媒體鏈接和分享按鈕。以下是 TOML 格式的示例：
-    ```toml
-    # 此配置块用于设置社交媒体链接和文章分享按钮。将其添加到你的 hugo.toml 文件中的 [params] 部分。
-    [params.social]
-    twitter = 'Your_Twitter_username'
-    github = 'Your_GitHub_username'
-    linkedin = 'Your_LinkedIn_username'
-    whatsapp = 'Your_WhatsApp_username'
+*   `social`: 配置社交媒體鏈接和分享按鈕。
+    ```yaml
+    social:
+      twitter: 'Your_Twitter_username'
+      github: 'Your_GitHub_username'
+      linkedin: 'Your_LinkedIn_username'
+      whatsapp: 'Your_WhatsApp_username'
 
-    [params.social.share]
-    disabled = false
-    disableByType = ["not-exist"] # content type
-    platforms = [ # 可用平台: [redidit, x, facebook, google, telegram]
-      { name = "reddit" },
-      { name = "x" },
-      { name = "facebook" },
-      # { name = "telegram" }, # 禁用平台
-      { name = "linkedin" },
-      { name = "whatsapp" },
-      # 自定義平台示例
-      { name = "FullExample", urlPattern = "https://example.com?link={permalink}&title={title}&tags={tags}&description={description}&via={via}&user={user}" },
-    ]
-
-    [params.social.connect]
-    platforms = [ # 可用平台: [github, x, linkedin, whatsapp]
-      "github",
-      "x",
-      # "linkedin", # 禁用平台
-      "whatsapp",
-    ]
+      share:
+        disabled: false
+        disableByType: # content type
+          - not-exist
+        platforms: # 可用平台: [redidit, x, facebook, google, telegram]
+          - name: reddit
+          - name: x
+          - name: facebook
+          # - name: telegram # 禁用平台
+          - name: linkedin
+          - name: whatsapp
+          # 自定義平台示例
+          - name: FullExample
+            urlPattern: "https://example.com?link={permalink}&title={title}&tags={tags}&description={description}&via={via}&user={user}"
+      connect:
+        platforms: # 可用平台: [github, x, linkedin, whatsapp]
+          - github
+          - x
+          # - linkedin # 禁用平台
+          - whatsapp
     ```
-*   `articleMetadata`: 配置文章元數據的位置 (`header`, `sidebar`, `none`)。以下是 TOML 格式的示例：
-    ```toml
-    # 此配置块用于设置文章元数据（如作者、日期、分类、标签）显示的位置。将其添加到你的 hugo.toml 文件中的 [params] 部分。
-    [params.articleMetadata]
-    position = "header"
+*   `articleMetadata`: 配置文章元數據的位置 (`header`, `sidebar`, `none`)。
+    ```yaml
+    articleMetadata:
+      position: header
     ```
-*   `toc`: 配置文章目錄。以下是 TOML 格式的示例：
-    ```toml
-    # 将以下内容添加到你的 hugo.toml 文件中的 [params] 部分
-    [params.toc]
-    disabled = false # 是否禁用目錄
+*   `toc`: 配置文章目錄。
+    ```yaml
+    toc:
+      disabled: false # 是否禁用目錄
     ```
-*   `relatedPosts`: 配置相關文章。以下是 TOML 格式的示例：
-    ```toml
-    # 将以下内容添加到你的 hugo.toml 文件中的 [params] 部分
-    [params.relatedPosts]
-    disabled = false # 是否禁用相關文章
-    disableByType = ["page"] # 按內容類型禁用
+*   `relatedPosts`: 配置相關文章。
+    ```yaml
+    relatedPosts:
+      disabled: false # 是否禁用相關文章
+      disableByType: [page] # 按內容類型禁用
     ```
-*   `comment`: 配置評論系統。以下是 TOML 格式的示例：
-    ```toml
-    # 此配置块用于设置评论系统。你可以选择禁用评论或集成第三方评论系统。将其添加到你的 hugo.toml 文件中的 [params] 部分。
-    [params.comment]
-    disabled = false # 是否禁用評論
-    disableByType = ["page"] # 按內容類型禁用
-    thirdParty = """
-your comment script will be loaded here # 在這裡添加第三方評論系統的腳本
-"""
+*   `comment`: 配置評論系統。
+    ```yaml
+    comment:
+      disabled: false # 是否禁用評論
+      disableByType: [page] # 按內容類型禁用
+      thirdParty: |
+        your comment script will be loaded here # 在這裡添加第三方評論系統的腳本
     ```
-*   `search`: 配置搜索功能。以下是 TOML 格式的示例：
-    ```toml
-    # 此配置块用于设置网站的搜索功能，可以选择不同的搜索提供者。将其添加到你的 hugo.toml 文件中的 [params] 部分。
-    [params.search]
-    disabled = false # 是否禁用搜索
-    provider = "pagefind" # 可用提供者: google, pagefind
+*   `search`: 配置搜索功能。
+    ```yaml
+    search:
+      disabled: false # 是否禁用搜索
+      provider: pagefind # 可用提供者: google, pagefind
     ```
-*   `math`: 配置數學公式排版支持。以下是 TOML 格式的示例：
-    ```toml
-    # 此配置块用于启用和设置数学公式的排版支持。将其添加到你的 hugo.toml 文件中的 [params] 部分。
-    [params.math]
-    math = false # 全局啟用或禁用
-    mathEngine = "mathJax" # 渲染引擎: mathJax | katex
+*   `math`: 配置數學公式排版支持。
+    ```yaml
+    math: false # 全局啟用或禁用
+    mathEngine: mathJax # 渲染引擎: mathJax | katex
     ```
-*   `enableEmoji`: 是否啟用 Emoji (也可以在頂層配置)。以下是 TOML 格式的示例：
-    ```toml
-    # 此配置块用于全局启用或禁用 Emoji。将其添加到你的 hugo.toml 文件中的 [params] 部分。
-    [params]
-    enableEmoji = true # 或者 false
-    ```
+*   `enableEmoji`: 是否啟用 Emoji (也可以在頂層配置)。
 
 ## 3. 創建內容
 

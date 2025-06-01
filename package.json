@@ -9,7 +9,9 @@
       "tailwindcss": "hugo-theme-fluidity"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "pagefind": "^1.3.0"
+  },
   "devDependencies": {
     "@tailwindcss/cli": "^4.0.0-beta.4",
     "@tailwindcss/typography": "^0.5.15",
