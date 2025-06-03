@@ -1,84 +1,45 @@
-# Hugo Theme Fluidity 使用指南與可自定義選項
+# Hugo Theme Fluidity 使用指南
 
-這份指南基於 `hugo-theme-fluidity` 主題的 `theme.toml` 和 `exampleSite/hugo.yaml` 檔案。
+這份指南將幫助您了解如何配置和自定義 `hugo-theme-fluidity` 主題。
 
-## 1. 安裝主題
+## 1. 引言
 
-你可以使用 Git Submodule 或 Hugo Modules 來安裝主題。
+`hugo-theme-fluidity` 是一個簡潔、響應式的 Hugo 主題，專為個人博客設計。它提供了豐富的配置選項，讓您可以輕鬆打造個性化的網站。
 
-**使用 Git Submodule:**
+## 2. 安裝
 
-在你的 Hugo 專案根目錄下執行：
+要安裝 `hugo-theme-fluidity` 主題，您可以將其作為 Git Submodule 添加到您的 Hugo 站點的 `themes` 目錄中：
 
 ```bash
 git submodule add https://github.com/wayjam/hugo-theme-fluidity.git themes/hugo-theme-fluidity
 ```
 
-**使用 Hugo Modules:**
+或者，您可以直接下載主題檔案並將其解壓縮到 `themes` 目錄中。
 
-在你的 `hugo.toml` 或 `hugo.yaml` 中添加：
-
-```yaml
-module:
-  imports:
-    - path: github.com/wayjam/hugo-theme-fluidity
-```
-
-然後執行 `hugo mod tidy` 和 `hugo mod vendor`。
-
-## 2. 配置 `hugo.toml` 或 `hugo.yaml`
-
-將主題名稱添加到你的主配置文件中：
+在您的 `hugo.yaml` 檔案中設定主題：
 
 ```yaml
 theme: hugo-theme-fluidity
 ```
 
-然後，在配置文件中添加 `params` 部分來配置主題的各種選項。以下是一些重要的可自定義選項：
+## 3. 基本配置 (hugo.yaml)
 
-### 基本配置
-
-*   `baseURL`: 網站的基礎 URL。
-*   `languageCode`: 網站語言，例如 `en` 或 `zh-cn`。
-*   `defaultContentLanguage`: 預設內容語言。
-*   `title`: 網站標題。
-*   `enableRobotsTXT`: 是否生成 `robots.txt`。
-*   `summaryLength`: 文章摘要的長度。
-*   `hasCJKLanguage`: 如果你的網站包含 CJK (中日韓) 語言，請設置為 `true`。
-*   `enableEmoji`: 是否啟用 Emoji。
-
-### 菜單配置 (`menus`)
-
-自定義網站頂部導航菜單的項目。
+以下是 `hugo.yaml` 中一些重要的基本配置：
 
 ```yaml
-menus:
-  main:
-    - identifier: home
-      pageRef: /
-      weight: 10
-    - identifier: post
-      pageRef: /posts
-      weight: 20
-    - identifier: tag
-      pageRef: /tags
-      weight: 30
-    - identifier: archive
-      pageRef: /archives
-      weight: 40
-    - identifier: about
-      pageRef: /about
-      weight: 50
-    - identifier: search
-      pageRef: /search
-      weight: 60
-```
+baseURL: "您的網站 URL" # 例如: https://your-domain.com/
+languageCode: "en-us" # 您的網站語言代碼
+defaultContentLanguage: "en" # 預設內容語言
+title: "您的網站標題" # 顯示在頁眉和瀏覽器標題欄
+enableRobotsTXT: true
+summaryLength: 100 # 文章摘要長度
+hasCJKLanguage: false # 如果您的網站包含中文、日文或韓文，請設定為 true
+enableEmoji: true # 啟用 Emoji
 
-### 輸出配置 (`outputs`)
+# 必須設定，用於主題的程式碼高亮樣式
+pygmentsUseClasses: true
+pygmentsCodefences: true
 
-配置不同頁面類型的輸出格式。
-
-```yaml
 outputs:
   home:
   - html
@@ -88,17 +49,23 @@ outputs:
   - rss
   taxonomy:
   - html
-  - term:
+  term:
   - html
-```
 
-### Markdown 配置 (`markup`)
+menus:
+  main: # 配置頁眉導航選單
+    - identifier: home
+      pageRef: /
+      weight: 10
+      name: Home # 選單顯示名稱
+    - identifier: post
+      pageRef: /posts
+      weight: 20
+      name: Posts
+    # 添加更多選單項目...
 
-配置 Markdown 渲染選項。
-
-```yaml
+# 數學排版配置 (如果需要)
 markup:
-  defaultMarkdownHandler: goldmark
   goldmark:
     extensions:
       passthrough:
@@ -109,166 +76,135 @@ markup:
             - ["\\[", "\\]"]
           inline:
             - ["\\(", "\\)"]
-```
 
-### 模塊配置 (`module`)
-
-如果你使用 Hugo Modules，這裡配置模塊的導入和掛載。
-
-```yaml
 module:
   hugoVersion:
-    min: 0.128.0
+    min: "0.128.0"
+  # 如果使用 hugo mod，請取消註釋以下內容
   # imports:
   #   - path: github.com/wayjam/hugo-theme-fluidity
-  mounts:
-    - source: assets
-      target: assets
-    - source: content
-      target: content
-    - source: hugo_stats.json
-      disableWatch: true
-      target: assets/notwatching/hugo_stats.json
 ```
 
-### 主題參數 (`params`)
+## 4. 主題參數 (params)
 
-這是主題特有的配置部分，提供了許多自定義選項：
+在 `hugo.yaml` 的 `params` 部分，您可以配置主題的各種選項：
 
-*   `description`: 網站描述。
-*   `fullContentRSS`: RSS 輸出是否包含完整文章內容。
-*   `mainSections`: 在首頁顯示的主要文章分類。
-*   `pageSize`: 控制不同頁面類型顯示的文章數量 (`home`, `list`, `archives`)。
-    ```yaml
-    pageSize:
-      home: 5
-      list: 5
-      archives: 20
-    ```
-*   `listPage`: 自定義列表頁面顯示。
-    ```yaml
-    listPage:
-      numCategoriesToShow: 1 # 列表頁面摘要中顯示的分類數量
-      numTagsToShow: 3       # 列表頁面摘要中顯示的標籤數量
-      showSummary: false     # 是否在列表頁面顯示文章摘要
-    ```
-*   `social`: 配置社交媒體鏈接和分享按鈕。
-    ```yaml
-    social:
-      twitter: 'Your_Twitter_username'
-      github: 'Your_GitHub_username'
-      linkedin: 'Your_LinkedIn_username'
-      whatsapp: 'Your_WhatsApp_username'
+```yaml
+params:
+  description: '您的網站描述' # 顯示在頁腳的關於區塊
+  fullContentRSS: true # RSS 輸出是否包含全文
 
-      share:
-        disabled: false
-        disableByType: # content type
-          - not-exist
-        platforms: # 可用平台: [redidit, x, facebook, google, telegram]
-          - name: reddit
-          - name: x
-          - name: facebook
-          # - name: telegram # 禁用平台
-          - name: linkedin
-          - name: whatsapp
-          # 自定義平台示例
-          - name: FullExample
-            urlPattern: "https://example.com?link={permalink}&title={title}&tags={tags}&description={description}&via={via}&user={user}"
-      connect:
-        platforms: # 可用平台: [github, x, linkedin, whatsapp]
-          - github
-          - x
-          # - linkedin # 禁用平台
-          - whatsapp
-    ```
-*   `articleMetadata`: 配置文章元數據的位置 (`header`, `sidebar`, `none`)。
-    ```yaml
-    articleMetadata:
-      position: header
-    ```
-*   `toc`: 配置文章目錄。
-    ```yaml
-    toc:
-      disabled: false # 是否禁用目錄
-    ```
-*   `relatedPosts`: 配置相關文章。
-    ```yaml
-    relatedPosts:
-      disabled: false # 是否禁用相關文章
-      disableByType: [page] # 按內容類型禁用
-    ```
-*   `comment`: 配置評論系統。
-    ```yaml
-    comment:
-      disabled: false # 是否禁用評論
-      disableByType: [page] # 按內容類型禁用
-      thirdParty: |
-        your comment script will be loaded here # 在這裡添加第三方評論系統的腳本
-    ```
-*   `search`: 配置搜索功能。
-    ```yaml
-    search:
-      disabled: false # 是否禁用搜索
-      provider: pagefind # 可用提供者: google, pagefind
-    ```
-*   `math`: 配置數學公式排版支持。
-    ```yaml
-    math: false # 全局啟用或禁用
-    mathEngine: mathJax # 渲染引擎: mathJax | katex
-    ```
-*   `enableEmoji`: 是否啟用 Emoji (也可以在頂層配置)。
+  mainSections: # 指定哪些 Section 的文章會顯示在首頁
+    - posts
 
-## 3. 創建內容
+  pageSize: # 控制不同頁面的文章列表大小
+    home: 5 # 首頁文章數量
+    list: 10 # 列表頁面文章數量 (分類、標籤等)
+    archives: 20 # 歸檔頁面文章數量
 
-在 `content` 目錄下創建你的 Markdown 文件來撰寫文章和頁面。
+  listPage: # 自定義列表頁面顯示
+    numCategoriesToShow: 1 # 在列表摘要中顯示的分類數量
+    numTagsToShow: 3 # 在列表摘要中顯示的標籤數量
+    showSummary: false # 是否在列表頁面顯示文章摘要
 
-*   文章通常放在 `content/posts` 目錄下。
-*   獨立頁面 (如關於頁面) 可以直接放在 `content` 目錄下。
+  social: # 社交連結和分享配置
+    twitter: '您的 Twitter 用戶名'
+    github: '您的 GitHub 用戶名'
+    linkedin: '您的 LinkedIn 用戶名'
+    whatsapp: '您的 WhatsApp 用戶名'
 
-在 Markdown 文件的 Front Matter 中，設置文章的元數據：
+    share: # 文章分享按鈕配置
+      disabled: false # 全局禁用分享按鈕
+      disableByType: # 按內容類型禁用分享按鈕
+        - not-exist # 示例：禁用 'not-exist' 類型的文章分享
+      platforms: # 要顯示的分享平台列表
+        - name: reddit
+        - name: x
+        - name: facebook
+        # - name: telegram # 禁用 Telegram 分享
+        - name: linkedin
+        - name: whatsapp
+        # 添加自定義分享平台
+        # - name: CustomPlatform
+        #   urlPattern: "https://example.com?link={permalink}&title={title}" # 使用佔位符
 
-```markdown
+    connect: # 頁腳社交連結配置
+      platforms: # 要顯示的社交連結平台列表
+        - github
+        - x
+        # - linkedin # 禁用 LinkedIn 連結
+        - whatsapp
+
+  articleMetadata: # 文章元數據顯示位置
+    position: header # 可選值: header, sidebar, none
+
+  toc: # 文章目錄配置
+    disabled: false # 全局禁用目錄
+
+  relatedPosts: # 相關文章配置
+    disabled: false # 全局禁用相關文章
+    disableByType: [page] # 按內容類型禁用相關文章
+
+  comment: # 評論配置
+    disabled: false # 全局禁用評論
+    disableByType: [page] # 按內容類型禁用評論
+    thirdParty: | # 第三方評論系統程式碼
+      <!-- 將您的第三方評論系統程式碼貼在這裡 -->
+      <!-- 例如 Disqus, utterances, Giscus 等 -->
+      <!-- 如果留空，將使用 Hugo 內建的 Disqus 模板 (需要設定 disqusShortname) -->
+
+  search: # 搜尋配置
+    disabled: false # 全局禁用搜尋
+    provider: pagefind # 可選值: google, pagefind
+
+  math: false # 全局啟用數學排版 (MathJax 或 KaTeX)
+  mathEngine: mathJax # 可選值: mathJax, katex
+
+  logo: '/path/to/your/logo.png' # 網站 Logo 圖片路徑 (相對於 static 或 assets 目錄)
+```
+
+## 5. 文章 Front Matter 配置
+
+在您的文章 (Markdown 檔案) 的 Front Matter 中，您可以設定以下參數來控制文章的顯示：
+
+```yaml
 ---
-title: "文章標題"
+title: "您的文章標題"
 date: 2023-10-27T10:00:00+08:00
-categories: ["分類"]
-tags: ["標籤1", "標籤2"]
+lastmod: 2023-10-27T10:00:00+08:00 # 最後修改日期 (如果與 date 不同)
+author: "作者名稱" # 顯示在文章元數據中
+role: "作者角色" # 顯示在作者名稱旁邊 (可選)
+featured: true # 設定為 true 使文章成為特色文章 (只在首頁顯示一篇)
+toc: true # 是否顯示文章目錄 (預設根據字數和全局配置判斷)
+tags: ["標籤1", "標籤2"] # 文章標籤
+categories: ["分類"] # 文章分類
+# 其他 Hugo 內建的 Front Matter 參數...
 ---
 
-文章內容...
+您的文章內容...
 ```
 
-## 4. 自定義樣式和腳本
+## 6. 自定義佈局和樣式
 
-主題的樣式和腳本文件位於 `themes/hugo-theme-fluidity/assets` 目錄下。建議在你的主專案的 `assets` 目錄下創建同名文件來覆蓋主題文件，以便於主題更新。
+`hugo-theme-fluidity` 使用 Tailwind CSS 進行樣式設計。如果您熟悉 Tailwind CSS，您可以通過以下方式進一步自定義主題的外觀：
 
-*   `assets/css/style.css`: 主題的主要樣式文件。
-*   `assets/css/highlight.css`: 代碼高亮樣式文件。
-*   `assets/js/main.js`: 主題的主要 JavaScript 文件。
+*   **修改佈局檔案**: 您可以修改 `themes/hugo-theme-fluidity/layouts/` 目錄下的佈局檔案 (`_default/single.html`, `_default/list.html`, `_default/home.html` 等) 和 `themes/hugo-theme-fluidity/layouts/partials/` 目錄下的 partials 檔案來改變頁面的結構和內容。
+*   **修改 Tailwind 配置**: 您可以修改主題根目錄下的 `tailwind.config.js` 檔案來擴展或修改 Tailwind CSS 的配置。
+*   **添加自定義 CSS**: 您可以在您的站點的 `assets/css/` 目錄下創建 CSS 檔案，並在 `hugo.yaml` 中配置，以便覆蓋主題的樣式。
 
-## 5. 自定義佈局
+請注意，直接修改主題檔案可能會在更新主題時產生衝突。建議通過 Hugo 的檔案查找順序來覆蓋主題檔案，例如將修改後的 partials 檔案放在您站點的 `layouts/partials/` 目錄下。
 
-主題的佈局文件位於 `themes/hugo-theme-fluidity/layouts` 目錄下。建議在你的主專案的 `layouts` 目錄下創建同名文件來覆蓋主題文件。
+## 7. 國際化 (i18n)
 
-*   `_default`: 包含默認的佈局文件。
-*   `partials`: 包含可重用的佈局片段。
+主題支援國際化。您可以通過修改 `themes/hugo-theme-fluidity/i18n/` 目錄下的語言檔案 (`en.yaml`, `zh-cn.yaml`, `zh-hk.yaml` 等) 來翻譯主題中的文字。您也可以在您站點的 `i18n/` 目錄下添加或修改語言檔案。
 
-## 6. 運行網站
+## 8. 其他
 
-在你的 Hugo 專案根目錄下執行：
+*   **運行範例站點**: 主題提供了一個範例站點 (`exampleSite/`)，您可以參考其配置和內容來了解主題的使用方法。您可以使用以下命令在本地運行範例站點：
 
-```bash
-hugo server
-```
+    ```bash
+    cd themes/hugo-theme-fluidity/exampleSite
+    hugo server
+    ```
 
-## 7. 生成靜態網站
-
-執行：
-
-```bash
-hugo
-```
-
-生成的靜態文件在 `public` 目錄中。
-
-希望這份 Markdown 格式的指南能幫助你更好地使用 `hugo-theme-fluidity` 主題。
+希望這份指南對您有所幫助！如果您有其他問題，建議查看主題的 GitHub 倉庫以獲取更多資訊。

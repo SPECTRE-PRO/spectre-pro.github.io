@@ -5,12 +5,11 @@ title: SPECTRE
 theme: hugo-theme-fluidity
 enableRobotsTXT: true
 summaryLength: 100
-hasCJKLanguage: false
+hasCJKLanguage: true
 enableEmoji: true
 
-params:
-  search:
-    provider: "pagefind"
+pygmentsUseClasses: true # 使用 CSS class 進行程式碼高亮。
+pygmentsCodefences: true # 啟用程式碼區塊高亮。
 
 caches:
   images:
@@ -46,9 +45,75 @@ menus:
     - identifier: archive
       pageRef: /archives
       weight: 40
-    - identifier: about
-      pageRef: /about
-      weight: 50
     - identifier: search
       pageRef: /search
-      weight: 60
+      weight: 50
+
+
+params:
+  description: '' # 顯示在頁腳的關於區塊下方，簡要介紹您的網站。
+  fullContentRSS: false # 設定為 true 時，RSS Feed 將包含文章的完整內容；設定為 false 時，只包含摘要。
+
+  mainSections: # 一個字串列表，指定哪些 Section (例如 'posts', 'blog') 的文章會顯示在首頁。
+    - posts
+
+  pageSize: # 控制不同頁面類型的文章列表每頁顯示數量。
+    home: 20 # 首頁顯示的文章數量。
+    list: 50 # 分類、標籤等列表頁面顯示的文章數量。
+    archives: 100 # 歸檔頁面顯示的文章數量。
+
+  listPage: # 自定義列表頁面 (分類、標籤等) 的顯示方式。
+    numCategoriesToShow: 5 # 在列表頁面的文章摘要中顯示的分類數量。
+    numTagsToShow: 50 # 在列表頁面的文章摘要中顯示的標籤數量。
+    showSummary: false # 設定為 true 時，在列表頁面顯示文章摘要；設定為 false 時，只顯示標題和元數據。
+
+  social: # 社交連結和分享功能的配置集合。
+    github: 'SPECTRE-PRO' # 您的 GitHub 用戶名，用於生成 GitHub 連結。
+
+    share: # 文章分享按鈕的配置。
+      disabled: false # 設定為 true 時，全局禁用所有文章的分享按鈕。
+      disableByType: # 一個字串列表，指定哪些內容類型 (例如 'page') 的文章禁用分享按鈕。
+        - not-exist # 示例：禁用 'not-exist' 類型的文章分享。
+      platforms: # 一個列表，指定要在文章頁面顯示的分享平台。
+        - name: reddit # 使用預設的 Reddit 分享配置。
+        - name: x # 使用預設的 X (Twitter) 分享配置。
+        - name: facebook # 使用預設的 Facebook 分享配置。
+        # - name: telegram # 通過註釋或移除來禁用 Telegram 分享。
+        - name: whatsapp # 使用預設的 WhatsApp 分享配置。
+        # 您可以添加自定義分享平台，例如：
+        # - name: CustomPlatform # 平台名稱
+        #   urlPattern: "https://example.com?link={permalink}&title={title}" # 分享 URL 模式，可以使用 {permalink}, {title}, {tags}, {description}, {via}, {user} 等佔位符。
+
+    connect: # 頁腳社交連結的配置。
+      platforms: # 一個字串列表，指定要在頁腳顯示的社交連結平台。
+        - github # 顯示 GitHub 連結 (需要配置 params.social.github)。
+        - # x # 顯示 X (Twitter) 連結 (需要配置 params.social.twitter)。
+        # - linkedin # 通過註釋或移除來禁用 LinkedIn 連結。
+        - # whatsapp # 顯示 WhatsApp 連結 (需要配置 params.social.whatsapp)。
+
+  articleMetadata: # 控制文章元數據 (作者、日期、閱讀時間、分類、標籤) 的顯示位置。
+    position: header # 可選值: "header" (顯示在文章標題下方), "sidebar" (顯示在側邊欄), "none" (不顯示元數據)。
+
+  toc: # 文章目錄 (Table of Contents) 的配置。
+    disabled: false # 設定為 true 時，全局禁用所有文章的目錄。
+
+  relatedPosts: # 相關文章的配置。
+    disabled: false # 設定為 true 時，全局禁用所有文章的相關文章列表。
+    disableByType: [page] # 一個字串列表，指定哪些內容類型 (例如 'page') 的文章禁用相關文章列表。
+
+  comment: # 評論功能的配置。
+    disabled: false # 設定為 true 時，全局禁用所有文章的評論功能。
+    disableByType: [page] # 一個字串列表，指定哪些內容類型 (例如 'page') 的文章禁用評論功能。
+    thirdParty: | # 在這裡貼上您的第三方評論系統 (如 Disqus, utterances, Giscus) 的程式碼片段。
+      <!-- 將您的第三方評論系統程式碼貼在這裡 -->
+      <!-- 例如 Disqus, utterances, Giscus 等 -->
+      <!-- 如果留空，主題將嘗試使用 Hugo 內建的 Disqus 模板 (需要設定 disqusShortname)。 -->
+
+  search: # 搜尋功能的配置。
+    disabled: false # 設定為 true 時，全局禁用搜尋功能。
+    provider: pagefind # 可選值: "google" (使用 Google 自定義搜尋), "pagefind" (使用 Pagefind 離線搜尋)。
+
+  math: true # 設定為 true 時，全局啟用數學排版支援 (MathJax 或 KaTeX)。
+  mathEngine: mathJax # 可選值: "mathJax", "katex"。選擇使用的數學排版引擎。
+
+  logo: '/favicon/favicon.svg' # 網站 Logo 圖片的路徑，相對於站點的 `static` 或 `assets` 目錄。顯示在頁眉的網站標題旁邊。
