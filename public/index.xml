@@ -8,5 +8,13 @@
     <description>Recent content on SPECTRE</description>
     <generator>Hugo</generator>
     <language>zh-hk</language>
-    <lastBuildDate></lastBuildDate><atom:link href="https://spectre-pro.github.io/index.xml" rel="self" type="application/rss+xml" /></channel>
+    <lastBuildDate>Sat, 07 Jun 2025 20:03:55 +0800</lastBuildDate><atom:link href="https://spectre-pro.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>贊助</title>
+      <link>https://spectre-pro.github.io/posts/test/</link>
+      <pubDate>Sat, 07 Jun 2025 20:03:55 +0800</pubDate><guid>https://spectre-pro.github.io/posts/test/</guid>
+      <description>&lt;p&gt;如果你喜歡這些內容，可以用微信掃下面這個碼贊助作者一杯咖啡&lt;/p&gt;</description></item><item>
+      <title>HELLO</title>
+      <link>https://spectre-pro.github.io/posts/my-first-post/</link>
+      <pubDate>Sun, 01 Jun 2025 13:43:37 +0800</pubDate><guid>https://spectre-pro.github.io/posts/my-first-post/</guid>
+      <description>&lt;h1 id=&#34;hello很高興認識你&#34;&gt;Hello很高興認識你&lt;/h1&gt;</description></item></channel>
 </rss>
