@@ -5,3 +5,7 @@ title = 'HELLO'
 +++
 
 # Hello很高興認識你
+
+<!--more-->
+
+This is the test post
