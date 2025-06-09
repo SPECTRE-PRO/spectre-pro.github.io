@@ -16,13 +16,9 @@
       <title>Python venv用法</title>
       <link>https://spectre-pro.github.io/posts/usepythonvenv/</link>
       <pubDate>Sat, 07 Jun 2025 20:03:55 +0800</pubDate><guid>https://spectre-pro.github.io/posts/usepythonvenv/</guid>
-      <description>&lt;h2 id=&#34;1-创建虚拟环境&#34;&gt;1. 创建虚拟环境&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;基本语法：&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;python3 -m venv &amp;lt;环境名&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;&amp;lt;环境名&amp;gt;&lt;/code&gt;：是你为虚拟环境起的名称（通常放在项目文件夹内，例如 &lt;code&gt;.venv&lt;/code&gt;、&lt;code&gt;env&lt;/code&gt; 或 &lt;code&gt;my_project_env&lt;/code&gt;）。&lt;/li&gt;&#xA;&lt;li&gt;这条命令会在当前目录下创建一个名为 &lt;code&gt;&amp;lt;环境名&amp;gt;&lt;/code&gt; 的文件夹，其中包含虚拟环境。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;指定 Python 版本（关键）：&lt;/strong&gt;&lt;/p&gt;</description></item><item>
+      <description>&lt;h2 id=&#34;venv-是什么&#34;&gt;&lt;code&gt;venv&lt;/code&gt; 是什么。&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;venv&lt;/code&gt; 是 Python 标准库中用于创建&lt;strong&gt;虚拟环境&lt;/strong&gt;的模块。&lt;/p&gt;&#xA;&lt;h3 id=&#34;什么是虚拟环境-virtual-environment&#34;&gt;什么是虚拟环境 (Virtual Environment)？&lt;/h3&gt;&#xA;&lt;p&gt;简单来说，虚拟环境就是一个独立的 Python 环境，它拥有自己的 Python 解释器、库和脚本目录。&lt;/p&gt;&#xA;&lt;h3 id=&#34;为什么需要使用-venv-虚拟环境&#34;&gt;为什么需要使用 &lt;code&gt;venv&lt;/code&gt; (虚拟环境)？&lt;/h3&gt;&#xA;&lt;p&gt;在 Python 开发中，不同的项目可能需要不同版本的库，或者同一个库的不同版本。如果没有虚拟环境，所有项目都共享全局的 Python 环境。这可能导致以下问题：&lt;/p&gt;</description></item><item>
       <title>贊助</title>
       <link>https://spectre-pro.github.io/posts/test/</link>
       <pubDate>Sat, 07 Jun 2025 20:03:55 +0800</pubDate><guid>https://spectre-pro.github.io/posts/test/</guid>
-      <description>&lt;p&gt;如果你喜歡這些內容，可以用微信掃下面這個碼贊助作者一杯咖啡&lt;/p&gt;</description></item><item>
-      <title>HELLO</title>
-      <link>https://spectre-pro.github.io/posts/my-first-post/</link>
-      <pubDate>Sun, 01 Jun 2025 13:43:37 +0800</pubDate><guid>https://spectre-pro.github.io/posts/my-first-post/</guid>
-      <description>&lt;h1 id=&#34;hello很高興認識你&#34;&gt;Hello很高興認識你&lt;/h1&gt;</description></item></channel>
+      <description>&lt;h2 id=&#34;如果你喜歡這些內容可以用微信掃下面這個碼贊助作者一杯咖啡&#34;&gt;如果你喜歡這些內容，可以用微信掃下面這個碼贊助作者一杯咖啡&lt;/h2&gt;</description></item></channel>
 </rss>

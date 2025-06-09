@@ -75,8 +75,6 @@
       <a
         class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/posts/" title="Posts">文章</a></li><li class="relative group">
       <a
-        class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/tags/" title="Tags">標籤</a></li><li class="relative group">
-      <a
         class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/archives/" title="Archives">歸檔</a></li><li class="relative group">
       <a
         class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/search/" title="搜索">搜尋</a></li></ul>
@@ -98,8 +96,6 @@
         class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200 active text-sky-600 dark:text-sky-300 font-semibold before:opacity-100" aria-current="page" href="/" title="SPECTRE">首頁</a></li><li class="relative group">
       <a
         class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200" href="/posts/" title="Posts">文章</a></li><li class="relative group">
-      <a
-        class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200" href="/tags/" title="Tags">標籤</a></li><li class="relative group">
       <a
         class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200" href="/archives/" title="Archives">歸檔</a></li><li class="relative group">
       <a
@@ -247,18 +243,12 @@
         </a>
       </h3>
 
-      <div class="text-neutral-700 dark:text-neutral-300 leading-relaxed text-base"><h2 id="1-创建虚拟环境">1. 创建虚拟环境</h2>
-<ul>
-<li>
-<p><strong>基本语法：</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python3 -m venv &lt;环境名&gt;
-</span></span></code></pre></div><ul>
-<li><code>&lt;环境名&gt;</code>：是你为虚拟环境起的名称（通常放在项目文件夹内，例如 <code>.venv</code>、<code>env</code> 或 <code>my_project_env</code>）。</li>
-<li>这条命令会在当前目录下创建一个名为 <code>&lt;环境名&gt;</code> 的文件夹，其中包含虚拟环境。</li>
-</ul>
-</li>
-<li>
-<p><strong>指定 Python 版本（关键）：</strong></p><span class="hellip">&hellip;</span></div>
+      <div class="text-neutral-700 dark:text-neutral-300 leading-relaxed text-base"><h2 id="venv-是什么"><code>venv</code> 是什么。</h2>
+<p><code>venv</code> 是 Python 标准库中用于创建<strong>虚拟环境</strong>的模块。</p>
+<h3 id="什么是虚拟环境-virtual-environment">什么是虚拟环境 (Virtual Environment)？</h3>
+<p>简单来说，虚拟环境就是一个独立的 Python 环境，它拥有自己的 Python 解释器、库和脚本目录。</p>
+<h3 id="为什么需要使用-venv-虚拟环境">为什么需要使用 <code>venv</code> (虚拟环境)？</h3>
+<p>在 Python 开发中，不同的项目可能需要不同版本的库，或者同一个库的不同版本。如果没有虚拟环境，所有项目都共享全局的 Python 环境。这可能导致以下问题：</p><span class="hellip">&hellip;</span></div>
 
       <div class="mt-2 hidden md:block">
         <a
@@ -324,7 +314,7 @@
         </a>
       </h3>
 
-      <div class="text-neutral-700 dark:text-neutral-300 leading-relaxed text-base"><p>如果你喜歡這些內容，可以用微信掃下面這個碼贊助作者一杯咖啡</p><span class="hellip">&hellip;</span></div>
+      <div class="text-neutral-700 dark:text-neutral-300 leading-relaxed text-base"><h2 id="如果你喜歡這些內容可以用微信掃下面這個碼贊助作者一杯咖啡">如果你喜歡這些內容，可以用微信掃下面這個碼贊助作者一杯咖啡</h2><span class="hellip">&hellip;</span></div>
 
       <div class="mt-2 hidden md:block">
         <a
@@ -344,72 +334,6 @@
           <span class="relative">閱讀更多
           </span>
           <span class="sr-only">about 贊助</span>
-        </a>
-      </div>
-    </article>
-  </div><div
-    class="overflow-hidden break-inside-avoid mb-6 last:mb-0
-           bg-white/95 dark:bg-neutral-900
-           hover:bg-gradient-to-br hover:from-white hover:to-blue-50/95
-           dark:hover:from-neutral-900 dark:hover:to-neutral-800/95
-           rounded-xl p-6
-           border border-neutral-200 dark:border-neutral-800
-           shadow-sm
-           backdrop-blur-md
-           transition-all duration-200
-           hover:border-sky-500/20 dark:hover:border-sky-500/30
-           hover:ring-1 hover:ring-sky-200 dark:hover:ring-sky-800
-           hover:-translate-y-0.5">
-    <article class="flex flex-col gap-4">
-      <div class="flex justify-between items-center">
-        <time
-          datetime="2025-06-01T13:43:37&#43;0800"
-          class="text-sm text-neutral-600 dark:text-neutral-400">
-          June 01, 2025
-        </time></div>
-
-      <h3
-        class="font-bold
-        tracking-tight
-        leading-tight
-          text-xl md:text-2xl
-        ">
-        <a
-          href="/posts/my-first-post/"
-          class="relative inline-block
-                    text-neutral-900 dark:text-white
-                    group-hover:text-sky-600 dark:group-hover:text-sky-400
-                    transition-colors duration-300">
-          HELLO
-          <span
-            class="absolute bottom-0 left-0 right-0 h-px
-                   bg-gradient-to-r from-sky-400 to-blue-500
-                   dark:from-sky-500 dark:to-blue-400
-                   transform origin-left scale-x-0 group-hover:scale-x-100
-                   transition-transform duration-300 ease-out"></span>
-        </a>
-      </h3>
-
-      <div class="text-neutral-700 dark:text-neutral-300 leading-relaxed text-base"><h1 id="hello很高興認識你">Hello很高興認識你</h1><span class="hellip">&hellip;</span></div>
-
-      <div class="mt-2 hidden md:block">
-        <a
-          href="/posts/my-first-post/"
-          aria-label="閱讀更多 about HELLO"
-          class="inline-flex items-center justify-center gap-1.5
-               px-4 h-9 text-sm font-medium rounded-lg
-               transition-all duration-200 ease-out
-               backdrop-blur-[2px]
-            bg-gradient-to-r from-white/60 via-sky-50/60 to-blue-50/60 dark:from-slate-800/60 dark:via-sky-900/30
-            dark:to-blue-900/30 text-sky-700 dark:text-sky-300 hover:from-sky-50/70 hover:via-sky-50/70
-            hover:to-blue-50/70 dark:hover:from-sky-800/40 dark:hover:via-sky-800/40 dark:hover:to-blue-800/40 border
-            border-slate-200/50 dark:border-slate-700/50 hover:border-sky-200/50 dark:hover:border-sky-700/50 shadow-sm
-            shadow-slate-200/20 dark:shadow-slate-900/20 hover:shadow-md hover:shadow-sky-100/30
-            dark:hover:shadow-sky-900/30 hover:-translate-y-0.5 hover:scale-[1.01]
-          ">
-          <span class="relative">閱讀更多
-          </span>
-          <span class="sr-only">about HELLO</span>
         </a>
       </div>
     </article>
@@ -440,7 +364,7 @@
                   class="text-sm text-neutral-500 dark:text-neutral-400
                            group-hover:text-sky-500 dark:group-hover:text-sky-400
                            transition-colors duration-300">
-                  (4)
+                  (3)
                 </span>
               </a>
             </li></ul>
