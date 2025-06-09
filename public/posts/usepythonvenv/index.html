@@ -3,23 +3,56 @@
 <head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <meta name="color-scheme" content="dark light">
-<meta name="description" content="如果你喜歡這些內容，可以用微信掃下面這個碼贊助作者一杯咖啡" />
+<meta name="description" content="1. 创建虚拟环境
+
+
+基本语法：
+python3 -m venv &lt;环境名&gt;
+
+&lt;环境名&gt;：是你为虚拟环境起的名称（通常放在项目文件夹内，例如 .venv、env 或 my_project_env）。
+这条命令会在当前目录下创建一个名为 &lt;环境名&gt; 的文件夹，其中包含虚拟环境。
+
+
+
+指定 Python 版本（关键）：" />
 <meta name="author" content="">
 <meta name="keywords" content="">
 
-<link rel="canonical" href="https://spectre-pro.github.io/posts/test/" /><!-- open graph --><meta property="og:type" content="article" />
-<meta property="og:description" content="如果你喜歡這些內容，可以用微信掃下面這個碼贊助作者一杯咖啡" />
-<meta property="og:title" content="贊助" />
+<link rel="canonical" href="https://spectre-pro.github.io/posts/usepythonvenv/" /><!-- open graph --><meta property="og:type" content="article" />
+<meta property="og:description" content="1. 创建虚拟环境
+
+
+基本语法：
+python3 -m venv &lt;环境名&gt;
+
+&lt;环境名&gt;：是你为虚拟环境起的名称（通常放在项目文件夹内，例如 .venv、env 或 my_project_env）。
+这条命令会在当前目录下创建一个名为 &lt;环境名&gt; 的文件夹，其中包含虚拟环境。
+
+
+
+指定 Python 版本（关键）：" />
+<meta property="og:title" content="Python venv用法" />
 <meta property="og:site_name" content="SPECTRE" />
 <meta property="og:image:type" content="image/jpeg" />
-<meta property="og:url" content="https://spectre-pro.github.io/posts/test/" />
+<meta property="og:url" content="https://spectre-pro.github.io/posts/usepythonvenv/" />
 <meta property="og:locale" content="zh-hk" /><meta property="article:published_time" content="2025-06-07" /><meta property="article:modified_time" content="2025-06-07" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="贊助 | SPECTRE" />
-<meta name="twitter:description" content="如果你喜歡這些內容，可以用微信掃下面這個碼贊助作者一杯咖啡" />
-<meta name="twitter:domain" content="https://spectre-pro.github.io/posts/test/" />
+<meta name="twitter:title" content="Python venv用法 | SPECTRE" />
+<meta name="twitter:description" content="1. 创建虚拟环境
 
-<title>贊助 | SPECTRE</title>
+
+基本语法：
+python3 -m venv &lt;环境名&gt;
+
+&lt;环境名&gt;：是你为虚拟环境起的名称（通常放在项目文件夹内，例如 .venv、env 或 my_project_env）。
+这条命令会在当前目录下创建一个名为 &lt;环境名&gt; 的文件夹，其中包含虚拟环境。
+
+
+
+指定 Python 版本（关键）：" />
+<meta name="twitter:domain" content="https://spectre-pro.github.io/posts/usepythonvenv/" />
+
+<title>Python venv用法 | SPECTRE</title>
 
 
 <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
@@ -139,7 +172,7 @@
     <header class="md:mb-4 lg:mb-8">
       <h1 class="fluidity-page-title text-4xl group mb-2 md:mb-4 lg:mb-8">
         <span class="relative inline-block">
-          贊助
+          Python venv用法
           <span class="fluidity-page-title-line"></span>
         </span>
       </h1><div
@@ -191,7 +224,7 @@
         <span
           class="text-sm group-hover:text-sky-600 dark:group-hover:text-sky-400
                       transition-colors duration-200">
-          預期閱讀 1 分鐘
+          預期閱讀 3 分鐘
         </span>
       </div></div>
   </div>
@@ -215,10 +248,108 @@
                 shadow-lg shadow-sky-100/20 dark:shadow-sky-900/20
                 transition-all duration-300 ease-out">
           <article class="prose prose-neutral dark:prose-invert">
-            <p>如果你喜歡這些內容，可以用微信掃下面這個碼贊助作者一杯咖啡</p>
-<blockquote>
-<p>手機端可在長按圖片。微信發送給自己，然後再微信打開圖片並長按識別二維碼</p></blockquote>
-<p><img src="/image/mm_reward_qrcode_1748756839642.png" alt="讚賞碼"></p>
+            <h2 id="1-创建虚拟环境">1. 创建虚拟环境</h2>
+<ul>
+<li>
+<p><strong>基本语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python3 -m venv &lt;环境名&gt;
+</span></span></code></pre></div><ul>
+<li><code>&lt;环境名&gt;</code>：是你为虚拟环境起的名称（通常放在项目文件夹内，例如 <code>.venv</code>、<code>env</code> 或 <code>my_project_env</code>）。</li>
+<li>这条命令会在当前目录下创建一个名为 <code>&lt;环境名&gt;</code> 的文件夹，其中包含虚拟环境。</li>
+</ul>
+</li>
+<li>
+<p><strong>指定 Python 版本（关键）：</strong></p>
+<p>如果你系统上安装了多个 Python 版本（例如 Python 3.8 和 Python 3.9），你需要使用特定版本的 <code>python</code> 命令来创建环境。 假设你要用 Python 3.8 创建环境：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python3.8 -m venv &lt;环境名&gt; 
+</span></span></code></pre></div><ul>
+<li><strong>重要：</strong>
+<ul>
+<li>确保 <code>python3.8</code> 命令在你的系统上可用（你可以通过在终端中运行 <code>python3.8 --version</code> 来检查）。如果不可用，你需要先安装 Python 3.8，或者找到它的正确路径。</li>
+<li>如果你只安装了一个 Python 3 版本，通常直接使用 <code>python3</code> 命令即可。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-激活虚拟环境">2. 激活虚拟环境</h2>
+<p>激活环境后，你后续的 <code>pip install</code> 命令安装的包都会被安装到这个虚拟环境中。</p>
+<ul>
+<li>
+<p><strong>Windows (cmd.exe):</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&lt;环境名&gt;<span class="se">\S</span>cripts<span class="se">\a</span>ctivate.bat
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Windows (PowerShell):</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="n">环境名</span><span class="p">&gt;\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">Activate</span><span class="p">.</span><span class="py">ps1</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Linux/macOS (bash/zsh):</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">source</span> &lt;环境名&gt;/bin/activate
+</span></span></code></pre></div></li>
+</ul>
+<p>激活后，你的命令行提示符通常会发生变化，显示当前激活的环境名称。</p>
+<h2 id="3-安装包">3. 安装包</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install &lt;包名&gt;
+</span></span></code></pre></div><p>例如：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install requests
+</span></span><span class="line"><span class="cl">pip install numpy pandas
+</span></span></code></pre></div><h2 id="4-列出已安装的包">4. 列出已安装的包</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip freeze
+</span></span></code></pre></div><p>这个命令会列出当前环境中安装的所有包及其版本号。通常，你会将输出重定向到一个 <code>requirements.txt</code> 文件中：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip freeze &gt; requirements.txt
+</span></span></code></pre></div><p>这样做的好处是，以后你可以在新的虚拟环境中，或者在另一台机器上，使用 <code>requirements.txt</code> 文件快速重新创建相同的环境。</p>
+<h2 id="5-从-requirementstxt-安装包">5. 从 <code>requirements.txt</code> 安装包</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install -r requirements.txt
+</span></span></code></pre></div><h2 id="6-退出虚拟环境">6. 退出虚拟环境</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">deactivate
+</span></span></code></pre></div><p>运行 <code>deactivate</code> 命令会退出当前激活的虚拟环境，回到系统全局 Python 环境。</p>
+<h2 id="7-删除虚拟环境">7. 删除虚拟环境</h2>
+<p>只需删除虚拟环境文件夹即可：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Linux/macOS</span>
+</span></span><span class="line"><span class="cl">rm -rf &lt;环境名&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Windows (cmd.exe)</span>
+</span></span><span class="line"><span class="cl">rmdir /s /q &lt;环境名&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Windows (PowerShell)</span>
+</span></span><span class="line"><span class="cl">Remove-Item -Recurse -Force &lt;环境名&gt;
+</span></span></code></pre></div><h2 id="完整示例假设你想使用-python-38-创建一个名为-venv-的环境">完整示例（假设你想使用 Python 3.8 创建一个名为 <code>.venv</code> 的环境）：</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 1. 创建环境 (使用 Python 3.8)</span>
+</span></span><span class="line"><span class="cl">python3.8 -m venv .venv
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2. 激活环境 (Linux/macOS 示例)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> .venv/bin/activate
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 3. 安装一些包</span>
+</span></span><span class="line"><span class="cl">pip install requests numpy
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 4. 列出已安装的包并保存到 requirements.txt</span>
+</span></span><span class="line"><span class="cl">pip freeze &gt; requirements.txt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 5. (稍后，在另一个环境或机器上) 从 requirements.txt 安装</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    (先创建并激活一个新环境，然后...)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    pip install -r requirements.txt</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 6. 退出环境</span>
+</span></span><span class="line"><span class="cl">deactivate
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 7. (以后，如果你不再需要这个环境) 删除环境</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    rm -rf .venv  (Linux/macOS)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    rmdir /s /q .venv (Windows cmd.exe)</span>
+</span></span></code></pre></div><h1 id="关键点回顾">关键点回顾：</h1>
+<ul>
+<li>使用 <code>python3 -m venv &lt;环境名&gt;</code> 创建环境。</li>
+<li>使用特定版本的 <code>python</code> 命令（例如 <code>python3.8 -m venv</code>）来指定 Python 版本。</li>
+<li>使用 <code>source &lt;环境名&gt;/bin/activate</code> (Linux/macOS) 或 <code>&lt;环境名&gt;\Scripts\activate.bat</code> (Windows) 激活环境。</li>
+<li>使用 <code>pip install</code> 安装包。</li>
+<li>使用 <code>pip freeze &gt; requirements.txt</code> 保存包列表。</li>
+<li>使用 <code>pip install -r requirements.txt</code> 从列表安装包。</li>
+<li>使用 <code>deactivate</code> 退出环境。</li>
+<li>直接删除环境文件夹来删除环境。</li>
+</ul>
+<p>只要你确保使用了正确版本的 <code>python</code> 命令来创建 <code>venv</code> 环境，就可以精确控制使用的 Python 版本。</p>
+
           </article>
 
           
@@ -236,10 +367,62 @@
                     shadow-lg shadow-sky-100/20 dark:shadow-sky-900/20
                     transition-all duration-300 ease-out">
             
-          <div class="relative">
+          <div class="relative"><div id="toc">
+  <div class="flex items-center justify-between mb-2 lg:mb-4">
+    <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">目錄</h2>
+    <button
+      id="toc-toggle"
+      aria-label="切換目錄"
+      class="inline-flex items-center justify-center w-8 h-8 rounded-lg
+        bg-blue-50/90 dark:bg-blue-900/30 
+        text-blue-600 dark:text-blue-300
+        hover:bg-cyan-50/90 dark:hover:bg-cyan-900/30
+        hover:text-cyan-600 dark:hover:text-cyan-300
+        ring-1 ring-blue-100 dark:ring-blue-900/50
+        cursor-pointer
+        focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 dark:focus-visible:ring-cyan-500
+        transition-all duration-200">
+      <span class="toc-expand hidden"><svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  xmlns="http://www.w3.org/2000/svg"ZgotmplZZgotmplZ><path
+      d="M2 4.75C2 4.33579 2.33579 4 2.75 4H21.25C21.6642 4 22 4.33579 22 4.75C22 5.16421 21.6642 5.5 21.25 5.5H2.75C2.33579 5.5 2 5.16421 2 4.75ZM12 8.75C12 8.33579 12.3358 8 12.75 8H21.25C21.6642 8 22 8.33579 22 8.75C22 9.16421 21.6642 9.5 21.25 9.5H12.75C12.3358 9.5 12 9.16421 12 8.75ZM7.28033 19.7803C7.13968 19.921 6.94891 20 6.75 20C6.55109 20 6.36032 19.921 6.21967 19.7803L3.21967 16.7803C2.92678 16.4874 2.92678 16.0126 3.21967 15.7197C3.51256 15.4268 3.98744 15.4268 4.28033 15.7197L6 17.4393V8.75C6 8.33579 6.33579 8 6.75 8C7.16421 8 7.5 8.33579 7.5 8.75V17.4393L9.21967 15.7197C9.51256 15.4268 9.98744 15.4268 10.2803 15.7197C10.5732 16.0126 10.5732 16.4874 10.2803 16.7803L7.28033 19.7803Z" /></svg>
+</span>
+      <span class="toc-collapse"><svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  xmlns="http://www.w3.org/2000/svg"ZgotmplZZgotmplZ><path
+      d="M2 4.75C2 4.33579 2.33579 4 2.75 4H21.25C21.6642 4 22 4.33579 22 4.75C22 5.16421 21.6642 5.5 21.25 5.5H2.75C2.33579 5.5 2 5.16421 2 4.75ZM12 8.75C12 8.33579 12.3358 8 12.75 8H21.25C21.6642 8 22 8.33579 22 8.75C22 9.16421 21.6642 9.5 21.25 9.5H12.75C12.3358 9.5 12 9.16421 12 8.75ZM7.28033 8.21967C7.13968 8.07902 6.94891 8 6.75 8C6.55109 8 6.36032 8.07902 6.21967 8.21967L3.21967 11.2197C2.92678 11.5126 2.92678 11.9874 3.21967 12.2803C3.51256 12.5732 3.98744 12.5732 4.28033 12.2803L6 10.5607V19.25C6 19.6642 6.33579 20 6.75 20C7.16421 20 7.5 19.6642 7.5 19.25V10.5607L9.21967 12.2803C9.51256 12.5732 9.98744 12.5732 10.2803 12.2803C10.5732 11.9874 10.5732 11.5126 10.2803 11.2197L7.28033 8.21967Z" /></svg>
+</span>
+    </button>
+  </div>
+
+  
+  
+    <div class="toc-content transition-all duration-200">
+      <nav><nav id="TableOfContents">
+  <ul class='space-y-1 ml-2'>
+    <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#1-创建虚拟环境">1. 创建虚拟环境</a></li>
+    <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#2-激活虚拟环境">2. 激活虚拟环境</a></li>
+    <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#3-安装包">3. 安装包</a></li>
+    <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#4-列出已安装的包">4. 列出已安装的包</a></li>
+    <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#5-从-requirementstxt-安装包">5. 从 <code>requirements.txt</code> 安装包</a></li>
+    <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#6-退出虚拟环境">6. 退出虚拟环境</a></li>
+    <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#7-删除虚拟环境">7. 删除虚拟环境</a></li>
+    <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#完整示例假设你想使用-python-38-创建一个名为-venv-的环境">完整示例（假设你想使用 Python 3.8 创建一个名为 <code>.venv</code> 的环境）：</a></li>
+  </ul>
+</nav></nav>
+    </div>
+  
+</div>
+</div><div class="border-b border-neutral-200/60 dark:border-neutral-700/60 my-4"></div><div class="relative">
 <div id="share"><h2 class="text-lg font-medium text-neutral-800 dark:text-neutral-200 mb-4">分享在</h2>
     <div class="flex flex-wrap justify-between gap-1 items-center space-y-1"><a
-    href="https://reddit.com/submit?url=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Ftest%2F&amp;title=%E8%B4%8A%E5%8A%A9"
+    href="https://reddit.com/submit?url=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Fusepythonvenv%2F&amp;title=Python&#43;venv%E7%94%A8%E6%B3%95"
     target="_blank"
     rel="noopener noreferrer"
     class="inline px-2 py-1 rounded-lg
@@ -254,8 +437,8 @@
       focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
       transform-gpu transition-all duration-200 ease-out
       shadow-sm"
-    aria-label="share贊助onReddit">Reddit</a><a
-    href="https://x.com/intent/tweet/?text=%E8%B4%8A%E5%8A%A9&amp;url=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Ftest%2F&amp;hashtags="
+    aria-label="sharePython venv用法onReddit">Reddit</a><a
+    href="https://x.com/intent/tweet/?text=Python&#43;venv%E7%94%A8%E6%B3%95&amp;url=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Fusepythonvenv%2F&amp;hashtags="
     target="_blank"
     rel="noopener noreferrer"
     class="inline px-2 py-1 rounded-lg
@@ -270,8 +453,8 @@
       focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
       transform-gpu transition-all duration-200 ease-out
       shadow-sm"
-    aria-label="share贊助onX.com">X.com</a><a
-    href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Ftest%2F"
+    aria-label="sharePython venv用法onX.com">X.com</a><a
+    href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Fusepythonvenv%2F"
     target="_blank"
     rel="noopener noreferrer"
     class="inline px-2 py-1 rounded-lg
@@ -286,8 +469,8 @@
       focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
       transform-gpu transition-all duration-200 ease-out
       shadow-sm"
-    aria-label="share贊助onFacebook">Facebook</a><a
-    href="https://wa.me/?text=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Ftest%2F%20%E8%B4%8A%E5%8A%A9"
+    aria-label="sharePython venv用法onFacebook">Facebook</a><a
+    href="https://wa.me/?text=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Fusepythonvenv%2F%20Python&#43;venv%E7%94%A8%E6%B3%95"
     target="_blank"
     rel="noopener noreferrer"
     class="inline px-2 py-1 rounded-lg
@@ -302,7 +485,7 @@
       focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
       transform-gpu transition-all duration-200 ease-out
       shadow-sm"
-    aria-label="share贊助onWhatsApp">WhatsApp</a></div></div>
+    aria-label="sharePython venv用法onWhatsApp">WhatsApp</a></div></div>
 
 </div><div class="border-b border-neutral-200/60 dark:border-neutral-700/60 my-4 hidden md:block"></div><div
             class="flex flex-wrap gap-2 justify-between text-sm text-neutral-700 dark:text-neutral-400 hidden md:flex">

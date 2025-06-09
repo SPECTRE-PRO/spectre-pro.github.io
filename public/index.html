@@ -151,6 +151,75 @@
     <article class="flex flex-col gap-4">
       <div class="flex justify-between items-center">
         <time
+          datetime="2025-06-09T13:43:37&#43;0800"
+          class="text-sm text-neutral-600 dark:text-neutral-400">
+          June 09, 2025
+        </time></div>
+
+      <h3
+        class="font-bold
+        tracking-tight
+        leading-tight
+          text-2xl md:text-3xl">
+        <a
+          href="/posts/del-da_store/"
+          class="relative inline-block
+                    text-neutral-900 dark:text-white
+                    group-hover:text-sky-600 dark:group-hover:text-sky-400
+                    transition-colors duration-300">
+          如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 文件
+          <span
+            class="absolute bottom-0 left-0 right-0 h-px
+                   bg-gradient-to-r from-sky-400 to-blue-500
+                   dark:from-sky-500 dark:to-blue-400
+                   transform origin-left scale-x-0 group-hover:scale-x-100
+                   transition-transform duration-300 ease-out"></span>
+        </a>
+      </h3>
+
+      <div class="text-neutral-700 dark:text-neutral-300 leading-relaxed text-base"><h2 id="如何在-mac-上刪除-github-倉庫中的-ds_store-文件">如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 文件</h2>
+<h3 id="步驟-1在終端機中找到你的倉庫">步驟 1：在終端機中找到你的倉庫</h3>
+<p>打開終端應用程序，並使用 <code>cd</code> 命令導航到你的倉庫根目錄。例如，如果你的倉庫位於 <code>/Users/xxx/Desktop/xxx</code>，你可以使用以下指令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> /Users/xxx/Desktop/xxx
+</span></span></code></pre></div><h3 id="步驟-2刪除-ds_store-文件">步驟 2：刪除 .DS_Store 文件</h3>
+<p>若要尋找並刪除倉庫中的所有 .DS_Store 文件，請執行下列命令：</p><span class="hellip">&hellip;</span></div>
+
+      <div class="mt-2 hidden md:block">
+        <a
+          href="/posts/del-da_store/"
+          aria-label="閱讀更多 about 如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 文件"
+          class="inline-flex items-center justify-center gap-1.5
+               px-4 h-9 text-sm font-medium rounded-lg
+               transition-all duration-200 ease-out
+               backdrop-blur-[2px]
+            bg-gradient-to-r from-sky-500/95 via-sky-500/95 to-blue-400/95 dark:from-sky-600/95 dark:via-sky-600/95
+            dark:to-blue-700/95 text-white dark:text-white hover:from-sky-600/95 hover:via-sky-600/95
+            hover:to-blue-700/95 dark:hover:from-sky-500/95 dark:hover:via-sky-500/95 dark:hover:to-blue-600/95 border
+            border-white/20 dark:border-white/10 shadow-sm shadow-sky-200/30 dark:shadow-sky-900/20 hover:shadow-md
+            hover:shadow-sky-200/40 dark:hover:shadow-sky-900/30 hover:-translate-y-0.5 hover:scale-[1.02]
+          ">
+          <span class="relative">閱讀更多
+          </span>
+          <span class="sr-only">about 如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 文件</span>
+        </a>
+      </div>
+    </article>
+  </div><div class="columns-1 md:columns-2 gap-8 space-y-8 [&>*:first-child]:mt-0"><div
+    class="overflow-hidden break-inside-avoid mb-6 last:mb-0
+           bg-white/95 dark:bg-neutral-900
+           hover:bg-gradient-to-br hover:from-white hover:to-blue-50/95
+           dark:hover:from-neutral-900 dark:hover:to-neutral-800/95
+           rounded-xl p-6
+           border border-neutral-200 dark:border-neutral-800
+           shadow-sm
+           backdrop-blur-md
+           transition-all duration-200
+           hover:border-sky-500/20 dark:hover:border-sky-500/30
+           hover:ring-1 hover:ring-sky-200 dark:hover:ring-sky-800
+           hover:-translate-y-0.5">
+    <article class="flex flex-col gap-4">
+      <div class="flex justify-between items-center">
+        <time
           datetime="2025-06-07T20:03:55&#43;0800"
           class="text-sm text-neutral-600 dark:text-neutral-400">
           June 07, 2025
@@ -160,7 +229,85 @@
         class="font-bold
         tracking-tight
         leading-tight
-          text-2xl md:text-3xl">
+          text-xl md:text-2xl
+        ">
+        <a
+          href="/posts/usepythonvenv/"
+          class="relative inline-block
+                    text-neutral-900 dark:text-white
+                    group-hover:text-sky-600 dark:group-hover:text-sky-400
+                    transition-colors duration-300">
+          Python venv用法
+          <span
+            class="absolute bottom-0 left-0 right-0 h-px
+                   bg-gradient-to-r from-sky-400 to-blue-500
+                   dark:from-sky-500 dark:to-blue-400
+                   transform origin-left scale-x-0 group-hover:scale-x-100
+                   transition-transform duration-300 ease-out"></span>
+        </a>
+      </h3>
+
+      <div class="text-neutral-700 dark:text-neutral-300 leading-relaxed text-base"><h2 id="1-创建虚拟环境">1. 创建虚拟环境</h2>
+<ul>
+<li>
+<p><strong>基本语法：</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python3 -m venv &lt;环境名&gt;
+</span></span></code></pre></div><ul>
+<li><code>&lt;环境名&gt;</code>：是你为虚拟环境起的名称（通常放在项目文件夹内，例如 <code>.venv</code>、<code>env</code> 或 <code>my_project_env</code>）。</li>
+<li>这条命令会在当前目录下创建一个名为 <code>&lt;环境名&gt;</code> 的文件夹，其中包含虚拟环境。</li>
+</ul>
+</li>
+<li>
+<p><strong>指定 Python 版本（关键）：</strong></p><span class="hellip">&hellip;</span></div>
+
+      <div class="mt-2 hidden md:block">
+        <a
+          href="/posts/usepythonvenv/"
+          aria-label="閱讀更多 about Python venv用法"
+          class="inline-flex items-center justify-center gap-1.5
+               px-4 h-9 text-sm font-medium rounded-lg
+               transition-all duration-200 ease-out
+               backdrop-blur-[2px]
+            bg-gradient-to-r from-white/60 via-sky-50/60 to-blue-50/60 dark:from-slate-800/60 dark:via-sky-900/30
+            dark:to-blue-900/30 text-sky-700 dark:text-sky-300 hover:from-sky-50/70 hover:via-sky-50/70
+            hover:to-blue-50/70 dark:hover:from-sky-800/40 dark:hover:via-sky-800/40 dark:hover:to-blue-800/40 border
+            border-slate-200/50 dark:border-slate-700/50 hover:border-sky-200/50 dark:hover:border-sky-700/50 shadow-sm
+            shadow-slate-200/20 dark:shadow-slate-900/20 hover:shadow-md hover:shadow-sky-100/30
+            dark:hover:shadow-sky-900/30 hover:-translate-y-0.5 hover:scale-[1.01]
+          ">
+          <span class="relative">閱讀更多
+          </span>
+          <span class="sr-only">about Python venv用法</span>
+        </a>
+      </div>
+    </article>
+  </div><div
+    class="overflow-hidden break-inside-avoid mb-6 last:mb-0
+           bg-white/95 dark:bg-neutral-900
+           hover:bg-gradient-to-br hover:from-white hover:to-blue-50/95
+           dark:hover:from-neutral-900 dark:hover:to-neutral-800/95
+           rounded-xl p-6
+           border border-neutral-200 dark:border-neutral-800
+           shadow-sm
+           backdrop-blur-md
+           transition-all duration-200
+           hover:border-sky-500/20 dark:hover:border-sky-500/30
+           hover:ring-1 hover:ring-sky-200 dark:hover:ring-sky-800
+           hover:-translate-y-0.5">
+    <article class="flex flex-col gap-4">
+      <div class="flex justify-between items-center">
+        <time
+          datetime="2025-06-07T20:03:55&#43;0800"
+          class="text-sm text-neutral-600 dark:text-neutral-400">
+          June 07, 2025
+        </time></div>
+
+      <h3
+        class="font-bold
+        tracking-tight
+        leading-tight
+          text-xl md:text-2xl
+        ">
         <a
           href="/posts/test/"
           class="relative inline-block
@@ -187,11 +334,12 @@
                px-4 h-9 text-sm font-medium rounded-lg
                transition-all duration-200 ease-out
                backdrop-blur-[2px]
-            bg-gradient-to-r from-sky-500/95 via-sky-500/95 to-blue-400/95 dark:from-sky-600/95 dark:via-sky-600/95
-            dark:to-blue-700/95 text-white dark:text-white hover:from-sky-600/95 hover:via-sky-600/95
-            hover:to-blue-700/95 dark:hover:from-sky-500/95 dark:hover:via-sky-500/95 dark:hover:to-blue-600/95 border
-            border-white/20 dark:border-white/10 shadow-sm shadow-sky-200/30 dark:shadow-sky-900/20 hover:shadow-md
-            hover:shadow-sky-200/40 dark:hover:shadow-sky-900/30 hover:-translate-y-0.5 hover:scale-[1.02]
+            bg-gradient-to-r from-white/60 via-sky-50/60 to-blue-50/60 dark:from-slate-800/60 dark:via-sky-900/30
+            dark:to-blue-900/30 text-sky-700 dark:text-sky-300 hover:from-sky-50/70 hover:via-sky-50/70
+            hover:to-blue-50/70 dark:hover:from-sky-800/40 dark:hover:via-sky-800/40 dark:hover:to-blue-800/40 border
+            border-slate-200/50 dark:border-slate-700/50 hover:border-sky-200/50 dark:hover:border-sky-700/50 shadow-sm
+            shadow-slate-200/20 dark:shadow-slate-900/20 hover:shadow-md hover:shadow-sky-100/30
+            dark:hover:shadow-sky-900/30 hover:-translate-y-0.5 hover:scale-[1.01]
           ">
           <span class="relative">閱讀更多
           </span>
@@ -199,7 +347,7 @@
         </a>
       </div>
     </article>
-  </div><div class="columns-1 md:columns-2 gap-8 space-y-8 [&>*:first-child]:mt-0"><div
+  </div><div
     class="overflow-hidden break-inside-avoid mb-6 last:mb-0
            bg-white/95 dark:bg-neutral-900
            hover:bg-gradient-to-br hover:from-white hover:to-blue-50/95
@@ -292,7 +440,7 @@
                   class="text-sm text-neutral-500 dark:text-neutral-400
                            group-hover:text-sky-500 dark:group-hover:text-sky-400
                            transition-colors duration-300">
-                  (2)
+                  (4)
                 </span>
               </a>
             </li></ul>
