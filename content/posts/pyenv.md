@@ -218,4 +218,4 @@ eval "$(pyenv virtualenv-init -)"
 ---
 
 > *Tip:*  
-> Windows 用户推荐使用 [pyenv-win](https://github.com/pyenv-win/pyenv-win)，并结合 [venv](https://spectrepro.pro/posts/usepythonvenv/) 管理虚拟环境；Mac/Linux 推荐结合 pyenv-virtualenv。
+> Windows 用户推荐使用 [pyenv-win](https://github.com/pyenv-win/pyenv-win)，并结合 [venv](https://spectrepro.pro/posts/pythonvenv/) 管理虚拟环境；Mac/Linux 推荐结合 pyenv-virtualenv。
