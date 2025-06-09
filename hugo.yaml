@@ -99,24 +99,22 @@ params:
     disabled: false # 設定為 true 時，全局禁用所有文章的評論功能。
     disableByType: [page] # 一個字串列表，指定哪些內容類型 (例如 'page') 的文章禁用評論功能。
     thirdParty: | # 在這裡貼上您的第三方評論系統 (如 Disqus, utterances, Giscus) 的程式碼片段。
-        <giscus-widget
-          id="comments"
-          repo="SPECTRE-PRO/spectre-pro.github.io"
-          repo-id="R_kgDOOz-m3A"
-          category="Announcements"
-          category-id="DIC_kwDOOz-m3M4CrO4f"
-          mapping="pathname"
-          strict="0"
-          reactions-enabled="1"
-          emit-metadata="0"
-          input-position="top"
-          theme="preferred_color_scheme"
-          lang="zh-TW"
-          loading="lazy"
-          crossorigin="anonymous"
-          async
-        >
-        </giscus-widget>
+      <script src="https://giscus.app/client.js"
+        data-repo="spectre-pro/spectre-pro.github.io"
+        data-repo-id="R_kgDOOz-m3A"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOOz-m3M4CrO4f"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-TW"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+      </script>
 
   search: # 搜尋功能的配置。
     disabled: false # 設定為 true 時，全局禁用搜尋功能。
