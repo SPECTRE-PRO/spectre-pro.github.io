@@ -36,15 +36,12 @@ menus:
     - identifier: post
       pageRef: /posts
       weight: 20
-    - identifier: tag
-      pageRef: /tags
-      weight: 30
     - identifier: archive
       pageRef: /archives
-      weight: 40
+      weight: 30
     - identifier: search
       pageRef: /search
-      weight: 50
+      weight: 40
 
 
 params:
