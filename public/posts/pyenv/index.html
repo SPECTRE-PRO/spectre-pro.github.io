@@ -3,23 +3,71 @@
 <head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <meta name="color-scheme" content="dark light">
-<meta name="description" content="Hello很高興認識你" />
+<meta name="description" content="pyenv 全面教程
+pyenv 是一个强大的 Python 版本管理工具，可让你轻松安装和切换多个 Python 版本。Windows 用户请使用 pyenv-win 项目。
+
+pyenv 简介
+
+作用：管理多个 Python 版本，轻松切换。
+优点：不污染系统 Python，支持用户级别的版本隔离。
+Windows 用户：请使用 pyenv-win。
+
+
+各平台安装 pyenv/pyenv-win
+macOS 安装
+
+
+安装 Homebrew（如已安装可跳过）
+bash
+/bin/bash -c &ldquo;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;" />
 <meta name="author" content="">
 <meta name="keywords" content="">
 
-<link rel="canonical" href="https://spectre-pro.github.io/posts/my-first-post/" /><!-- open graph --><meta property="og:type" content="article" />
-<meta property="og:description" content="Hello很高興認識你" />
-<meta property="og:title" content="HELLO" />
+<link rel="canonical" href="https://spectre-pro.github.io/posts/pyenv/" /><!-- open graph --><meta property="og:type" content="article" />
+<meta property="og:description" content="pyenv 全面教程
+pyenv 是一个强大的 Python 版本管理工具，可让你轻松安装和切换多个 Python 版本。Windows 用户请使用 pyenv-win 项目。
+
+pyenv 简介
+
+作用：管理多个 Python 版本，轻松切换。
+优点：不污染系统 Python，支持用户级别的版本隔离。
+Windows 用户：请使用 pyenv-win。
+
+
+各平台安装 pyenv/pyenv-win
+macOS 安装
+
+
+安装 Homebrew（如已安装可跳过）
+bash
+/bin/bash -c &ldquo;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;" />
+<meta property="og:title" content="pyenv 全面教程" />
 <meta property="og:site_name" content="SPECTRE" />
 <meta property="og:image:type" content="image/jpeg" />
-<meta property="og:url" content="https://spectre-pro.github.io/posts/my-first-post/" />
-<meta property="og:locale" content="zh-hk" /><meta property="article:published_time" content="2025-06-01" /><meta property="article:modified_time" content="2025-06-01" />
+<meta property="og:url" content="https://spectre-pro.github.io/posts/pyenv/" />
+<meta property="og:locale" content="zh-hk" /><meta property="article:published_time" content="2025-06-03" /><meta property="article:modified_time" content="2025-06-03" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="HELLO | SPECTRE" />
-<meta name="twitter:description" content="Hello很高興認識你" />
-<meta name="twitter:domain" content="https://spectre-pro.github.io/posts/my-first-post/" />
+<meta name="twitter:title" content="pyenv 全面教程 | SPECTRE" />
+<meta name="twitter:description" content="pyenv 全面教程
+pyenv 是一个强大的 Python 版本管理工具，可让你轻松安装和切换多个 Python 版本。Windows 用户请使用 pyenv-win 项目。
 
-<title>HELLO | SPECTRE</title>
+pyenv 简介
+
+作用：管理多个 Python 版本，轻松切换。
+优点：不污染系统 Python，支持用户级别的版本隔离。
+Windows 用户：请使用 pyenv-win。
+
+
+各平台安装 pyenv/pyenv-win
+macOS 安装
+
+
+安装 Homebrew（如已安装可跳过）
+bash
+/bin/bash -c &ldquo;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;" />
+<meta name="twitter:domain" content="https://spectre-pro.github.io/posts/pyenv/" />
+
+<title>pyenv 全面教程 | SPECTRE</title>
 
 
 <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
@@ -29,8 +77,8 @@
 <meta name="apple-mobile-web-app-title" content="SPECTRE" />
 <link rel="manifest" href="/favicon/site.webmanifest" /><!-- Stylesheets ---><link
           rel="stylesheet"
-          href="/css/style.min.fbdc4305ed8d9dcfa94ba95d1e88a5987f249d2adb40cfbe8e68fcd627483a1c.css"
-          integrity="sha256-&#43;9xDBe2Nnc&#43;pS6ldHoilmH8knSrbQM&#43;&#43;jmj81idIOhw="
+          href="/css/style.min.3a7f1f7eb584fe6cc1b02b98664918359f66f5dd7bca30fab3c0214eff80ae19.css"
+          integrity="sha256-On8ffrWE/mzBsCuYZkkYNZ9m9d17yjD6s8AhTv&#43;Arhk="
           crossorigin="anonymous" /><!-- Script --><script src="/js/main.63585bc5794edcd24854a2689ba8657b91d0641acf0f2af744b363d1a347ee3b.js" integrity="sha256-Y1hbxXlO3NJIVKJom6hle5HQZBrPDyr3RLNj0aNH7js=" crossorigin="anonymous"></script><!-- Components --><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <script>
   MathJax = {
@@ -74,8 +122,6 @@
       <a
         class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300 ancestor text-sky-600 dark:text-sky-300 font-semibold" aria-current="true" href="/posts/" title="Posts">文章</a></li><li class="relative group">
       <a
-        class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/tags/" title="Tags">標籤</a></li><li class="relative group">
-      <a
         class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/archives/" title="Archives">歸檔</a></li><li class="relative group">
       <a
         class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/search/" title="搜索">搜尋</a></li></ul>
@@ -97,8 +143,6 @@
         class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200" href="/" title="SPECTRE">首頁</a></li><li class="relative group">
       <a
         class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200 ancestor text-sky-600 dark:text-sky-300 font-semibold" aria-current="true" href="/posts/" title="Posts">文章</a></li><li class="relative group">
-      <a
-        class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200" href="/tags/" title="Tags">標籤</a></li><li class="relative group">
       <a
         class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200" href="/archives/" title="Archives">歸檔</a></li><li class="relative group">
       <a
@@ -139,7 +183,7 @@
     <header class="md:mb-4 lg:mb-8">
       <h1 class="fluidity-page-title text-4xl group mb-2 md:mb-4 lg:mb-8">
         <span class="relative inline-block">
-          HELLO
+          pyenv 全面教程
           <span class="fluidity-page-title-line"></span>
         </span>
       </h1><div
@@ -166,11 +210,11 @@
       d="M17.75 3C19.5449 3 21 4.45507 21 6.25V17.75C21 19.5449 19.5449 21 17.75 21H6.25C4.45507 21 3 19.5449 3 17.75V6.25C3 4.45507 4.45507 3 6.25 3H17.75ZM19.5 8.5H4.5V17.75C4.5 18.7165 5.2835 19.5 6.25 19.5H17.75C18.7165 19.5 19.5 18.7165 19.5 17.75V8.5ZM7.75 14.5C8.44036 14.5 9 15.0596 9 15.75C9 16.4404 8.44036 17 7.75 17C7.05964 17 6.5 16.4404 6.5 15.75C6.5 15.0596 7.05964 14.5 7.75 14.5ZM12 14.5C12.6904 14.5 13.25 15.0596 13.25 15.75C13.25 16.4404 12.6904 17 12 17C11.3096 17 10.75 16.4404 10.75 15.75C10.75 15.0596 11.3096 14.5 12 14.5ZM7.75 10.5C8.44036 10.5 9 11.0596 9 11.75C9 12.4404 8.44036 13 7.75 13C7.05964 13 6.5 12.4404 6.5 11.75C6.5 11.0596 7.05964 10.5 7.75 10.5ZM12 10.5C12.6904 10.5 13.25 11.0596 13.25 11.75C13.25 12.4404 12.6904 13 12 13C11.3096 13 10.75 12.4404 10.75 11.75C10.75 11.0596 11.3096 10.5 12 10.5ZM16.25 10.5C16.9404 10.5 17.5 11.0596 17.5 11.75C17.5 12.4404 16.9404 13 16.25 13C15.5596 13 15 12.4404 15 11.75C15 11.0596 15.5596 10.5 16.25 10.5ZM17.75 4.5H6.25C5.2835 4.5 4.5 5.2835 4.5 6.25V7H19.5V6.25C19.5 5.2835 18.7165 4.5 17.75 4.5Z" /></svg>
 </span>
         <time
-          datetime="2025-06-01T13:43:37&#43;08:00"
+          datetime="2025-06-03T00:00:00&#43;08:00"
           title="發佈時間"
           class="text-sm group-hover:text-sky-600 dark:group-hover:text-sky-400
                       transition-colors duration-200">
-          June 1, 2025
+          June 3, 2025
         </time>
       </div>
 
@@ -191,7 +235,7 @@
         <span
           class="text-sm group-hover:text-sky-600 dark:group-hover:text-sky-400
                       transition-colors duration-200">
-          預期閱讀 1 分鐘
+          預期閱讀 2 分鐘
         </span>
       </div></div>
   </div>
@@ -215,8 +259,229 @@
                 shadow-lg shadow-sky-100/20 dark:shadow-sky-900/20
                 transition-all duration-300 ease-out">
           <article class="prose prose-neutral dark:prose-invert">
-            <h1 id="hello很高興認識你">Hello很高興認識你</h1>
-<p>This is the test post</p>
+            <h1 id="pyenv-全面教程">pyenv 全面教程</h1>
+<p><a href="https://github.com/pyenv/pyenv">pyenv</a> 是一个强大的 Python 版本管理工具，可让你轻松安装和切换多个 Python 版本。<em>Windows 用户请使用 <a href="https://github.com/pyenv-win/pyenv-win">pyenv-win</a> 项目。</em></p>
+<hr>
+<h2 id="pyenv-简介">pyenv 简介</h2>
+<ul>
+<li><em>作用</em>：管理多个 Python 版本，轻松切换。</li>
+<li><em>优点</em>：不污染系统 Python，支持用户级别的版本隔离。</li>
+<li><em>Windows 用户</em>：请使用 <a href="https://github.com/pyenv-win/pyenv-win">pyenv-win</a>。</li>
+</ul>
+<hr>
+<h2 id="各平台安装-pyenvpyenv-win">各平台安装 pyenv/pyenv-win</h2>
+<h3 id="macos-安装">macOS 安装</h3>
+<ol>
+<li>
+<p>安装 <a href="https://brew.sh/">Homebrew</a>（如已安装可跳过）
+bash
+/bin/bash -c &ldquo;$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)%22">https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</a></p>
+</li>
+<li>
+<p>安装 pyenv
+bash
+brew install pyenv</p>
+</li>
+<li>
+<p>（可选）安装 pyenv-virtualenv
+bash
+brew install pyenv-virtualenv</p>
+</li>
+</ol>
+<h3 id="linuxwsl-安装">Linux/WSL 安装</h3>
+<ol>
+<li>
+<p>使用 curl 安装：
+bash
+curl <a href="https://pyenv.run">https://pyenv.run</a> | bash</p>
+</li>
+<li>
+<p>或手动 clone：
+bash
+git clone <a href="https://github.com/pyenv/pyenv.git">https://github.com/pyenv/pyenv.git</a> ~/.pyenv</p>
+</li>
+</ol>
+<h3 id="windows-安装pyenv-win">Windows 安装（pyenv-win）</h3>
+<h4 id="方法一使用-powershell-安装推荐">方法一：使用 PowerShell 安装（推荐）</h4>
+<ol>
+<li>
+<p><em>以管理员身份打开 PowerShell</em></p>
+</li>
+<li>
+<p>执行以下命令（会自动下载最新版 pyenv-win）：
+powershell
+Invoke-WebRequest -UseBasicParsing -Uri &ldquo;<a href="https://pyenv.run">https://pyenv.run</a>&rdquo; -OutFile &ldquo;./pyenv-win-install.ps1&rdquo;
+.\pyenv-win-install.ps1</p>
+<blockquote>
+<p>该脚本自动将 pyenv 安装到 C:\Users&lt;YourUser&gt;.pyenv\pyenv-win</p></blockquote>
+</li>
+</ol>
+<h4 id="方法二手动安装">方法二：手动安装</h4>
+<ol>
+<li>
+<p>打开 PowerShell，运行：
+powershell
+git clone <a href="https://github.com/pyenv-win/pyenv-win.git">https://github.com/pyenv-win/pyenv-win.git</a> $HOME.pyenv\pyenv-win</p>
+</li>
+<li>
+<p>配置环境变量（见下文）</p>
+</li>
+</ol>
+<hr>
+<h2 id="配置环境变量">配置环境变量</h2>
+<h3 id="macoslinuxwsl">macOS/Linux/WSL</h3>
+<p>将以下内容加入你的 shell 配置文件（如 <del>/.bashrc、</del>/.zshrc）：</p>
+<p>bash
+export PYENV_ROOT=&quot;$HOME/.pyenv&rdquo;
+export PATH=&quot;$PYENV_ROOT/bin:$PATH&quot;
+eval &ldquo;$(pyenv init &ndash;path)&rdquo;
+eval &ldquo;$(pyenv init -)&rdquo;</p>
+<h1 id="如使用-pyenv-virtualenv还需加上">如使用 pyenv-virtualenv，还需加上：</h1>
+<p>eval &ldquo;$(pyenv virtualenv-init -)&rdquo;</p>
+<p>保存并执行 source ~/.bashrc 或重启终端。</p>
+<h3 id="windows-pyenv-win">Windows (pyenv-win)</h3>
+<ol>
+<li>
+<p><em>添加环境变量（以用户变量为例）</em><br>
+打开<em>系统环境变量</em>设置，添加以下内容：</p>
+<ul>
+<li>PYENV 变量，值为：<br>
+C:\Users&lt;YourUser&gt;.pyenv\pyenv-win</li>
+<li>编辑 Path 变量，<em>添加</em>：
+<ul>
+<li>%PYENV%\bin</li>
+<li>%PYENV%\shims</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em>重启 PowerShell 或 CMD</em></p>
+</li>
+<li>
+<p><em>验证是否生效</em>
+sh
+pyenv &ndash;version</p>
+</li>
+</ol>
+<hr>
+<h2 id="安装-python-版本">安装 Python 版本</h2>
+<h3 id="macoslinuxwsl-1">macOS/Linux/WSL</h3>
+<ul>
+<li>
+<p>列出可用版本：
+bash
+pyenv install &ndash;list</p>
+</li>
+<li>
+<p>安装指定版本：
+bash
+pyenv install 3.11.8</p>
+</li>
+</ul>
+<h3 id="windows-pyenv-win-1">Windows (pyenv-win)</h3>
+<ul>
+<li>
+<p>列出可用版本：
+powershell
+pyenv install &ndash;list</p>
+</li>
+<li>
+<p>安装指定版本：
+powershell
+pyenv install 3.12.3</p>
+</li>
+</ul>
+<hr>
+<h2 id="切换-python-版本">切换 Python 版本</h2>
+<h3 id="全局切换">全局切换</h3>
+<ul>
+<li>所有平台通用：
+sh
+pyenv global 3.12.3</li>
+</ul>
+<h3 id="本地项目切换">本地（项目）切换</h3>
+<ul>
+<li>在项目目录下运行（会生成 .python-version 文件）：
+sh
+pyenv local 3.8.18</li>
+</ul>
+<hr>
+<h2 id="卸载-python-版本">卸载 Python 版本</h2>
+<ul>
+<li>所有平台通用：
+sh
+pyenv uninstall 3.8.18</li>
+</ul>
+<hr>
+<h2 id="常见问题与解决方法">常见问题与解决方法</h2>
+<h3 id="windows-特有问题">Windows 特有问题</h3>
+<ul>
+<li><em>pyenv: command not found</em>
+<ul>
+<li>检查环境变量 Path 是否配置正确。</li>
+<li>重启 PowerShell/CMD。</li>
+</ul>
+</li>
+<li><em>安装 Python 失败</em>
+<ul>
+<li>检查网络，部分版本下载需科学上网。</li>
+<li>pyenv-win 不支持老旧 Python 2 版本。</li>
+</ul>
+</li>
+</ul>
+<h3 id="通用问题">通用问题</h3>
+<ul>
+<li>缺依赖/编译错误（Linux/macOS）：
+<ul>
+<li>需提前安装依赖，见上文。</li>
+</ul>
+</li>
+<li>pip/pip3 问题：
+<ul>
+<li>升级 pip：python -m pip install &ndash;upgrade pip</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="高级用法">高级用法</h2>
+<h3 id="pyenv-virtualenvmaclinuxwsl">pyenv-virtualenv（Mac/Linux/WSL）</h3>
+<ul>
+<li>创建虚拟环境：
+bash
+pyenv virtualenv 3.11.8 myenv
+pyenv activate myenv</li>
+</ul>
+<h3 id="windows-虚拟环境">Windows 虚拟环境</h3>
+<ul>
+<li>推荐用 venv：
+powershell
+python -m venv myenv
+.\myenv\Scripts\activate</li>
+</ul>
+<h3 id="查看已安装的-python-版本">查看已安装的 Python 版本</h3>
+<ul>
+<li>所有平台通用：
+sh
+pyenv versions</li>
+</ul>
+<h3 id="卸载-pyenvpyenv-win">卸载 pyenv/pyenv-win</h3>
+<ul>
+<li>删除安装目录和环境变量即可。</li>
+</ul>
+<hr>
+<h2 id="参考链接">参考链接</h2>
+<ul>
+<li><a href="https://github.com/pyenv/pyenv">pyenv GitHub</a></li>
+<li><a href="https://github.com/pyenv-win/pyenv-win">pyenv-win (Windows)</a></li>
+<li><a href="https://github.com/pyenv/pyenv-virtualenv">pyenv-virtualenv</a></li>
+<li><a href="https://github.com/pyenv/pyenv#installation">pyenv 官方文档</a></li>
+</ul>
+<hr>
+<blockquote>
+<p><em>Tip:</em><br>
+Windows 用户推荐使用 <a href="https://github.com/pyenv-win/pyenv-win">pyenv-win</a>，并结合 <a href="https://spectrepro.pro/posts/usepythonvenv/">venv</a> 管理虚拟环境；Mac/Linux 推荐结合 pyenv-virtualenv。</p></blockquote>
+
           </article>
 
           
@@ -234,10 +499,103 @@
                     shadow-lg shadow-sky-100/20 dark:shadow-sky-900/20
                     transition-all duration-300 ease-out">
             
-          <div class="relative">
+          <div class="relative"><div id="toc">
+  <div class="flex items-center justify-between mb-2 lg:mb-4">
+    <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">目錄</h2>
+    <button
+      id="toc-toggle"
+      aria-label="切換目錄"
+      class="inline-flex items-center justify-center w-8 h-8 rounded-lg
+        bg-blue-50/90 dark:bg-blue-900/30 
+        text-blue-600 dark:text-blue-300
+        hover:bg-cyan-50/90 dark:hover:bg-cyan-900/30
+        hover:text-cyan-600 dark:hover:text-cyan-300
+        ring-1 ring-blue-100 dark:ring-blue-900/50
+        cursor-pointer
+        focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 dark:focus-visible:ring-cyan-500
+        transition-all duration-200">
+      <span class="toc-expand hidden"><svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  xmlns="http://www.w3.org/2000/svg"ZgotmplZZgotmplZ><path
+      d="M2 4.75C2 4.33579 2.33579 4 2.75 4H21.25C21.6642 4 22 4.33579 22 4.75C22 5.16421 21.6642 5.5 21.25 5.5H2.75C2.33579 5.5 2 5.16421 2 4.75ZM12 8.75C12 8.33579 12.3358 8 12.75 8H21.25C21.6642 8 22 8.33579 22 8.75C22 9.16421 21.6642 9.5 21.25 9.5H12.75C12.3358 9.5 12 9.16421 12 8.75ZM7.28033 19.7803C7.13968 19.921 6.94891 20 6.75 20C6.55109 20 6.36032 19.921 6.21967 19.7803L3.21967 16.7803C2.92678 16.4874 2.92678 16.0126 3.21967 15.7197C3.51256 15.4268 3.98744 15.4268 4.28033 15.7197L6 17.4393V8.75C6 8.33579 6.33579 8 6.75 8C7.16421 8 7.5 8.33579 7.5 8.75V17.4393L9.21967 15.7197C9.51256 15.4268 9.98744 15.4268 10.2803 15.7197C10.5732 16.0126 10.5732 16.4874 10.2803 16.7803L7.28033 19.7803Z" /></svg>
+</span>
+      <span class="toc-collapse"><svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  xmlns="http://www.w3.org/2000/svg"ZgotmplZZgotmplZ><path
+      d="M2 4.75C2 4.33579 2.33579 4 2.75 4H21.25C21.6642 4 22 4.33579 22 4.75C22 5.16421 21.6642 5.5 21.25 5.5H2.75C2.33579 5.5 2 5.16421 2 4.75ZM12 8.75C12 8.33579 12.3358 8 12.75 8H21.25C21.6642 8 22 8.33579 22 8.75C22 9.16421 21.6642 9.5 21.25 9.5H12.75C12.3358 9.5 12 9.16421 12 8.75ZM7.28033 8.21967C7.13968 8.07902 6.94891 8 6.75 8C6.55109 8 6.36032 8.07902 6.21967 8.21967L3.21967 11.2197C2.92678 11.5126 2.92678 11.9874 3.21967 12.2803C3.51256 12.5732 3.98744 12.5732 4.28033 12.2803L6 10.5607V19.25C6 19.6642 6.33579 20 6.75 20C7.16421 20 7.5 19.6642 7.5 19.25V10.5607L9.21967 12.2803C9.51256 12.5732 9.98744 12.5732 10.2803 12.2803C10.5732 11.9874 10.5732 11.5126 10.2803 11.2197L7.28033 8.21967Z" /></svg>
+</span>
+    </button>
+  </div>
+
+  
+  
+    <div class="toc-content transition-all duration-200">
+      <nav><nav id="TableOfContents">
+  <ul class='space-y-1 ml-2'>
+    <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#pyenv-简介">pyenv 简介</a></li>
+    <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#各平台安装-pyenvpyenv-win">各平台安装 pyenv/pyenv-win</a>
+      <ul class='space-y-1 ml-2'>
+        <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#macos-安装">macOS 安装</a></li>
+        <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#linuxwsl-安装">Linux/WSL 安装</a></li>
+        <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#windows-安装pyenv-win">Windows 安装（pyenv-win）</a></li>
+      </ul>
+    </li>
+    <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#配置环境变量">配置环境变量</a>
+      <ul class='space-y-1 ml-2'>
+        <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#macoslinuxwsl">macOS/Linux/WSL</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul class='space-y-1 ml-2'>
+    <li class='py-0.5'>
+      <ul class='space-y-1 ml-2'>
+        <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#windows-pyenv-win">Windows (pyenv-win)</a></li>
+      </ul>
+    </li>
+    <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#安装-python-版本">安装 Python 版本</a>
+      <ul class='space-y-1 ml-2'>
+        <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#macoslinuxwsl-1">macOS/Linux/WSL</a></li>
+        <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#windows-pyenv-win-1">Windows (pyenv-win)</a></li>
+      </ul>
+    </li>
+    <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#切换-python-版本">切换 Python 版本</a>
+      <ul class='space-y-1 ml-2'>
+        <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#全局切换">全局切换</a></li>
+        <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#本地项目切换">本地（项目）切换</a></li>
+      </ul>
+    </li>
+    <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#卸载-python-版本">卸载 Python 版本</a></li>
+    <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#常见问题与解决方法">常见问题与解决方法</a>
+      <ul class='space-y-1 ml-2'>
+        <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#windows-特有问题">Windows 特有问题</a></li>
+        <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#通用问题">通用问题</a></li>
+      </ul>
+    </li>
+    <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#高级用法">高级用法</a>
+      <ul class='space-y-1 ml-2'>
+        <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#pyenv-virtualenvmaclinuxwsl">pyenv-virtualenv（Mac/Linux/WSL）</a></li>
+        <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#windows-虚拟环境">Windows 虚拟环境</a></li>
+        <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#查看已安装的-python-版本">查看已安装的 Python 版本</a></li>
+        <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#卸载-pyenvpyenv-win">卸载 pyenv/pyenv-win</a></li>
+      </ul>
+    </li>
+    <li class='py-0.5'><a class='block text-sm text-neutral-700 dark:text-neutral-400 hover:text-cyan-600 dark:hover:text-cyan-400 hover:translate-x-1 transition-all duration-200' href="#参考链接">参考链接</a></li>
+  </ul>
+</nav></nav>
+    </div>
+  
+</div>
+</div><div class="border-b border-neutral-200/60 dark:border-neutral-700/60 my-4"></div><div class="relative">
 <div id="share"><h2 class="text-lg font-medium text-neutral-800 dark:text-neutral-200 mb-4">分享在</h2>
     <div class="flex flex-wrap justify-between gap-1 items-center space-y-1"><a
-    href="https://reddit.com/submit?url=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Fmy-first-post%2F&amp;title=HELLO"
+    href="https://reddit.com/submit?url=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Fpyenv%2F&amp;title=pyenv&#43;%E5%85%A8%E9%9D%A2%E6%95%99%E7%A8%8B"
     target="_blank"
     rel="noopener noreferrer"
     class="inline px-2 py-1 rounded-lg
@@ -252,8 +610,8 @@
       focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
       transform-gpu transition-all duration-200 ease-out
       shadow-sm"
-    aria-label="shareHELLOonReddit">Reddit</a><a
-    href="https://x.com/intent/tweet/?text=HELLO&amp;url=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Fmy-first-post%2F&amp;hashtags="
+    aria-label="sharepyenv 全面教程onReddit">Reddit</a><a
+    href="https://x.com/intent/tweet/?text=pyenv&#43;%E5%85%A8%E9%9D%A2%E6%95%99%E7%A8%8B&amp;url=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Fpyenv%2F&amp;hashtags="
     target="_blank"
     rel="noopener noreferrer"
     class="inline px-2 py-1 rounded-lg
@@ -268,8 +626,8 @@
       focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
       transform-gpu transition-all duration-200 ease-out
       shadow-sm"
-    aria-label="shareHELLOonX.com">X.com</a><a
-    href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Fmy-first-post%2F"
+    aria-label="sharepyenv 全面教程onX.com">X.com</a><a
+    href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Fpyenv%2F"
     target="_blank"
     rel="noopener noreferrer"
     class="inline px-2 py-1 rounded-lg
@@ -284,8 +642,8 @@
       focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
       transform-gpu transition-all duration-200 ease-out
       shadow-sm"
-    aria-label="shareHELLOonFacebook">Facebook</a><a
-    href="https://wa.me/?text=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Fmy-first-post%2F%20HELLO"
+    aria-label="sharepyenv 全面教程onFacebook">Facebook</a><a
+    href="https://wa.me/?text=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Fpyenv%2F%20pyenv&#43;%E5%85%A8%E9%9D%A2%E6%95%99%E7%A8%8B"
     target="_blank"
     rel="noopener noreferrer"
     class="inline px-2 py-1 rounded-lg
@@ -300,7 +658,7 @@
       focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
       transform-gpu transition-all duration-200 ease-out
       shadow-sm"
-    aria-label="shareHELLOonWhatsApp">WhatsApp</a></div></div>
+    aria-label="sharepyenv 全面教程onWhatsApp">WhatsApp</a></div></div>
 
 </div><div class="border-b border-neutral-200/60 dark:border-neutral-700/60 my-4 hidden md:block"></div><div
             class="flex flex-wrap gap-2 justify-between text-sm text-neutral-700 dark:text-neutral-400 hidden md:flex">

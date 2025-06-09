@@ -20,5 +20,9 @@
       <title>贊助</title>
       <link>https://spectre-pro.github.io/posts/test/</link>
       <pubDate>Sat, 07 Jun 2025 20:03:55 +0800</pubDate><guid>https://spectre-pro.github.io/posts/test/</guid>
-      <description>&lt;h2 id=&#34;如果你喜歡這些內容可以用微信掃下面這個碼贊助作者一杯咖啡&#34;&gt;如果你喜歡這些內容，可以用微信掃下面這個碼贊助作者一杯咖啡&lt;/h2&gt;</description></item></channel>
+      <description>&lt;h2 id=&#34;如果你喜歡這些內容可以用微信掃下面這個碼贊助作者一杯咖啡&#34;&gt;如果你喜歡這些內容，可以用微信掃下面這個碼贊助作者一杯咖啡&lt;/h2&gt;</description></item><item>
+      <title>pyenv 全面教程</title>
+      <link>https://spectre-pro.github.io/posts/pyenv/</link>
+      <pubDate>Tue, 03 Jun 2025 00:00:00 +0800</pubDate><guid>https://spectre-pro.github.io/posts/pyenv/</guid>
+      <description>&lt;h1 id=&#34;pyenv-全面教程&#34;&gt;pyenv 全面教程&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/pyenv/pyenv&#34;&gt;pyenv&lt;/a&gt; 是一个强大的 Python 版本管理工具，可让你轻松安装和切换多个 Python 版本。&lt;em&gt;Windows 用户请使用 &lt;a href=&#34;https://github.com/pyenv-win/pyenv-win&#34;&gt;pyenv-win&lt;/a&gt; 项目。&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;pyenv-简介&#34;&gt;pyenv 简介&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;作用&lt;/em&gt;：管理多个 Python 版本，轻松切换。&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;优点&lt;/em&gt;：不污染系统 Python，支持用户级别的版本隔离。&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;Windows 用户&lt;/em&gt;：请使用 &lt;a href=&#34;https://github.com/pyenv-win/pyenv-win&#34;&gt;pyenv-win&lt;/a&gt;。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;各平台安装-pyenvpyenv-win&#34;&gt;各平台安装 pyenv/pyenv-win&lt;/h2&gt;&#xA;&lt;h3 id=&#34;macos-安装&#34;&gt;macOS 安装&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;安装 &lt;a href=&#34;https://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;（如已安装可跳过）&#xA;bash&#xA;/bin/bash -c &amp;ldquo;$(curl -fsSL &lt;a href=&#34;https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)%22&#34;&gt;https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;quot;&lt;/a&gt;&lt;/p&gt;</description></item></channel>
 </rss>
