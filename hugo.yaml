@@ -15,9 +15,6 @@ caches:
   images:
     dir: ':cacheDir/images'
 
-toc:
-  disabled: false # 是否禁用目錄
-
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:
