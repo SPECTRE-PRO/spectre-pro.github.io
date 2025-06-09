@@ -97,7 +97,7 @@ params:
 
   comment: # 評論功能的配置。
     disabled: false # 設定為 true 時，全局禁用所有文章的評論功能。
-    disableByType: [page] # 一個字串列表，指定哪些內容類型 (例如 'page') 的文章禁用評論功能。
+    disableByType: [] # 一個字串列表，指定哪些內容類型 (例如 'page') 的文章禁用評論功能。
     thirdParty: | # 在這裡貼上您的第三方評論系統 (如 Disqus, utterances, Giscus) 的程式碼片段。
       <script src="https://giscus.app/client.js"
         data-repo="spectre-pro/spectre-pro.github.io"
