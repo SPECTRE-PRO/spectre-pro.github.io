@@ -4,7 +4,7 @@ draft = false
 title = 'Python venv用法'
 +++
 
-**1. 创建虚拟环境**
+# 1. 创建虚拟环境
 
    *   **基本语法：**
 
@@ -27,7 +27,7 @@ title = 'Python venv用法'
            *   确保 `python3.8` 命令在你的系统上可用（你可以通过在终端中运行 `python3.8 --version` 来检查）。如果不可用，你需要先安装 Python 3.8，或者找到它的正确路径。
            *   如果你只安装了一个 Python 3 版本，通常直接使用 `python3` 命令即可。
 
-**2. 激活虚拟环境**
+# 2. 激活虚拟环境
 
    激活环境后，你后续的 `pip install` 命令安装的包都会被安装到这个虚拟环境中。
 
@@ -51,7 +51,7 @@ title = 'Python venv用法'
 
    激活后，你的命令行提示符通常会发生变化，显示当前激活的环境名称。
 
-**3. 安装包**
+# 3. 安装包
 
    ```bash
    pip install <包名>
@@ -64,7 +64,7 @@ title = 'Python venv用法'
    pip install numpy pandas
    ```
 
-**4. 列出已安装的包**
+# 4. 列出已安装的包
 
    ```bash
    pip freeze
@@ -78,13 +78,13 @@ title = 'Python venv用法'
 
    这样做的好处是，以后你可以在新的虚拟环境中，或者在另一台机器上，使用 `requirements.txt` 文件快速重新创建相同的环境。
 
-**5. 从 `requirements.txt` 安装包**
+# 5. 从 `requirements.txt` 安装包
 
    ```bash
    pip install -r requirements.txt
    ```
 
-**6. 退出虚拟环境**
+# 6. 退出虚拟环境
 
    ```bash
    deactivate
@@ -92,7 +92,7 @@ title = 'Python venv用法'
 
    运行 `deactivate` 命令会退出当前激活的虚拟环境，回到系统全局 Python 环境。
 
-**7. 删除虚拟环境**
+# 7. 删除虚拟环境
 
    只需删除虚拟环境文件夹即可：
 
@@ -107,7 +107,7 @@ title = 'Python venv用法'
    Remove-Item -Recurse -Force <环境名>
    ```
 
-**完整示例（假设你想使用 Python 3.8 创建一个名为 `.venv` 的环境）：**
+# 完整示例（假设你想使用 Python 3.8 创建一个名为 `.venv` 的环境）：
 
 ```bash
 # 1. 创建环境 (使用 Python 3.8)
@@ -134,7 +134,7 @@ deactivate
 #    rmdir /s /q .venv (Windows cmd.exe)
 ```
 
-**关键点回顾：**
+# 关键点回顾：
 
 *   使用 `python3 -m venv <环境名>` 创建环境。
 *   使用特定版本的 `python` 命令（例如 `python3.8 -m venv`）来指定 Python 版本。
