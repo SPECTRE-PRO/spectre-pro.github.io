@@ -4,13 +4,13 @@
   xmlns:wfw="http://wellformedweb.org/CommentAPI/">
   <channel>
     <title>Pyenv on SPECTRE</title>
-    <link>https://spectre-pro.github.io/tags/pyenv/</link>
+    <link>https://spectrepro.pro/tags/pyenv/</link>
     <description>Recent content in Pyenv on SPECTRE</description>
     <generator>Hugo</generator>
-    <language>zh-hk</language>
-    <lastBuildDate>Sun, 08 Jun 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://spectre-pro.github.io/tags/pyenv/index.xml" rel="self" type="application/rss+xml" /><item>
+    <language>zh-tw</language>
+    <lastBuildDate>Sun, 08 Jun 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://spectrepro.pro/tags/pyenv/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>pyenv 與 pyenv-win 全面教學</title>
-      <link>https://spectre-pro.github.io/posts/pyenv/</link>
-      <pubDate>Sun, 08 Jun 2025 00:00:00 +0800</pubDate><guid>https://spectre-pro.github.io/posts/pyenv/</guid>
+      <link>https://spectrepro.pro/posts/pyenv/</link>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 +0800</pubDate><guid>https://spectrepro.pro/posts/pyenv/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/pyenv/pyenv&#34;&gt;pyenv&lt;/a&gt; 是一個強大的 Python 版本管理工具，主要用於 Linux 和 macOS 系統。對於 Windows 使用者，推薦使用 &lt;a href=&#34;https://github.com/pyenv-win/pyenv-win&#34;&gt;pyenv-win&lt;/a&gt; 專案，它是 pyenv 在 Windows 上的移植版本。本教學將涵蓋這兩個工具的安裝、設定與基本使用。&lt;/p&gt;</description></item></channel>
 </rss>

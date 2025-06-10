@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-hk" dir="ltr">
+<html lang="zh-tw" dir="ltr">
 <head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <meta name="color-scheme" content="dark light">
@@ -8,43 +8,27 @@
 <meta name="author" content="">
 <meta name="keywords" content="Mac, GitHub, .DS_Store, Git, .gitignore">
 
-<link rel="canonical" href="https://spectre-pro.github.io/posts/del-ds_store/" /><!-- open graph --><meta property="og:type" content="article" />
+<link rel="canonical" href="https://spectrepro.pro/posts/del-ds_store/" /><!-- open graph --><meta property="og:type" content="article" />
 <meta property="og:description" content=".DS_Store 檔案是 macOS 作業系統自動在資料夾中建立的隱藏檔案，用於儲存資料夾的自訂屬性，例如圖示位置或背景圖片。雖然它們在本地檔案系統中很有用，但在 Git 倉庫中卻常常造成困擾，因為它們會隨著檔案的移動或刪除而頻繁變動，導致不必要的版本控制變更，並可能在不同作業系統的使用者之間產生衝突。
 本篇文章將引導您如何在 Mac 上從您的 Git 倉庫中刪除這些 .DS_Store 檔案，並設定 .gitignore 以防止它們在未來被意外地加入到版本控制中。" />
 <meta property="og:title" content="如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 檔案並避免再次出現" />
 <meta property="og:site_name" content="SPECTRE" />
 <meta property="og:image:type" content="image/jpeg" />
-<meta property="og:url" content="https://spectre-pro.github.io/posts/del-ds_store/" />
-<meta property="og:locale" content="zh-hk" /><meta property="article:published_time" content="2025-06-09" /><meta property="article:modified_time" content="2025-06-09" /><meta property="article:tag" content="Mac" /><meta property="article:tag" content="GitHub" /><meta property="article:tag" content=".DS_Store" /><meta property="article:tag" content="Git" /><meta property="article:tag" content=".gitignore" />
+<meta property="og:url" content="https://spectrepro.pro/posts/del-ds_store/" />
+<meta property="og:locale" content="zh-tw" /><meta property="article:published_time" content="2025-06-09" /><meta property="article:modified_time" content="2025-06-09" /><meta property="article:tag" content="Mac" /><meta property="article:tag" content="GitHub" /><meta property="article:tag" content=".DS_Store" /><meta property="article:tag" content="Git" /><meta property="article:tag" content=".gitignore" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 檔案並避免再次出現 | SPECTRE" />
 <meta name="twitter:description" content=".DS_Store 檔案是 macOS 作業系統自動在資料夾中建立的隱藏檔案，用於儲存資料夾的自訂屬性，例如圖示位置或背景圖片。雖然它們在本地檔案系統中很有用，但在 Git 倉庫中卻常常造成困擾，因為它們會隨著檔案的移動或刪除而頻繁變動，導致不必要的版本控制變更，並可能在不同作業系統的使用者之間產生衝突。
 本篇文章將引導您如何在 Mac 上從您的 Git 倉庫中刪除這些 .DS_Store 檔案，並設定 .gitignore 以防止它們在未來被意外地加入到版本控制中。" />
-<meta name="twitter:domain" content="https://spectre-pro.github.io/posts/del-ds_store/" />
+<meta name="twitter:domain" content="https://spectrepro.pro/posts/del-ds_store/" />
 
 <title>如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 檔案並避免再次出現 | SPECTRE</title>
 
-
-<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-<link rel="shortcut icon" href="/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="SPECTRE" />
-<link rel="manifest" href="/favicon/site.webmanifest" /><!-- Stylesheets ---><link
+<link rel="icon" href="https://spectrepro.pro/favicon.ico"><!-- Stylesheets ---><link
           rel="stylesheet"
           href="/css/style.min.fbdc4305ed8d9dcfa94ba95d1e88a5987f249d2adb40cfbe8e68fcd627483a1c.css"
           integrity="sha256-&#43;9xDBe2Nnc&#43;pS6ldHoilmH8knSrbQM&#43;&#43;jmj81idIOhw="
-          crossorigin="anonymous" /><!-- Script --><script src="/js/main.63585bc5794edcd24854a2689ba8657b91d0641acf0f2af744b363d1a347ee3b.js" integrity="sha256-Y1hbxXlO3NJIVKJom6hle5HQZBrPDyr3RLNj0aNH7js=" crossorigin="anonymous"></script><!-- Components --><script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-<script>
-  MathJax = {
-    tex: {
-      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
-      inlineMath: [['\\(', '\\)']]                  
-    }
-  };
-</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4421097292963871"
-     crossorigin="anonymous"></script>
+          crossorigin="anonymous" /><!-- Script --><script src="/js/main.63585bc5794edcd24854a2689ba8657b91d0641acf0f2af744b363d1a347ee3b.js" integrity="sha256-Y1hbxXlO3NJIVKJom6hle5HQZBrPDyr3RLNj0aNH7js=" crossorigin="anonymous"></script><!-- Components -->
 </head>
 <body class="min-h-screen">
   <div id="fluidity-theme-container">
@@ -53,7 +37,7 @@
   <div class="container mx-auto">
     <div class="flex justify-between items-center py-5 px-4">
       <div class="text-2xl">
-        <a href="https://spectre-pro.github.io/" class="flex items-center gap-2"><img src="/favicon/favicon.svg" alt="SPECTRE" class="w-8 h-8" /><span class="font-semibold relative group">
+        <a href="https://spectrepro.pro/" class="flex items-center gap-2"><span class="font-semibold relative group">
             <span
               class="bg-clip-text text-transparent bg-gradient-to-r 
               from-blue-600 via-cyan-500 to-blue-500
@@ -79,13 +63,13 @@
       <a
         class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300 ancestor text-sky-600 dark:text-sky-300 font-semibold" aria-current="true" href="/posts/" title="Posts">文章</a></li><li class="relative group">
       <a
-        class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/archives/" title="Archives">歸檔</a></li><li class="relative group">
-      <a
         class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/tags/" title="Tags">標籤</a></li><li class="relative group">
+      <a
+        class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/archives/" title="Archives">歸檔</a></li><li class="relative group">
       <a
         class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/categories/" title="Categories">分類</a></li><li class="relative group">
       <a
-        class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/" title="搜尋">搜尋</a></li></ul>
+        class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/search/" title="Search">搜尋</a></li></ul>
 
     
     <div class="relative md:hidden " dir="rtl">
@@ -105,13 +89,13 @@
       <a
         class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200 ancestor text-sky-600 dark:text-sky-300 font-semibold" aria-current="true" href="/posts/" title="Posts">文章</a></li><li class="relative group">
       <a
-        class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200" href="/archives/" title="Archives">歸檔</a></li><li class="relative group">
-      <a
         class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200" href="/tags/" title="Tags">標籤</a></li><li class="relative group">
+      <a
+        class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200" href="/archives/" title="Archives">歸檔</a></li><li class="relative group">
       <a
         class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200" href="/categories/" title="Categories">分類</a></li><li class="relative group">
       <a
-        class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200" href="/" title="搜尋">搜尋</a></li></ul>
+        class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200" href="/search/" title="Search">搜尋</a></li></ul>
     </div>
   </nav><button id="mobile-menu-button" class="fluidity-header-icon block md:hidden" aria-label="Toggle menu" aria-expanded="false"><svg
   width="24"
@@ -200,7 +184,7 @@
         <span
           class="text-sm group-hover:text-sky-600 dark:group-hover:text-sky-400
                       transition-colors duration-200">
-          預期閱讀 3 分鐘
+          預期閱讀 2 分鐘
         </span>
       </div><div class="flex items-center gap-2 group">
           <span
@@ -277,12 +261,12 @@
 <h3 id="步驟-1開啟終端機並導航到您的倉庫目錄">步驟 1：開啟終端機並導航到您的倉庫目錄</h3>
 <p>首先，開啟您的「終端機」應用程式。您可以在「應用程式」-&gt;「工具程式」中找到它，或者使用 Spotlight 搜尋 (Command + Space) 輸入「終端機」來開啟。</p>
 <p>使用 <code>cd</code> (change directory) 命令導航到您的 Git 倉庫的根目錄。請將 <code>/path/to/your/repository</code> 替換為您實際的倉庫路徑。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> /path/to/your/repository
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd /path/to/your/repository
 </span></span></code></pre></div><p>例如，如果您的倉庫位於您的桌面上的名為 <code>my-project</code> 的資料夾中，指令可能會是：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> ~/Desktop/my-project
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd ~/Desktop/my-project
 </span></span></code></pre></div><h3 id="步驟-2尋找並刪除倉庫中的-ds_store-檔案">步驟 2：尋找並刪除倉庫中的 .DS_Store 檔案</h3>
 <p>接下來，我們將使用一個命令來尋找並從 Git 的追蹤中移除所有 <code>.DS_Store</code> 檔案。這個命令會遞歸地搜尋當前目錄（您的倉庫根目錄）及其所有子目錄中的 <code>.DS_Store</code> 檔案，並使用 <code>git rm</code> 命令將它們從 Git 索引中移除。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">find . -name .DS_Store -print0 <span class="p">|</span> xargs -0 git rm --cached --ignore-unmatch
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>find . -name .DS_Store -print0 | xargs -0 git rm --cached --ignore-unmatch
 </span></span></code></pre></div><ul>
 <li><code>find . -name .DS_Store -print0</code>: 這部分命令會在當前目錄 (<code>.</code>) 中尋找所有名為 <code>.DS_Store</code> 的檔案，並使用 <code>-print0</code> 選項以 null 字元分隔找到的檔案路徑，這有助於正確處理包含空格或其他特殊字元的檔案名。</li>
 <li><code>xargs -0</code>: 這部分命令接收 <code>find</code> 命令輸出的以 null 字元分隔的檔案列表，並將這些檔案作為參數傳遞給後面的 <code>git rm</code> 命令。<code>-0</code> 選項確保 <code>xargs</code> 也使用 null 字元作為分隔符。</li>
@@ -292,19 +276,19 @@
 <h3 id="步驟-3建立或修改-gitignore-檔案以忽略-ds_store">步驟 3：建立或修改 .gitignore 檔案以忽略 .DS_Store</h3>
 <p>為了防止 <code>.DS_Store</code> 檔案在未來再次被意外地加入到 Git 倉庫中，我們需要將它們添加到 <code>.gitignore</code> 檔案中。<code>.gitignore</code> 檔案用於指定 Git 應該忽略的檔案和資料夾模式。</p>
 <p>如果您的倉庫根目錄中還沒有 <code>.gitignore</code> 檔案，您可以建立一個：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">touch .gitignore
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>touch .gitignore
 </span></span></code></pre></div><p>然後，將 <code>.DS_Store</code> 模式添加到 <code>.gitignore</code> 檔案中。這可以通過編輯檔案手動完成，或者使用以下命令：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;.DS_Store&#34;</span> &gt;&gt; .gitignore
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;.DS_Store&#34;</span> &gt;&gt; .gitignore
 </span></span></code></pre></div><p>這個命令會將一行包含 <code>.DS_Store</code> 的文字添加到 <code>.gitignore</code> 檔案的末尾。如果檔案已經存在，它會將內容附加到現有內容之後。</p>
 <h3 id="步驟-4提交變更並推送到-github">步驟 4：提交變更並推送到 GitHub</h3>
 <p>現在，您已經從 Git 追蹤中移除了 <code>.DS_Store</code> 檔案，並配置了 <code>.gitignore</code> 來忽略它們。接下來，您需要提交這些變更並將其推送到您的 GitHub 倉庫。</p>
 <p>首先，將 <code>.gitignore</code> 檔案的變更添加到暫存區：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git add .gitignore
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git add .gitignore
 </span></span></code></pre></div><p>如果您使用了 <code>git rm --cached</code>，您可能還需要將 <code>.DS_Store</code> 檔案的移除操作添加到暫存區。最簡單的方法是使用 <code>git add .</code>，但請確保您只添加了您想要提交的變更。或者，您可以再次執行 <code>git rm --cached --ignore-unmatch</code> 命令，它會將移除操作添加到暫存區。</p>
 <p>然後，提交您的變更。請提供一個有意義的提交訊息，例如「移除 .DS_Store 檔案並更新 .gitignore」。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git commit -m <span class="s2">&#34;移除 .DS_Store 檔案並更新 .gitignore&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;移除 .DS_Store 檔案並更新 .gitignore&#34;</span>
 </span></span></code></pre></div><p>最後，將您的本地變更推送到 GitHub 倉庫的遠端分支。請將 <code>main</code> 替換為您實際使用的分支名稱（例如 <code>master</code> 或其他分支）。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git push origin main
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git push origin main
 </span></span></code></pre></div><p>完成這些步驟後，您的 GitHub 倉庫將不再包含 <code>.DS_Store</code> 檔案，並且 Git 將來會自動忽略它們。</p>
           </article>
 
@@ -321,9 +305,7 @@
                     border border-neutral-200/80 dark:border-neutral-700/80
                     backdrop-blur-md
                     shadow-lg shadow-sky-100/20 dark:shadow-sky-900/20
-                    transition-all duration-300 ease-out">
-            
-          <div class="relative"><div id="toc">
+                    transition-all duration-300 ease-out"><div class="relative"><div id="toc">
   <div class="flex items-center justify-between mb-2 lg:mb-4">
     <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">目錄</h2>
     <button
@@ -375,74 +357,6 @@
     </div>
   
 </div>
-</div><div class="border-b border-neutral-200/60 dark:border-neutral-700/60 my-4"></div><div class="relative">
-<div id="share"><h2 class="text-lg font-medium text-neutral-800 dark:text-neutral-200 mb-4">分享在</h2>
-    <div class="flex flex-wrap justify-between gap-1 items-center space-y-1"><a
-    href="https://reddit.com/submit?url=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Fdel-ds_store%2F&amp;title=%E5%A6%82%E4%BD%95%E5%9C%A8&#43;Mac&#43;%E4%B8%8A%E5%88%AA%E9%99%A4&#43;GitHub&#43;%E5%80%89%E5%BA%AB%E4%B8%AD%E7%9A%84&#43;.DS_Store&#43;%E6%AA%94%E6%A1%88%E4%B8%A6%E9%81%BF%E5%85%8D%E5%86%8D%E6%AC%A1%E5%87%BA%E7%8F%BE"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="inline px-2 py-1 rounded-lg
-      text-sm font-medium
-      bg-white/60 dark:bg-neutral-800/60
-      text-neutral-700 dark:text-neutral-300
-      border border-neutral-200/50 dark:border-neutral-700/50
-      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
-      hover:border-blue-200 dark:hover:border-blue-800
-      hover:text-blue-700 dark:hover:text-blue-200
-      hover:scale-105
-      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
-      transform-gpu transition-all duration-200 ease-out
-      shadow-sm"
-    aria-label="share如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 檔案並避免再次出現onReddit">Reddit</a><a
-    href="https://x.com/intent/tweet/?text=%E5%A6%82%E4%BD%95%E5%9C%A8&#43;Mac&#43;%E4%B8%8A%E5%88%AA%E9%99%A4&#43;GitHub&#43;%E5%80%89%E5%BA%AB%E4%B8%AD%E7%9A%84&#43;.DS_Store&#43;%E6%AA%94%E6%A1%88%E4%B8%A6%E9%81%BF%E5%85%8D%E5%86%8D%E6%AC%A1%E5%87%BA%E7%8F%BE&amp;url=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Fdel-ds_store%2F&amp;hashtags=Mac%2CGitHub%2C.DS_Store%2CGit%2C.gitignore"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="inline px-2 py-1 rounded-lg
-      text-sm font-medium
-      bg-white/60 dark:bg-neutral-800/60
-      text-neutral-700 dark:text-neutral-300
-      border border-neutral-200/50 dark:border-neutral-700/50
-      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
-      hover:border-blue-200 dark:hover:border-blue-800
-      hover:text-blue-700 dark:hover:text-blue-200
-      hover:scale-105
-      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
-      transform-gpu transition-all duration-200 ease-out
-      shadow-sm"
-    aria-label="share如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 檔案並避免再次出現onX.com">X.com</a><a
-    href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Fdel-ds_store%2F"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="inline px-2 py-1 rounded-lg
-      text-sm font-medium
-      bg-white/60 dark:bg-neutral-800/60
-      text-neutral-700 dark:text-neutral-300
-      border border-neutral-200/50 dark:border-neutral-700/50
-      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
-      hover:border-blue-200 dark:hover:border-blue-800
-      hover:text-blue-700 dark:hover:text-blue-200
-      hover:scale-105
-      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
-      transform-gpu transition-all duration-200 ease-out
-      shadow-sm"
-    aria-label="share如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 檔案並避免再次出現onFacebook">Facebook</a><a
-    href="https://wa.me/?text=https%3A%2F%2Fspectre-pro.github.io%2Fposts%2Fdel-ds_store%2F%20%E5%A6%82%E4%BD%95%E5%9C%A8&#43;Mac&#43;%E4%B8%8A%E5%88%AA%E9%99%A4&#43;GitHub&#43;%E5%80%89%E5%BA%AB%E4%B8%AD%E7%9A%84&#43;.DS_Store&#43;%E6%AA%94%E6%A1%88%E4%B8%A6%E9%81%BF%E5%85%8D%E5%86%8D%E6%AC%A1%E5%87%BA%E7%8F%BE"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="inline px-2 py-1 rounded-lg
-      text-sm font-medium
-      bg-white/60 dark:bg-neutral-800/60
-      text-neutral-700 dark:text-neutral-300
-      border border-neutral-200/50 dark:border-neutral-700/50
-      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
-      hover:border-blue-200 dark:hover:border-blue-800
-      hover:text-blue-700 dark:hover:text-blue-200
-      hover:scale-105
-      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
-      transform-gpu transition-all duration-200 ease-out
-      shadow-sm"
-    aria-label="share如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 檔案並避免再次出現onWhatsApp">WhatsApp</a></div></div>
-
 </div><div class="border-b border-neutral-200/60 dark:border-neutral-700/60 my-4 hidden md:block"></div><div
             class="flex flex-wrap gap-2 justify-between text-sm text-neutral-700 dark:text-neutral-400 hidden md:flex">
             <button
@@ -527,23 +441,7 @@
 
       <div class="mt-4">
         
-          <div id="comments" class="tab-content hidden" role="tabpanel"><script src="https://giscus.app/client.js"
-  data-repo="spectre-pro/spectre-pro.github.io"
-  data-repo-id="R_kgDOOz-m3A"
-  data-category="Announcements"
-  data-category-id="DIC_kwDOOz-m3M4CrO4f"
-  data-mapping="pathname"
-  data-strict="0"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="top"
-  data-theme="preferred_color_scheme"
-  data-lang="zh-TW"
-  data-loading="lazy"
-  crossorigin="anonymous"
-  async>
-</script>
-</div></div>
+          <div id="comments" class="tab-content hidden" role="tabpanel"></div></div>
     </aside>
   </div></main>
     <footer class="relative z-50"><div
@@ -556,7 +454,7 @@
       
       <div class="col-span-1 md:col-span-2">
         <h3 class="text-lg sm:text-xl font-semibold text-neutral-900 dark:text-neutral-50 mb-4">關於</h3>
-        <p class="text-slate-600 dark:text-slate-300 italic text-sm sm:text-base">Tech Change The Lives</p>
+        <p class="text-slate-600 dark:text-slate-300 italic text-sm sm:text-base"></p>
       </div>
 
       
@@ -600,25 +498,6 @@
 </span>
       <span class="transform group-hover:translate-x-1 transition-transform duration-300">RSS Feed</span>
     </a>
-  </li><li>
-    <a
-      href="https://github.com/SPECTRE-PRO"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="group flex items-center gap-2 
-            text-slate-600 hover:text-sky-600 
-            dark:text-slate-300 dark:hover:text-sky-300 
-            transition-all duration-300 ease-in-out">
-      <span class="transform group-hover:scale-110 transition-transform duration-300"><svg
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="currentColor"
-  xmlns="http://www.w3.org/2000/svg"ZgotmplZZgotmplZ><path
-      d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"></path></svg>
-</span>
-      <span class="transform group-hover:translate-x-1 transition-transform duration-300">Github</span>
-    </a>
   </li></ul>
       </div>
     </div>
@@ -639,8 +518,18 @@
                   hover:text-sky-600 dark:hover:text-sky-400 
                   transition-colors duration-300"
           target="_blank"
-          href="https://github.com/SPECTRE-PRO/spectre-pro.github.io">
-          SPECTRE
+          href="https://gohugo.io">
+          Hugo
+        </a>
+        &&
+        <a
+          class="underline decoration-neutral-300 
+                  hover:text-sky-600 dark:hover:text-sky-400 
+                  transition-colors duration-300"
+          rel="nofollow"
+          target="_blank"
+          href="https://github.com/wayjam/hugo-theme-fluidity">
+          Theme Fluidity
         </a>
       </span>
     </div>

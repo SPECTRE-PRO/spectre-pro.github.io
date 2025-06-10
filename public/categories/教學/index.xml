@@ -4,13 +4,13 @@
   xmlns:wfw="http://wellformedweb.org/CommentAPI/">
   <channel>
     <title>教學 on SPECTRE</title>
-    <link>https://spectre-pro.github.io/categories/%E6%95%99%E5%AD%B8/</link>
+    <link>https://spectrepro.pro/categories/%E6%95%99%E5%AD%B8/</link>
     <description>Recent content in 教學 on SPECTRE</description>
     <generator>Hugo</generator>
-    <language>zh-hk</language>
-    <lastBuildDate>Tue, 10 Jun 2025 19:30:00 +0800</lastBuildDate><atom:link href="https://spectre-pro.github.io/categories/%E6%95%99%E5%AD%B8/index.xml" rel="self" type="application/rss+xml" /><item>
+    <language>zh-tw</language>
+    <lastBuildDate>Tue, 10 Jun 2025 19:30:00 +0800</lastBuildDate><atom:link href="https://spectrepro.pro/categories/%E6%95%99%E5%AD%B8/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>使用 Browser-use Web UI</title>
-      <link>https://spectre-pro.github.io/posts/usebrowser-use/</link>
-      <pubDate>Tue, 10 Jun 2025 19:30:00 +0800</pubDate><guid>https://spectre-pro.github.io/posts/usebrowser-use/</guid>
+      <link>https://spectrepro.pro/posts/usebrowser-use/</link>
+      <pubDate>Tue, 10 Jun 2025 19:30:00 +0800</pubDate><guid>https://spectrepro.pro/posts/usebrowser-use/</guid>
       <description>&lt;p&gt;這篇文章將詳細介紹如何安裝和使用基於 Gradio 的 Browser-use Web UI。Browser-use 是一個旨在讓 AI 代理能夠存取網站的專案，而 Web UI 則提供了一個使用者友善的介面來與瀏覽器代理互動。&lt;/p&gt;</description></item></channel>
 </rss>

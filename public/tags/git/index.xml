@@ -4,13 +4,13 @@
   xmlns:wfw="http://wellformedweb.org/CommentAPI/">
   <channel>
     <title>Git on SPECTRE</title>
-    <link>https://spectre-pro.github.io/tags/git/</link>
+    <link>https://spectrepro.pro/tags/git/</link>
     <description>Recent content in Git on SPECTRE</description>
     <generator>Hugo</generator>
-    <language>zh-hk</language>
-    <lastBuildDate>Mon, 09 Jun 2025 13:43:37 +0800</lastBuildDate><atom:link href="https://spectre-pro.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" /><item>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 09 Jun 2025 13:43:37 +0800</lastBuildDate><atom:link href="https://spectrepro.pro/tags/git/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 檔案並避免再次出現</title>
-      <link>https://spectre-pro.github.io/posts/del-ds_store/</link>
-      <pubDate>Mon, 09 Jun 2025 13:43:37 +0800</pubDate><guid>https://spectre-pro.github.io/posts/del-ds_store/</guid>
+      <link>https://spectrepro.pro/posts/del-ds_store/</link>
+      <pubDate>Mon, 09 Jun 2025 13:43:37 +0800</pubDate><guid>https://spectrepro.pro/posts/del-ds_store/</guid>
       <description>&lt;p&gt;&lt;code&gt;.DS_Store&lt;/code&gt; 檔案是 macOS 作業系統自動在資料夾中建立的隱藏檔案，用於儲存資料夾的自訂屬性，例如圖示位置或背景圖片。雖然它們在本地檔案系統中很有用，但在 Git 倉庫中卻常常造成困擾，因為它們會隨著檔案的移動或刪除而頻繁變動，導致不必要的版本控制變更，並可能在不同作業系統的使用者之間產生衝突。&lt;/p&gt;&#xA;&lt;p&gt;本篇文章將引導您如何在 Mac 上從您的 Git 倉庫中刪除這些 &lt;code&gt;.DS_Store&lt;/code&gt; 檔案，並設定 &lt;code&gt;.gitignore&lt;/code&gt; 以防止它們在未來被意外地加入到版本控制中。&lt;/p&gt;</description></item></channel>
 </rss>

@@ -4,73 +4,73 @@
   xmlns:wfw="http://wellformedweb.org/CommentAPI/">
   <channel>
     <title>Tags on SPECTRE</title>
-    <link>https://spectre-pro.github.io/tags/</link>
+    <link>https://spectrepro.pro/tags/</link>
     <description>Recent content in Tags on SPECTRE</description>
     <generator>Hugo</generator>
-    <language>zh-hk</language>
-    <lastBuildDate>Tue, 10 Jun 2025 19:30:00 +0800</lastBuildDate><atom:link href="https://spectre-pro.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+    <language>zh-tw</language>
+    <lastBuildDate>Tue, 10 Jun 2025 19:30:00 +0800</lastBuildDate><atom:link href="https://spectrepro.pro/tags/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>AI</title>
-      <link>https://spectre-pro.github.io/tags/ai/</link>
-      <pubDate>Tue, 10 Jun 2025 19:30:00 +0800</pubDate><guid>https://spectre-pro.github.io/tags/ai/</guid>
+      <link>https://spectrepro.pro/tags/ai/</link>
+      <pubDate>Tue, 10 Jun 2025 19:30:00 +0800</pubDate><guid>https://spectrepro.pro/tags/ai/</guid>
       <description></description></item><item>
       <title>Browser-Use</title>
-      <link>https://spectre-pro.github.io/tags/browser-use/</link>
-      <pubDate>Tue, 10 Jun 2025 19:30:00 +0800</pubDate><guid>https://spectre-pro.github.io/tags/browser-use/</guid>
+      <link>https://spectrepro.pro/tags/browser-use/</link>
+      <pubDate>Tue, 10 Jun 2025 19:30:00 +0800</pubDate><guid>https://spectrepro.pro/tags/browser-use/</guid>
       <description></description></item><item>
       <title>Web UI</title>
-      <link>https://spectre-pro.github.io/tags/web-ui/</link>
-      <pubDate>Tue, 10 Jun 2025 19:30:00 +0800</pubDate><guid>https://spectre-pro.github.io/tags/web-ui/</guid>
+      <link>https://spectrepro.pro/tags/web-ui/</link>
+      <pubDate>Tue, 10 Jun 2025 19:30:00 +0800</pubDate><guid>https://spectrepro.pro/tags/web-ui/</guid>
       <description></description></item><item>
       <title>.DS_Store</title>
-      <link>https://spectre-pro.github.io/tags/.ds_store/</link>
-      <pubDate>Mon, 09 Jun 2025 13:43:37 +0800</pubDate><guid>https://spectre-pro.github.io/tags/.ds_store/</guid>
+      <link>https://spectrepro.pro/tags/.ds_store/</link>
+      <pubDate>Mon, 09 Jun 2025 13:43:37 +0800</pubDate><guid>https://spectrepro.pro/tags/.ds_store/</guid>
       <description></description></item><item>
       <title>.Gitignore</title>
-      <link>https://spectre-pro.github.io/tags/.gitignore/</link>
-      <pubDate>Mon, 09 Jun 2025 13:43:37 +0800</pubDate><guid>https://spectre-pro.github.io/tags/.gitignore/</guid>
+      <link>https://spectrepro.pro/tags/.gitignore/</link>
+      <pubDate>Mon, 09 Jun 2025 13:43:37 +0800</pubDate><guid>https://spectrepro.pro/tags/.gitignore/</guid>
       <description></description></item><item>
       <title>Git</title>
-      <link>https://spectre-pro.github.io/tags/git/</link>
-      <pubDate>Mon, 09 Jun 2025 13:43:37 +0800</pubDate><guid>https://spectre-pro.github.io/tags/git/</guid>
+      <link>https://spectrepro.pro/tags/git/</link>
+      <pubDate>Mon, 09 Jun 2025 13:43:37 +0800</pubDate><guid>https://spectrepro.pro/tags/git/</guid>
       <description></description></item><item>
       <title>GitHub</title>
-      <link>https://spectre-pro.github.io/tags/github/</link>
-      <pubDate>Mon, 09 Jun 2025 13:43:37 +0800</pubDate><guid>https://spectre-pro.github.io/tags/github/</guid>
+      <link>https://spectrepro.pro/tags/github/</link>
+      <pubDate>Mon, 09 Jun 2025 13:43:37 +0800</pubDate><guid>https://spectrepro.pro/tags/github/</guid>
       <description></description></item><item>
       <title>Mac</title>
-      <link>https://spectre-pro.github.io/tags/mac/</link>
-      <pubDate>Mon, 09 Jun 2025 13:43:37 +0800</pubDate><guid>https://spectre-pro.github.io/tags/mac/</guid>
+      <link>https://spectrepro.pro/tags/mac/</link>
+      <pubDate>Mon, 09 Jun 2025 13:43:37 +0800</pubDate><guid>https://spectrepro.pro/tags/mac/</guid>
       <description></description></item><item>
       <title>Pyenv</title>
-      <link>https://spectre-pro.github.io/tags/pyenv/</link>
-      <pubDate>Sun, 08 Jun 2025 00:00:00 +0800</pubDate><guid>https://spectre-pro.github.io/tags/pyenv/</guid>
+      <link>https://spectrepro.pro/tags/pyenv/</link>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 +0800</pubDate><guid>https://spectrepro.pro/tags/pyenv/</guid>
       <description></description></item><item>
       <title>Pyenv-Win</title>
-      <link>https://spectre-pro.github.io/tags/pyenv-win/</link>
-      <pubDate>Sun, 08 Jun 2025 00:00:00 +0800</pubDate><guid>https://spectre-pro.github.io/tags/pyenv-win/</guid>
+      <link>https://spectrepro.pro/tags/pyenv-win/</link>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 +0800</pubDate><guid>https://spectrepro.pro/tags/pyenv-win/</guid>
       <description></description></item><item>
       <title>Python</title>
-      <link>https://spectre-pro.github.io/tags/python/</link>
-      <pubDate>Sun, 08 Jun 2025 00:00:00 +0800</pubDate><guid>https://spectre-pro.github.io/tags/python/</guid>
+      <link>https://spectrepro.pro/tags/python/</link>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 +0800</pubDate><guid>https://spectrepro.pro/tags/python/</guid>
       <description></description></item><item>
       <title>版本管理</title>
-      <link>https://spectre-pro.github.io/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/</link>
-      <pubDate>Sun, 08 Jun 2025 00:00:00 +0800</pubDate><guid>https://spectre-pro.github.io/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/</guid>
+      <link>https://spectrepro.pro/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 +0800</pubDate><guid>https://spectrepro.pro/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/</guid>
       <description></description></item><item>
       <title>虛擬環境</title>
-      <link>https://spectre-pro.github.io/tags/%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83/</link>
-      <pubDate>Sun, 08 Jun 2025 00:00:00 +0800</pubDate><guid>https://spectre-pro.github.io/tags/%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83/</guid>
+      <link>https://spectrepro.pro/tags/%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83/</link>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 +0800</pubDate><guid>https://spectrepro.pro/tags/%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83/</guid>
       <description></description></item><item>
       <title>Venv</title>
-      <link>https://spectre-pro.github.io/tags/venv/</link>
-      <pubDate>Sat, 07 Jun 2025 21:04:55 +0800</pubDate><guid>https://spectre-pro.github.io/tags/venv/</guid>
+      <link>https://spectrepro.pro/tags/venv/</link>
+      <pubDate>Sat, 07 Jun 2025 21:04:55 +0800</pubDate><guid>https://spectrepro.pro/tags/venv/</guid>
       <description></description></item><item>
       <title>支持</title>
-      <link>https://spectre-pro.github.io/tags/%E6%94%AF%E6%8C%81/</link>
-      <pubDate>Sat, 07 Jun 2025 20:03:55 +0800</pubDate><guid>https://spectre-pro.github.io/tags/%E6%94%AF%E6%8C%81/</guid>
+      <link>https://spectrepro.pro/tags/%E6%94%AF%E6%8C%81/</link>
+      <pubDate>Sat, 07 Jun 2025 20:03:55 +0800</pubDate><guid>https://spectrepro.pro/tags/%E6%94%AF%E6%8C%81/</guid>
       <description></description></item><item>
       <title>贊助</title>
-      <link>https://spectre-pro.github.io/tags/%E8%B4%8A%E5%8A%A9/</link>
-      <pubDate>Sat, 07 Jun 2025 20:03:55 +0800</pubDate><guid>https://spectre-pro.github.io/tags/%E8%B4%8A%E5%8A%A9/</guid>
+      <link>https://spectrepro.pro/tags/%E8%B4%8A%E5%8A%A9/</link>
+      <pubDate>Sat, 07 Jun 2025 20:03:55 +0800</pubDate><guid>https://spectrepro.pro/tags/%E8%B4%8A%E5%8A%A9/</guid>
       <description></description></item></channel>
 </rss>
