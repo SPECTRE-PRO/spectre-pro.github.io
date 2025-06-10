@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+  <channel>
+    <title>Web UI on SPECTRE</title>
+    <link>https://spectre-pro.github.io/tags/web-ui/</link>
+    <description>Recent content in Web UI on SPECTRE</description>
+    <generator>Hugo</generator>
+    <language>zh-hk</language>
+    <lastBuildDate>Tue, 10 Jun 2025 19:30:00 +0800</lastBuildDate><atom:link href="https://spectre-pro.github.io/tags/web-ui/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>使用 Browser-use Web UI</title>
+      <link>https://spectre-pro.github.io/posts/usebrowser-use/</link>
+      <pubDate>Tue, 10 Jun 2025 19:30:00 +0800</pubDate><guid>https://spectre-pro.github.io/posts/usebrowser-use/</guid>
+      <description>&lt;p&gt;這篇文章將詳細介紹如何安裝和使用基於 Gradio 的 Browser-use Web UI。Browser-use 是一個旨在讓 AI 代理能夠存取網站的專案，而 Web UI 則提供了一個使用者友善的介面來與瀏覽器代理互動。&lt;/p&gt;&#xA;&lt;h2 id=&#34;專案特色&#34;&gt;專案特色&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;WebUI&lt;/strong&gt;: 基於 Gradio 建構，支援 Browser-use 的大部分功能，提供使用者友善的介面。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;擴展的 LLM 支援&lt;/strong&gt;: 整合了多種大型語言模型 (LLM)，包括 Google、OpenAI、Azure OpenAI、Anthropic、DeepSeek、Ollama 等，並計劃未來支援更多模型。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;自訂瀏覽器支援&lt;/strong&gt;: 允許使用自己的瀏覽器，無需重新登入網站或處理其他身份驗證問題。此功能還支援高畫質螢幕錄影。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;持久性瀏覽器會話&lt;/strong&gt;: 可以選擇在 AI 任務之間保持瀏覽器視窗開啟，以便查看 AI 互動的完整歷史記錄和狀態。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;安裝指南&#34;&gt;安裝指南&lt;/h2&gt;&#xA;&lt;p&gt;有兩種安裝 Browser-use Web UI 的方法：本地安裝和 Docker 安裝。&lt;/p&gt;</description></item></channel>
+</rss>

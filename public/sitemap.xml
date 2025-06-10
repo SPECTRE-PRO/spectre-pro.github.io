@@ -2,19 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://spectre-pro.github.io/tags/ai/</loc>
+    <lastmod>2025-06-10T19:30:00+08:00</lastmod>
+  </url><url>
+    <loc>https://spectre-pro.github.io/tags/browser-use/</loc>
+    <lastmod>2025-06-10T19:30:00+08:00</lastmod>
+  </url><url>
+    <loc>https://spectre-pro.github.io/categories/</loc>
+    <lastmod>2025-06-10T19:30:00+08:00</lastmod>
+  </url><url>
     <loc>https://spectre-pro.github.io/posts/</loc>
     <lastmod>2025-06-10T19:30:00+08:00</lastmod>
   </url><url>
     <loc>https://spectre-pro.github.io/</loc>
     <lastmod>2025-06-10T19:30:00+08:00</lastmod>
   </url><url>
+    <loc>https://spectre-pro.github.io/tags/</loc>
+    <lastmod>2025-06-10T19:30:00+08:00</lastmod>
+  </url><url>
+    <loc>https://spectre-pro.github.io/tags/web-ui/</loc>
+    <lastmod>2025-06-10T19:30:00+08:00</lastmod>
+  </url><url>
+    <loc>https://spectre-pro.github.io/posts/usebrowser-use/</loc>
+    <lastmod>2025-06-10T19:30:00+08:00</lastmod>
+  </url><url>
+    <loc>https://spectre-pro.github.io/categories/%E6%95%99%E5%AD%B8/</loc>
+    <lastmod>2025-06-10T19:30:00+08:00</lastmod>
+  </url><url>
     <loc>https://spectre-pro.github.io/tags/.ds_store/</loc>
     <lastmod>2025-06-09T13:43:37+08:00</lastmod>
   </url><url>
     <loc>https://spectre-pro.github.io/tags/.gitignore/</loc>
-    <lastmod>2025-06-09T13:43:37+08:00</lastmod>
-  </url><url>
-    <loc>https://spectre-pro.github.io/categories/</loc>
     <lastmod>2025-06-09T13:43:37+08:00</lastmod>
   </url><url>
     <loc>https://spectre-pro.github.io/categories/git/</loc>
@@ -27,9 +45,6 @@
     <lastmod>2025-06-09T13:43:37+08:00</lastmod>
   </url><url>
     <loc>https://spectre-pro.github.io/tags/mac/</loc>
-    <lastmod>2025-06-09T13:43:37+08:00</lastmod>
-  </url><url>
-    <loc>https://spectre-pro.github.io/tags/</loc>
     <lastmod>2025-06-09T13:43:37+08:00</lastmod>
   </url><url>
     <loc>https://spectre-pro.github.io/posts/del-ds_store/</loc>
