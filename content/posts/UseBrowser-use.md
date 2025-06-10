@@ -163,8 +163,6 @@ TARGETPLATFORM=linux/arm64 docker compose up --build
     *   預設 VNC 密碼: "youvncpassword"
     *   可以透過在 `.env` 檔案中設定 `VNC_PASSWORD` 來更改
 
-## 更新日誌
 
-*   **2025/01/26**: 感謝 @vvincent1234。現在 browser-use-webui 可以與 DeepSeek-r1 結合進行深度思考！
-*   **2025/01/10**: 感謝 @casistack。現在我們有了 Docker 設定選項，並且支援在任務之間保持瀏覽器開啟。[影片教學演示](https://github.com/browser-use/web-ui/issues/1#issuecomment-2582511750)。
-*   **2025/01/06**: 感謝 @richard-devbot。發布了全新且精心設計的 WebUI。[影片教學演示](https://github.com/warmshao/browser-use-webui/issues/1#issuecomment-2573393113)。
+## 影片教學演示
+感謝 @richard-devbot。發布了全新且精心設計的 WebUI。[影片教學演示](https://github.com/warmshao/browser-use-webui/issues/1#issuecomment-2573393113)。
