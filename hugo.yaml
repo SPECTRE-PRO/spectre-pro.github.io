@@ -39,7 +39,7 @@ menus:
     - identifier: archive
       pageRef: /archives
       weight: 30
-    - identifier: tags
+    - identifier: tag
       pageRef: /tags
       weight: 40
     - identifier: categories
