@@ -2,6 +2,8 @@
 date = '2025-06-07T21:04:55+08:00'
 draft = false
 title = 'Python venv 用法詳解'
+tags = ["Python", "venv", "虛擬環境"]
+categories = ["Python"]
 +++
 
 ## `venv` 是什麼？

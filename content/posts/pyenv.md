@@ -2,6 +2,8 @@
 date = '2025-06-08T00:00:00+08:00'
 draft = false
 title = 'pyenv 與 pyenv-win 全面教學'
+tags = ["pyenv", "pyenv-win", "Python", "版本管理", "虛擬環境"]
+categories = ["Python"]
 +++
 
 # pyenv 與 pyenv-win 全面教學

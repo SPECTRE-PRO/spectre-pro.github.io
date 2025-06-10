@@ -7,5 +7,18 @@
     <link>https://spectre-pro.github.io/categories/</link>
     <description>Recent content in Categories on SPECTRE</description>
     <generator>Hugo</generator>
-    <language>zh-hk</language><atom:link href="https://spectre-pro.github.io/categories/index.xml" rel="self" type="application/rss+xml" /></channel>
+    <language>zh-hk</language>
+    <lastBuildDate>Mon, 09 Jun 2025 13:43:37 +0800</lastBuildDate><atom:link href="https://spectre-pro.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Git</title>
+      <link>https://spectre-pro.github.io/categories/git/</link>
+      <pubDate>Mon, 09 Jun 2025 13:43:37 +0800</pubDate><guid>https://spectre-pro.github.io/categories/git/</guid>
+      <description></description></item><item>
+      <title>Python</title>
+      <link>https://spectre-pro.github.io/categories/python/</link>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 +0800</pubDate><guid>https://spectre-pro.github.io/categories/python/</guid>
+      <description></description></item><item>
+      <title>其他</title>
+      <link>https://spectre-pro.github.io/categories/%E5%85%B6%E4%BB%96/</link>
+      <pubDate>Sat, 07 Jun 2025 20:03:55 +0800</pubDate><guid>https://spectre-pro.github.io/categories/%E5%85%B6%E4%BB%96/</guid>
+      <description></description></item></channel>
 </rss>

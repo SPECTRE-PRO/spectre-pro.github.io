@@ -2,6 +2,8 @@
 date = '2025-06-09T13:43:37+08:00'
 draft = false
 title = '如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 檔案並避免再次出現'
+tags = ["Mac", "GitHub", ".DS_Store", "Git", ".gitignore"]
+categories = ["Git"]
 +++
 
 ## 如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 檔案並避免再次出現

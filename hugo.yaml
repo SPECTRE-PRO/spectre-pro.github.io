@@ -39,9 +39,15 @@ menus:
     - identifier: archive
       pageRef: /archives
       weight: 30
+    - identifier: tags
+      pageRef: /tags
+      weight: 40
+    - identifier: categories
+      pageRef: /categories
+      weight: 50
     - identifier: search
       pageRef: /search
-      weight: 40
+      weight: 60
 
 
 params:

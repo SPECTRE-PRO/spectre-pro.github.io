@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+  <channel>
+    <title>Python on SPECTRE</title>
+    <link>https://spectre-pro.github.io/categories/python/</link>
+    <description>Recent content in Python on SPECTRE</description>
+    <generator>Hugo</generator>
+    <language>zh-hk</language>
+    <lastBuildDate>Sun, 08 Jun 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://spectre-pro.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>pyenv 與 pyenv-win 全面教學</title>
+      <link>https://spectre-pro.github.io/posts/pyenv/</link>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 +0800</pubDate><guid>https://spectre-pro.github.io/posts/pyenv/</guid>
+      <description>&lt;h1 id=&#34;pyenv-與-pyenv-win-全面教學&#34;&gt;pyenv 與 pyenv-win 全面教學&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/pyenv/pyenv&#34;&gt;pyenv&lt;/a&gt; 是一個強大的 Python 版本管理工具，主要用於 Linux 和 macOS 系統。對於 Windows 使用者，推薦使用 &lt;a href=&#34;https://github.com/pyenv-win/pyenv-win&#34;&gt;pyenv-win&lt;/a&gt; 專案，它是 pyenv 在 Windows 上的移植版本。本教學將涵蓋這兩個工具的安裝、設定與基本使用。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;pyenvpyenv-win-簡介&#34;&gt;pyenv/pyenv-win 簡介&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;作用&lt;/strong&gt;：讓你輕鬆安裝、管理並切換多個 Python 版本，而不會影響系統預設的 Python 環境。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;優點&lt;/strong&gt;：&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;版本隔離&lt;/strong&gt;：在使用者層級管理 Python 版本，避免與系統 Python 衝突。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;專案獨立&lt;/strong&gt;：可以為不同專案設定獨立的 Python 版本。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;易於切換&lt;/strong&gt;：透過簡單的指令即可快速切換 Python 版本。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;pyenv vs pyenv-win&lt;/strong&gt;：&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;pyenv&lt;/code&gt;：原生支援 Linux、macOS 和其他類 Unix 系統。&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;pyenv-win&lt;/code&gt;：專為 Windows 設計，安裝原生 Windows Python 版本。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;安裝-pyenv-linuxmacos&#34;&gt;安裝 pyenv (Linux/macOS)&lt;/h2&gt;&#xA;&lt;p&gt;在安裝 pyenv 之前，請確保你的系統已安裝必要的建置依賴項。具體依賴項列表請參考 &lt;a href=&#34;https://github.com/pyenv/pyenv/wiki#suggested-build-environment&#34;&gt;pyenv 官方文件&lt;/a&gt;。&lt;/p&gt;</description></item><item>
+      <title>Python venv 用法詳解</title>
+      <link>https://spectre-pro.github.io/posts/pythonvenv/</link>
+      <pubDate>Sat, 07 Jun 2025 21:04:55 +0800</pubDate><guid>https://spectre-pro.github.io/posts/pythonvenv/</guid>
+      <description>&lt;h2 id=&#34;venv-是什麼&#34;&gt;&lt;code&gt;venv&lt;/code&gt; 是什麼？&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;venv&lt;/code&gt; 是 Python 標準庫中用於建立&lt;strong&gt;輕量級虛擬環境&lt;/strong&gt;的模組。從 Python 3.3 版本開始，&lt;code&gt;venv&lt;/code&gt; 就已經內建在 Python 中，無需額外安裝。&lt;/p&gt;&#xA;&lt;h3 id=&#34;什麼是虛擬環境-virtual-environment&#34;&gt;什麼是虛擬環境 (Virtual Environment)？&lt;/h3&gt;&#xA;&lt;p&gt;虛擬環境是一個獨立的目錄樹，其中包含 Python 安裝及其一系列額外的套件。它與系統全域的 Python 環境隔離。當你在虛擬環境中安裝套件時，這些套件只會安裝到該環境中，不會影響到全域或其他虛擬環境。&lt;/p&gt;</description></item></channel>
+</rss>
