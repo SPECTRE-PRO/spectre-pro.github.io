@@ -51,7 +51,7 @@ menus:
 
 
 params:
-  description: '' # 顯示在頁腳的關於區塊下方，簡要介紹您的網站。
+  description: 'Tech Change The Lives' # 顯示在頁腳的關於區塊下方，簡要介紹您的網站。
   fullContentRSS: false # 設定為 true 時，RSS Feed 將包含文章的完整內容；設定為 false 時，只包含摘要。
 
   mainSections: # 一個字串列表，指定哪些 Section (例如 'posts', 'blog') 的文章會顯示在首頁。
