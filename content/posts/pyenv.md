@@ -6,8 +6,6 @@ tags = ["pyenv", "pyenv-win", "Python", "版本管理", "虛擬環境"]
 categories = ["Python"]
 +++
 
-# pyenv 與 pyenv-win 全面教學
-
 [pyenv](https://github.com/pyenv/pyenv) 是一個強大的 Python 版本管理工具，主要用於 Linux 和 macOS 系統。對於 Windows 使用者，推薦使用 [pyenv-win](https://github.com/pyenv-win/pyenv-win) 專案，它是 pyenv 在 Windows 上的移植版本。本教學將涵蓋這兩個工具的安裝、設定與基本使用。
 
 ---
