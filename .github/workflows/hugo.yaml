@@ -61,8 +61,6 @@ jobs:
           key: hugo-${{ github.run_id }}
           restore-keys:
             hugo-
-      - name: Run Pagefind build
-        run: npx pagefind --site public
       - name: Configure Git
         run: git config core.quotepath false
       - name: Build with Hugo
@@ -79,6 +77,8 @@ jobs:
           path: |
             ${{ runner.temp }}/hugo_cache
           key: ${{ steps.cache-restore.outputs.cache-primary-key }}
+      - name: Run Pagefind build
+        run: npx pagefind --site public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
