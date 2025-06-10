@@ -3,54 +3,12 @@
 <head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <meta name="color-scheme" content="dark light">
-<meta name="description" content="pyenv 是一個強大的 Python 版本管理工具，主要用於 Linux 和 macOS 系統。對於 Windows 使用者，推薦使用 pyenv-win 專案，它是 pyenv 在 Windows 上的移植版本。本教學將涵蓋這兩個工具的安裝、設定與基本使用。
-
-pyenv/pyenv-win 簡介
-
-作用：讓你輕鬆安裝、管理並切換多個 Python 版本，而不會影響系統預設的 Python 環境。
-優點：
-
-版本隔離：在使用者層級管理 Python 版本，避免與系統 Python 衝突。
-專案獨立：可以為不同專案設定獨立的 Python 版本。
-易於切換：透過簡單的指令即可快速切換 Python 版本。
-
-
-pyenv vs pyenv-win：
-
-pyenv：原生支援 Linux、macOS 和其他類 Unix 系統。
-pyenv-win：專為 Windows 設計，安裝原生 Windows Python 版本。
-
-
-
-
-安裝 pyenv (Linux/macOS)
-在安裝 pyenv 之前，請確保你的系統已安裝必要的建置依賴項。具體依賴項列表請參考 pyenv 官方文件。" />
+<meta name="description" content="pyenv 是一個強大的 Python 版本管理工具，主要用於 Linux 和 macOS 系統。對於 Windows 使用者，推薦使用 pyenv-win 專案，它是 pyenv 在 Windows 上的移植版本。本教學將涵蓋這兩個工具的安裝、設定與基本使用。" />
 <meta name="author" content="">
 <meta name="keywords" content="pyenv, pyenv-win, Python, 版本管理, 虛擬環境">
 
 <link rel="canonical" href="https://spectre-pro.github.io/posts/pyenv/" /><!-- open graph --><meta property="og:type" content="article" />
-<meta property="og:description" content="pyenv 是一個強大的 Python 版本管理工具，主要用於 Linux 和 macOS 系統。對於 Windows 使用者，推薦使用 pyenv-win 專案，它是 pyenv 在 Windows 上的移植版本。本教學將涵蓋這兩個工具的安裝、設定與基本使用。
-
-pyenv/pyenv-win 簡介
-
-作用：讓你輕鬆安裝、管理並切換多個 Python 版本，而不會影響系統預設的 Python 環境。
-優點：
-
-版本隔離：在使用者層級管理 Python 版本，避免與系統 Python 衝突。
-專案獨立：可以為不同專案設定獨立的 Python 版本。
-易於切換：透過簡單的指令即可快速切換 Python 版本。
-
-
-pyenv vs pyenv-win：
-
-pyenv：原生支援 Linux、macOS 和其他類 Unix 系統。
-pyenv-win：專為 Windows 設計，安裝原生 Windows Python 版本。
-
-
-
-
-安裝 pyenv (Linux/macOS)
-在安裝 pyenv 之前，請確保你的系統已安裝必要的建置依賴項。具體依賴項列表請參考 pyenv 官方文件。" />
+<meta property="og:description" content="pyenv 是一個強大的 Python 版本管理工具，主要用於 Linux 和 macOS 系統。對於 Windows 使用者，推薦使用 pyenv-win 專案，它是 pyenv 在 Windows 上的移植版本。本教學將涵蓋這兩個工具的安裝、設定與基本使用。" />
 <meta property="og:title" content="pyenv 與 pyenv-win 全面教學" />
 <meta property="og:site_name" content="SPECTRE" />
 <meta property="og:image:type" content="image/jpeg" />
@@ -58,28 +16,7 @@ pyenv-win：專為 Windows 設計，安裝原生 Windows Python 版本。
 <meta property="og:locale" content="zh-hk" /><meta property="article:published_time" content="2025-06-08" /><meta property="article:modified_time" content="2025-06-08" /><meta property="article:tag" content="pyenv" /><meta property="article:tag" content="pyenv-win" /><meta property="article:tag" content="Python" /><meta property="article:tag" content="版本管理" /><meta property="article:tag" content="虛擬環境" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="pyenv 與 pyenv-win 全面教學 | SPECTRE" />
-<meta name="twitter:description" content="pyenv 是一個強大的 Python 版本管理工具，主要用於 Linux 和 macOS 系統。對於 Windows 使用者，推薦使用 pyenv-win 專案，它是 pyenv 在 Windows 上的移植版本。本教學將涵蓋這兩個工具的安裝、設定與基本使用。
-
-pyenv/pyenv-win 簡介
-
-作用：讓你輕鬆安裝、管理並切換多個 Python 版本，而不會影響系統預設的 Python 環境。
-優點：
-
-版本隔離：在使用者層級管理 Python 版本，避免與系統 Python 衝突。
-專案獨立：可以為不同專案設定獨立的 Python 版本。
-易於切換：透過簡單的指令即可快速切換 Python 版本。
-
-
-pyenv vs pyenv-win：
-
-pyenv：原生支援 Linux、macOS 和其他類 Unix 系統。
-pyenv-win：專為 Windows 設計，安裝原生 Windows Python 版本。
-
-
-
-
-安裝 pyenv (Linux/macOS)
-在安裝 pyenv 之前，請確保你的系統已安裝必要的建置依賴項。具體依賴項列表請參考 pyenv 官方文件。" />
+<meta name="twitter:description" content="pyenv 是一個強大的 Python 版本管理工具，主要用於 Linux 和 macOS 系統。對於 Windows 使用者，推薦使用 pyenv-win 專案，它是 pyenv 在 Windows 上的移植版本。本教學將涵蓋這兩個工具的安裝、設定與基本使用。" />
 <meta name="twitter:domain" content="https://spectre-pro.github.io/posts/pyenv/" />
 
 <title>pyenv 與 pyenv-win 全面教學 | SPECTRE</title>
@@ -619,7 +556,6 @@ pyenv-win：專為 Windows 設計，安裝原生 Windows Python 版本。
 </ul>
 <hr>
 <p>希望這份教學能幫助你更好地理解和使用 pyenv 和 pyenv-win 來管理你的 Python 環境！</p>
-
           </article>
 
           
