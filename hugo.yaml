@@ -11,12 +11,6 @@ enableEmoji: true
 pygmentsUseClasses: true # 使用 CSS class 進行程式碼高亮。
 pygmentsCodefences: true # 啟用程式碼區塊高亮。
 
-mediaTypes:
-  application/javascript:
-    suffixes: ["js"]
-  text/css:
-    suffixes: ["css"]
-
 outputFormats:
   Pagefind:
     mediaType: application/json
