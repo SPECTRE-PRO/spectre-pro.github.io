@@ -7,6 +7,7 @@ categories: ["教學"]
 ---
 
 這篇文章將詳細介紹如何安裝和使用基於 Gradio 的 Browser-use Web UI。Browser-use 是一個旨在讓 AI 代理能夠存取網站的專案，而 Web UI 則提供了一個使用者友善的介面來與瀏覽器代理互動。
+<!--more-->
 
 ## 專案特色
 
