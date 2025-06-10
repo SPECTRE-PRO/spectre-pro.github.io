@@ -166,4 +166,4 @@ TARGETPLATFORM=linux/arm64 docker compose up --build
 
 
 ## 影片教學演示
-感謝 @richard-devbot。發布了全新且精心設計的 WebUI。[影片教學演示](https://github.com/warmshao/browser-use-webui/issues/1#issuecomment-2573393113)。
+感謝 @richard-devbot。發布了全新且精心設計的 WebUI。[影片教學演示](https://github.com/browser-use/web-ui/issues/1)。
