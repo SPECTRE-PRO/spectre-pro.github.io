@@ -61,6 +61,8 @@ jobs:
           key: hugo-${{ github.run_id }}
           restore-keys:
             hugo-
+      - name: Run Pagefind build
+        run: npx pagefind --site public
       - name: Configure Git
         run: git config core.quotepath false
       - name: Build with Hugo
