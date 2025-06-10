@@ -142,6 +142,7 @@
         hideMenu();
       }
     });
+    hideMenu();
   }
   function init() {
     setupTheme();
