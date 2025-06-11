@@ -16,11 +16,11 @@ menus:
     - identifier: tag
       pageRef: /tags
       weight: 30
-    - identifier: archive
-      pageRef: /archives
-      weight: 40
     - identifier: categories
       pageRef: /categories
+      weight: 40
+    - identifier: archive
+      pageRef: /archives
       weight: 50
     - identifier: search
       pageRef: /search
