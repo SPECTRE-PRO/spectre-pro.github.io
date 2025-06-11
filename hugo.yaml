@@ -3,6 +3,7 @@ languageCode : zh-tw
 defaultContentLanguage: zh-tw
 title : SPECTRE
 theme: hugo-theme-fluidity
+hasCJKLanguage: true
 
 menus:
   # Menu: Configure the menu items on the header.
