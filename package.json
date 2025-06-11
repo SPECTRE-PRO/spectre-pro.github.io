@@ -19,6 +19,6 @@
     "prettier-plugin-go-template": "^0.0.15",
     "tailwindcss": "^4.0.0-beta.4"
   },
-  "name": "blog",
+  "name": "spectre-pro.github.io",
   "version": "0.1.0"
 }
