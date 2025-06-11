@@ -47,3 +47,5 @@ params:
               crossorigin="anonymous"
               async>
       </script>
+
+  logo: '/favicon/web-app-manifest-512x512.png'
