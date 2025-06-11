@@ -1,7 +1,7 @@
 baseURL : https://spectrepro.pro/
 languageCode : zh-tw
 defaultContentLanguage: zh-tw
-title : SPECTRE
+title : SPECTRE's note
 theme: hugo-theme-fluidity
 hasCJKLanguage: true
 
@@ -25,6 +25,8 @@ menus:
       weight: 50
 
 params:
+  description: 'Moving up, way up. Moving up, stay up.'
+
   search:
     provider: pagefind
 
