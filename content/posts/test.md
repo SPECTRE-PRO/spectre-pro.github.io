@@ -11,4 +11,4 @@ categories = ["其他"]
 
 > 手機端可在長按圖片。微信發送給自己，然後再微信打開圖片並長按識別二維碼
 
-![讚賞碼](/image/mm_reward_qrcode_1748756839642.png)
+![讚賞碼](https://github.com/user-attachments/assets/7ba1d3d1-e2b4-4fe0-b4b4-7340d156475a)
