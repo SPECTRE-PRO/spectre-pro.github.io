@@ -4,8 +4,8 @@
   xmlns:wfw="http://wellformedweb.org/CommentAPI/">
   <channel>
     <title>Search on SPECTRE&#39;s note</title>
-    <link>http://localhost:1313/search/</link>
+    <link>https://spectrepro.pro/search/</link>
     <description>Recent content in Search on SPECTRE&#39;s note</description>
     <generator>Hugo</generator>
-    <language>zh-tw</language><atom:link href="http://localhost:1313/search/index.xml" rel="self" type="application/rss+xml" /></channel>
+    <language>zh-tw</language><atom:link href="https://spectrepro.pro/search/index.xml" rel="self" type="application/rss+xml" /></channel>
 </rss>
