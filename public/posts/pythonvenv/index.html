@@ -277,7 +277,7 @@ venv 是 Python 標準庫中用於建立輕量級虛擬環境的模組。從 Pyt
 <ul>
 <li>
 <p><strong>基本語法：</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python -m venv &lt;環境路徑&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python -m venv &lt;環境路徑&gt;
 </span></span></code></pre></div><ul>
 <li><code>&lt;環境路徑&gt;</code>：指定虛擬環境要建立在哪個目錄下。這可以是一個相對路徑或絕對路徑。通常，習慣將虛擬環境建立在專案的根目錄下，並命名為 <code>.venv</code>、<code>env</code> 或 <code>venv</code>。例如，在專案目錄下執行 <code>python -m venv .venv</code> 會在當前目錄建立一個名為 <code>.venv</code> 的子目錄作為虛擬環境。</li>
 </ul>
@@ -286,9 +286,9 @@ venv 是 Python 標準庫中用於建立輕量級虛擬環境的模組。從 Pyt
 <p><strong>指定 Python 版本：</strong></p>
 <p><code>python -m venv</code> 命令會使用執行該命令的 <code>python</code> 解釋器來建立虛擬環境。如果你系統上安裝了多個 Python 版本（例如 Python 3.8 和 Python 3.9），並且希望使用特定版本來建立環境，你需要確保你使用的 <code>python</code> 命令指向的是你想要的版本。</p>
 <p>例如，如果你想使用 Python 3.8 建立環境：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3.8 -m venv &lt;環境路徑&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python3.8 -m venv &lt;環境路徑&gt;
 </span></span></code></pre></div><p>或者，如果你知道特定 Python 版本的完整路徑：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/usr/local/bin/python3.8 -m venv &lt;環境路徑&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/usr/local/bin/python3.8 -m venv &lt;環境路徑&gt;
 </span></span></code></pre></div><ul>
 <li><strong>重要：</strong> 確保你使用的 <code>python</code> 命令（如 <code>python3.8</code>）在你的系統上是可用的，並且指向正確的 Python 版本。你可以透過執行 <code>python --version</code> 或 <code>python3.8 --version</code> 來檢查。</li>
 </ul>
@@ -303,7 +303,7 @@ venv 是 Python 標準庫中用於建立輕量級虛擬環境的模組。從 Pyt
 <li><code>--upgrade-deps</code>: 升級虛擬環境中的核心依賴（如 <code>pip</code>, <code>setuptools</code>, <code>wheel</code>）到最新版本。</li>
 </ul>
 <p>例如，建立一個可以存取系統套件的環境：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python -m venv --system-site-packages .venv
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python -m venv --system-site-packages .venv
 </span></span></code></pre></div></li>
 </ul>
 <h3 id="2-啟用虛擬環境">2. 啟用虛擬環境</h3>
@@ -311,103 +311,103 @@ venv 是 Python 標準庫中用於建立輕量級虛擬環境的模組。從 Pyt
 <ul>
 <li>
 <p><strong>Windows (命令提示字元 <code>cmd.exe</code>):</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&lt;環境路徑&gt;<span style="color:#ae81ff">\S</span>cripts<span style="color:#ae81ff">\a</span>ctivate.bat
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&lt;環境路徑&gt;<span class="se">\S</span>cripts<span class="se">\a</span>ctivate.bat
 </span></span></code></pre></div></li>
 <li>
 <p><strong>Windows (PowerShell):</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>&lt;環境路徑&gt;\Scripts\Activate.ps1
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="n">環境路徑</span><span class="p">&gt;\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">Activate</span><span class="p">.</span><span class="py">ps1</span>
 </span></span></code></pre></div></li>
 <li>
 <p><strong>Linux/macOS (Bash 或 Zsh):</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>source &lt;環境路徑&gt;/bin/activate
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">source</span> &lt;環境路徑&gt;/bin/activate
 </span></span></code></pre></div><p>或者使用點號 (<code>.</code>) 作為 <code>source</code> 的縮寫：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>. &lt;環境路徑&gt;/bin/activate
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">. &lt;環境路徑&gt;/bin/activate
 </span></span></code></pre></div></li>
 </ul>
 <p>啟用成功後，你的終端提示符前面會顯示虛擬環境的名稱，例如 <code>(.venv) your_username@your_machine:~$</code>。</p>
 <h3 id="3-安裝套件">3. 安裝套件</h3>
 <p>啟用虛擬環境後，使用 <code>pip</code> 命令安裝的套件將會被安裝到當前虛擬環境的 <code>site-packages</code> 目錄中。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install &lt;套件名&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install &lt;套件名&gt;
 </span></span></code></pre></div><p>你可以一次安裝多個套件：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install requests numpy pandas
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install requests numpy pandas
 </span></span></code></pre></div><p>指定套件版本：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install requests<span style="color:#f92672">==</span>2.28.1
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install <span class="nv">requests</span><span class="o">==</span>2.28.1
 </span></span></code></pre></div><h3 id="4-列出已安裝的套件">4. 列出已安裝的套件</h3>
 <p>使用 <code>pip freeze</code> 命令可以列出當前虛擬環境中安裝的所有套件及其精確的版本號。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip freeze
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip freeze
 </span></span></code></pre></div><p>這個命令的輸出格式非常適合用於建立 <code>requirements.txt</code> 檔案，以便記錄專案的依賴。</p>
 <h3 id="5-儲存和載入專案依賴-requirementstxt">5. 儲存和載入專案依賴 (<code>requirements.txt</code>)</h3>
 <p>為了方便在不同環境或機器上重建相同的專案依賴，通常會將 <code>pip freeze</code> 的輸出儲存到一個名為 <code>requirements.txt</code> 的檔案中。</p>
 <ul>
 <li>
 <p><strong>儲存依賴：</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip freeze &gt; requirements.txt
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip freeze &gt; requirements.txt
 </span></span></code></pre></div><p>這會在當前目錄下建立或覆蓋 <code>requirements.txt</code> 檔案，其中包含了環境中所有套件及其版本資訊。</p>
 </li>
 <li>
 <p><strong>從 <code>requirements.txt</code> 安裝依賴：</strong></p>
 <p>在新的虛擬環境中，或者在另一台機器上，你可以使用以下命令根據 <code>requirements.txt</code> 檔案安裝所有列出的套件：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install -r requirements.txt
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install -r requirements.txt
 </span></span></code></pre></div><p>這會自動下載並安裝檔案中指定的所有套件及其版本。</p>
 </li>
 </ul>
 <h3 id="6-退出虛擬環境">6. 退出虛擬環境</h3>
 <p>當你完成在虛擬環境中的工作後，可以使用 <code>deactivate</code> 命令退出環境，回到系統全域的 Python 環境。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>deactivate
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">deactivate
 </span></span></code></pre></div><p>退出後，命令列提示符會恢復到啟用前的狀態。</p>
 <h3 id="7-刪除虛擬環境">7. 刪除虛擬環境</h3>
 <p>刪除虛擬環境非常簡單，只需刪除建立環境時指定的目錄即可。</p>
 <ul>
 <li>
 <p><strong>Linux/macOS:</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rm -rf &lt;環境路徑&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rm -rf &lt;環境路徑&gt;
 </span></span></code></pre></div></li>
 <li>
 <p><strong>Windows (命令提示字元 <code>cmd.exe</code>):</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rmdir /s /q &lt;環境路徑&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rmdir /s /q &lt;環境路徑&gt;
 </span></span></code></pre></div></li>
 <li>
 <p><strong>Windows (PowerShell):</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Remove-Item -Recurse -Force &lt;環境路徑&gt;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">Remove-Item</span> <span class="n">-Recurse</span> <span class="n">-Force</span> <span class="p">&lt;</span><span class="n">環境路徑</span><span class="p">&gt;</span>
 </span></span></code></pre></div><p>請注意，在刪除虛擬環境之前，請確保你已經退出了該環境（使用 <code>deactivate</code> 命令）。</p>
 </li>
 </ul>
 <h2 id="完整範例">完整範例</h2>
 <p>假設你在一個名為 <code>my_project</code> 的目錄中工作，並希望使用系統預設的 Python 3 版本建立一個名為 <code>.venv</code> 的虛擬環境，然後安裝 <code>requests</code> 和 <code>beautifulsoup4</code> 套件。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 進入專案目錄</span>
-</span></span><span style="display:flex;"><span>cd my_project
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1. 建立虛擬環境 (使用系統預設的 python3)</span>
-</span></span><span style="display:flex;"><span>python3 -m venv .venv
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. 啟用虛擬環境 (以 Linux/macOS 為例)</span>
-</span></span><span style="display:flex;"><span>source .venv/bin/activate
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 啟用後，提示符應顯示 (.venv)</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. 安裝專案所需的套件</span>
-</span></span><span style="display:flex;"><span>pip install requests beautifulsoup4
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 4. 列出已安裝的套件並儲存到 requirements.txt</span>
-</span></span><span style="display:flex;"><span>pip freeze &gt; requirements.txt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 查看 requirements.txt 的內容</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># cat requirements.txt # Linux/macOS</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># type requirements.txt # Windows</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 5. (假設你在另一個終端或機器上) 建立一個新的環境並從 requirements.txt 安裝</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#    cd my_project</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#    python3 -m venv new_env</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#    source new_env/bin/activate # 或 Windows 對應的啟用命令</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#    pip install -r requirements.txt</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#    deactivate # 退出 new_env</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 6. 退出當前虛擬環境 (.venv)</span>
-</span></span><span style="display:flex;"><span>deactivate
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 7. (如果你不再需要 .venv 環境) 刪除環境目錄</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#    rm -rf .venv # Linux/macOS</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#    rmdir /s /q .venv # Windows cmd.exe</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 進入專案目錄</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> my_project
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 1. 建立虛擬環境 (使用系統預設的 python3)</span>
+</span></span><span class="line"><span class="cl">python3 -m venv .venv
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2. 啟用虛擬環境 (以 Linux/macOS 為例)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> .venv/bin/activate
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 啟用後，提示符應顯示 (.venv)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 3. 安裝專案所需的套件</span>
+</span></span><span class="line"><span class="cl">pip install requests beautifulsoup4
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 4. 列出已安裝的套件並儲存到 requirements.txt</span>
+</span></span><span class="line"><span class="cl">pip freeze &gt; requirements.txt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看 requirements.txt 的內容</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># cat requirements.txt # Linux/macOS</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># type requirements.txt # Windows</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 5. (假設你在另一個終端或機器上) 建立一個新的環境並從 requirements.txt 安裝</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    cd my_project</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    python3 -m venv new_env</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    source new_env/bin/activate # 或 Windows 對應的啟用命令</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    pip install -r requirements.txt</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    deactivate # 退出 new_env</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 6. 退出當前虛擬環境 (.venv)</span>
+</span></span><span class="line"><span class="cl">deactivate
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 7. (如果你不再需要 .venv 環境) 刪除環境目錄</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    rm -rf .venv # Linux/macOS</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    rmdir /s /q .venv # Windows cmd.exe</span>
 </span></span></code></pre></div><h2 id="總結">總結</h2>
 <p><code>venv</code> 模組提供了一個簡單有效的方式來管理 Python 專案的依賴。透過為每個專案建立獨立的虛擬環境，可以避免套件衝突，保持環境整潔，並提高專案的可移植性。掌握 <code>venv</code> 的使用是每個 Python 開發者的基本技能。</p>
           </article>
@@ -425,7 +425,9 @@ venv 是 Python 標準庫中用於建立輕量級虛擬環境的模組。從 Pyt
                     border border-neutral-200/80 dark:border-neutral-700/80
                     backdrop-blur-md
                     shadow-lg shadow-sky-100/20 dark:shadow-sky-900/20
-                    transition-all duration-300 ease-out"><div class="relative"><div id="toc">
+                    transition-all duration-300 ease-out">
+            
+          <div class="relative"><div id="toc">
   <div class="flex items-center justify-between mb-2 lg:mb-4">
     <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">目錄</h2>
     <button
@@ -488,6 +490,90 @@ venv 是 Python 標準庫中用於建立輕量級虛擬環境的模組。從 Pyt
     </div>
   
 </div>
+</div><div class="border-b border-neutral-200/60 dark:border-neutral-700/60 my-4"></div><div class="relative">
+<div id="share"><h2 class="text-lg font-medium text-neutral-800 dark:text-neutral-200 mb-4">分享在</h2>
+    <div class="flex flex-wrap justify-between gap-1 items-center space-y-1"><a
+    href="https://reddit.com/submit?url=https%3A%2F%2Fspectrepro.pro%2Fposts%2Fpythonvenv%2F&amp;title=Python&#43;venv&#43;%E7%94%A8%E6%B3%95%E8%A9%B3%E8%A7%A3"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline px-2 py-1 rounded-lg
+      text-sm font-medium
+      bg-white/60 dark:bg-neutral-800/60
+      text-neutral-700 dark:text-neutral-300
+      border border-neutral-200/50 dark:border-neutral-700/50
+      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
+      hover:border-blue-200 dark:hover:border-blue-800
+      hover:text-blue-700 dark:hover:text-blue-200
+      hover:scale-105
+      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
+      transform-gpu transition-all duration-200 ease-out
+      shadow-sm"
+    aria-label="sharePython venv 用法詳解onReddit">Reddit</a><a
+    href="https://x.com/intent/tweet/?text=Python&#43;venv&#43;%E7%94%A8%E6%B3%95%E8%A9%B3%E8%A7%A3&amp;url=https%3A%2F%2Fspectrepro.pro%2Fposts%2Fpythonvenv%2F&amp;hashtags=Python%2Cvenv%2C%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline px-2 py-1 rounded-lg
+      text-sm font-medium
+      bg-white/60 dark:bg-neutral-800/60
+      text-neutral-700 dark:text-neutral-300
+      border border-neutral-200/50 dark:border-neutral-700/50
+      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
+      hover:border-blue-200 dark:hover:border-blue-800
+      hover:text-blue-700 dark:hover:text-blue-200
+      hover:scale-105
+      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
+      transform-gpu transition-all duration-200 ease-out
+      shadow-sm"
+    aria-label="sharePython venv 用法詳解onX.com">X.com</a><a
+    href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fspectrepro.pro%2Fposts%2Fpythonvenv%2F"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline px-2 py-1 rounded-lg
+      text-sm font-medium
+      bg-white/60 dark:bg-neutral-800/60
+      text-neutral-700 dark:text-neutral-300
+      border border-neutral-200/50 dark:border-neutral-700/50
+      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
+      hover:border-blue-200 dark:hover:border-blue-800
+      hover:text-blue-700 dark:hover:text-blue-200
+      hover:scale-105
+      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
+      transform-gpu transition-all duration-200 ease-out
+      shadow-sm"
+    aria-label="sharePython venv 用法詳解onFacebook">Facebook</a><a
+    href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fspectrepro.pro%2Fposts%2Fpythonvenv%2F&amp;title=Python&#43;venv&#43;%E7%94%A8%E6%B3%95%E8%A9%B3%E8%A7%A3"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline px-2 py-1 rounded-lg
+      text-sm font-medium
+      bg-white/60 dark:bg-neutral-800/60
+      text-neutral-700 dark:text-neutral-300
+      border border-neutral-200/50 dark:border-neutral-700/50
+      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
+      hover:border-blue-200 dark:hover:border-blue-800
+      hover:text-blue-700 dark:hover:text-blue-200
+      hover:scale-105
+      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
+      transform-gpu transition-all duration-200 ease-out
+      shadow-sm"
+    aria-label="sharePython venv 用法詳解onLinkedin">Linkedin</a><a
+    href="https://wa.me/?text=https%3A%2F%2Fspectrepro.pro%2Fposts%2Fpythonvenv%2F%20Python&#43;venv&#43;%E7%94%A8%E6%B3%95%E8%A9%B3%E8%A7%A3"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline px-2 py-1 rounded-lg
+      text-sm font-medium
+      bg-white/60 dark:bg-neutral-800/60
+      text-neutral-700 dark:text-neutral-300
+      border border-neutral-200/50 dark:border-neutral-700/50
+      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
+      hover:border-blue-200 dark:hover:border-blue-800
+      hover:text-blue-700 dark:hover:text-blue-200
+      hover:scale-105
+      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
+      transform-gpu transition-all duration-200 ease-out
+      shadow-sm"
+    aria-label="sharePython venv 用法詳解onWhatsApp">WhatsApp</a></div></div>
+
 </div><div class="border-b border-neutral-200/60 dark:border-neutral-700/60 my-4 hidden md:block"></div><div
             class="flex flex-wrap gap-2 justify-between text-sm text-neutral-700 dark:text-neutral-400 hidden md:flex">
             <button

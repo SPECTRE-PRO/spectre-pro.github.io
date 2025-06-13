@@ -264,12 +264,12 @@
 <h3 id="步驟-1開啟終端機並導航到您的倉庫目錄">步驟 1：開啟終端機並導航到您的倉庫目錄</h3>
 <p>首先，開啟您的「終端機」應用程式。您可以在「應用程式」-&gt;「工具程式」中找到它，或者使用 Spotlight 搜尋 (Command + Space) 輸入「終端機」來開啟。</p>
 <p>使用 <code>cd</code> (change directory) 命令導航到您的 Git 倉庫的根目錄。請將 <code>/path/to/your/repository</code> 替換為您實際的倉庫路徑。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd /path/to/your/repository
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> /path/to/your/repository
 </span></span></code></pre></div><p>例如，如果您的倉庫位於您的桌面上的名為 <code>my-project</code> 的資料夾中，指令可能會是：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd ~/Desktop/my-project
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> ~/Desktop/my-project
 </span></span></code></pre></div><h3 id="步驟-2尋找並刪除倉庫中的-ds_store-檔案">步驟 2：尋找並刪除倉庫中的 .DS_Store 檔案</h3>
 <p>接下來，我們將使用一個命令來尋找並從 Git 的追蹤中移除所有 <code>.DS_Store</code> 檔案。這個命令會遞歸地搜尋當前目錄（您的倉庫根目錄）及其所有子目錄中的 <code>.DS_Store</code> 檔案，並使用 <code>git rm</code> 命令將它們從 Git 索引中移除。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>find . -name .DS_Store -print0 | xargs -0 git rm --cached --ignore-unmatch
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">find . -name .DS_Store -print0 <span class="p">|</span> xargs -0 git rm --cached --ignore-unmatch
 </span></span></code></pre></div><ul>
 <li><code>find . -name .DS_Store -print0</code>: 這部分命令會在當前目錄 (<code>.</code>) 中尋找所有名為 <code>.DS_Store</code> 的檔案，並使用 <code>-print0</code> 選項以 null 字元分隔找到的檔案路徑，這有助於正確處理包含空格或其他特殊字元的檔案名。</li>
 <li><code>xargs -0</code>: 這部分命令接收 <code>find</code> 命令輸出的以 null 字元分隔的檔案列表，並將這些檔案作為參數傳遞給後面的 <code>git rm</code> 命令。<code>-0</code> 選項確保 <code>xargs</code> 也使用 null 字元作為分隔符。</li>
@@ -279,19 +279,19 @@
 <h3 id="步驟-3建立或修改-gitignore-檔案以忽略-ds_store">步驟 3：建立或修改 .gitignore 檔案以忽略 .DS_Store</h3>
 <p>為了防止 <code>.DS_Store</code> 檔案在未來再次被意外地加入到 Git 倉庫中，我們需要將它們添加到 <code>.gitignore</code> 檔案中。<code>.gitignore</code> 檔案用於指定 Git 應該忽略的檔案和資料夾模式。</p>
 <p>如果您的倉庫根目錄中還沒有 <code>.gitignore</code> 檔案，您可以建立一個：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>touch .gitignore
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">touch .gitignore
 </span></span></code></pre></div><p>然後，將 <code>.DS_Store</code> 模式添加到 <code>.gitignore</code> 檔案中。這可以通過編輯檔案手動完成，或者使用以下命令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;.DS_Store&#34;</span> &gt;&gt; .gitignore
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;.DS_Store&#34;</span> &gt;&gt; .gitignore
 </span></span></code></pre></div><p>這個命令會將一行包含 <code>.DS_Store</code> 的文字添加到 <code>.gitignore</code> 檔案的末尾。如果檔案已經存在，它會將內容附加到現有內容之後。</p>
 <h3 id="步驟-4提交變更並推送到-github">步驟 4：提交變更並推送到 GitHub</h3>
 <p>現在，您已經從 Git 追蹤中移除了 <code>.DS_Store</code> 檔案，並配置了 <code>.gitignore</code> 來忽略它們。接下來，您需要提交這些變更並將其推送到您的 GitHub 倉庫。</p>
 <p>首先，將 <code>.gitignore</code> 檔案的變更添加到暫存區：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git add .gitignore
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git add .gitignore
 </span></span></code></pre></div><p>如果您使用了 <code>git rm --cached</code>，您可能還需要將 <code>.DS_Store</code> 檔案的移除操作添加到暫存區。最簡單的方法是使用 <code>git add .</code>，但請確保您只添加了您想要提交的變更。或者，您可以再次執行 <code>git rm --cached --ignore-unmatch</code> 命令，它會將移除操作添加到暫存區。</p>
 <p>然後，提交您的變更。請提供一個有意義的提交訊息，例如「移除 .DS_Store 檔案並更新 .gitignore」。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;移除 .DS_Store 檔案並更新 .gitignore&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git commit -m <span class="s2">&#34;移除 .DS_Store 檔案並更新 .gitignore&#34;</span>
 </span></span></code></pre></div><p>最後，將您的本地變更推送到 GitHub 倉庫的遠端分支。請將 <code>main</code> 替換為您實際使用的分支名稱（例如 <code>master</code> 或其他分支）。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git push origin main
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git push origin main
 </span></span></code></pre></div><p>完成這些步驟後，您的 GitHub 倉庫將不再包含 <code>.DS_Store</code> 檔案，並且 Git 將來會自動忽略它們。</p>
           </article>
 
@@ -308,7 +308,9 @@
                     border border-neutral-200/80 dark:border-neutral-700/80
                     backdrop-blur-md
                     shadow-lg shadow-sky-100/20 dark:shadow-sky-900/20
-                    transition-all duration-300 ease-out"><div class="relative"><div id="toc">
+                    transition-all duration-300 ease-out">
+            
+          <div class="relative"><div id="toc">
   <div class="flex items-center justify-between mb-2 lg:mb-4">
     <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">目錄</h2>
     <button
@@ -360,6 +362,90 @@
     </div>
   
 </div>
+</div><div class="border-b border-neutral-200/60 dark:border-neutral-700/60 my-4"></div><div class="relative">
+<div id="share"><h2 class="text-lg font-medium text-neutral-800 dark:text-neutral-200 mb-4">分享在</h2>
+    <div class="flex flex-wrap justify-between gap-1 items-center space-y-1"><a
+    href="https://reddit.com/submit?url=https%3A%2F%2Fspectrepro.pro%2Fposts%2Fdel-ds_store%2F&amp;title=%E5%A6%82%E4%BD%95%E5%9C%A8&#43;Mac&#43;%E4%B8%8A%E5%88%AA%E9%99%A4&#43;GitHub&#43;%E5%80%89%E5%BA%AB%E4%B8%AD%E7%9A%84&#43;.DS_Store&#43;%E6%AA%94%E6%A1%88%E4%B8%A6%E9%81%BF%E5%85%8D%E5%86%8D%E6%AC%A1%E5%87%BA%E7%8F%BE"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline px-2 py-1 rounded-lg
+      text-sm font-medium
+      bg-white/60 dark:bg-neutral-800/60
+      text-neutral-700 dark:text-neutral-300
+      border border-neutral-200/50 dark:border-neutral-700/50
+      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
+      hover:border-blue-200 dark:hover:border-blue-800
+      hover:text-blue-700 dark:hover:text-blue-200
+      hover:scale-105
+      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
+      transform-gpu transition-all duration-200 ease-out
+      shadow-sm"
+    aria-label="share如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 檔案並避免再次出現onReddit">Reddit</a><a
+    href="https://x.com/intent/tweet/?text=%E5%A6%82%E4%BD%95%E5%9C%A8&#43;Mac&#43;%E4%B8%8A%E5%88%AA%E9%99%A4&#43;GitHub&#43;%E5%80%89%E5%BA%AB%E4%B8%AD%E7%9A%84&#43;.DS_Store&#43;%E6%AA%94%E6%A1%88%E4%B8%A6%E9%81%BF%E5%85%8D%E5%86%8D%E6%AC%A1%E5%87%BA%E7%8F%BE&amp;url=https%3A%2F%2Fspectrepro.pro%2Fposts%2Fdel-ds_store%2F&amp;hashtags=Mac%2CGitHub%2C.DS_Store%2CGit%2C.gitignore"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline px-2 py-1 rounded-lg
+      text-sm font-medium
+      bg-white/60 dark:bg-neutral-800/60
+      text-neutral-700 dark:text-neutral-300
+      border border-neutral-200/50 dark:border-neutral-700/50
+      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
+      hover:border-blue-200 dark:hover:border-blue-800
+      hover:text-blue-700 dark:hover:text-blue-200
+      hover:scale-105
+      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
+      transform-gpu transition-all duration-200 ease-out
+      shadow-sm"
+    aria-label="share如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 檔案並避免再次出現onX.com">X.com</a><a
+    href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fspectrepro.pro%2Fposts%2Fdel-ds_store%2F"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline px-2 py-1 rounded-lg
+      text-sm font-medium
+      bg-white/60 dark:bg-neutral-800/60
+      text-neutral-700 dark:text-neutral-300
+      border border-neutral-200/50 dark:border-neutral-700/50
+      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
+      hover:border-blue-200 dark:hover:border-blue-800
+      hover:text-blue-700 dark:hover:text-blue-200
+      hover:scale-105
+      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
+      transform-gpu transition-all duration-200 ease-out
+      shadow-sm"
+    aria-label="share如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 檔案並避免再次出現onFacebook">Facebook</a><a
+    href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fspectrepro.pro%2Fposts%2Fdel-ds_store%2F&amp;title=%E5%A6%82%E4%BD%95%E5%9C%A8&#43;Mac&#43;%E4%B8%8A%E5%88%AA%E9%99%A4&#43;GitHub&#43;%E5%80%89%E5%BA%AB%E4%B8%AD%E7%9A%84&#43;.DS_Store&#43;%E6%AA%94%E6%A1%88%E4%B8%A6%E9%81%BF%E5%85%8D%E5%86%8D%E6%AC%A1%E5%87%BA%E7%8F%BE"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline px-2 py-1 rounded-lg
+      text-sm font-medium
+      bg-white/60 dark:bg-neutral-800/60
+      text-neutral-700 dark:text-neutral-300
+      border border-neutral-200/50 dark:border-neutral-700/50
+      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
+      hover:border-blue-200 dark:hover:border-blue-800
+      hover:text-blue-700 dark:hover:text-blue-200
+      hover:scale-105
+      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
+      transform-gpu transition-all duration-200 ease-out
+      shadow-sm"
+    aria-label="share如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 檔案並避免再次出現onLinkedin">Linkedin</a><a
+    href="https://wa.me/?text=https%3A%2F%2Fspectrepro.pro%2Fposts%2Fdel-ds_store%2F%20%E5%A6%82%E4%BD%95%E5%9C%A8&#43;Mac&#43;%E4%B8%8A%E5%88%AA%E9%99%A4&#43;GitHub&#43;%E5%80%89%E5%BA%AB%E4%B8%AD%E7%9A%84&#43;.DS_Store&#43;%E6%AA%94%E6%A1%88%E4%B8%A6%E9%81%BF%E5%85%8D%E5%86%8D%E6%AC%A1%E5%87%BA%E7%8F%BE"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline px-2 py-1 rounded-lg
+      text-sm font-medium
+      bg-white/60 dark:bg-neutral-800/60
+      text-neutral-700 dark:text-neutral-300
+      border border-neutral-200/50 dark:border-neutral-700/50
+      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
+      hover:border-blue-200 dark:hover:border-blue-800
+      hover:text-blue-700 dark:hover:text-blue-200
+      hover:scale-105
+      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
+      transform-gpu transition-all duration-200 ease-out
+      shadow-sm"
+    aria-label="share如何在 Mac 上刪除 GitHub 倉庫中的 .DS_Store 檔案並避免再次出現onWhatsApp">WhatsApp</a></div></div>
+
 </div><div class="border-b border-neutral-200/60 dark:border-neutral-700/60 my-4 hidden md:block"></div><div
             class="flex flex-wrap gap-2 justify-between text-sm text-neutral-700 dark:text-neutral-400 hidden md:flex">
             <button

@@ -262,40 +262,40 @@
 <p>請參閱 <a href="https://docs.browser-use.com/quickstart#prepare-the-environment">快速入門指南</a> 或按照以下步驟進行。</p>
 <h4 id="步驟-1-克隆儲存庫">步驟 1: 克隆儲存庫</h4>
 <p>開啟終端機並執行以下命令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/browser-use/web-ui.git
-</span></span><span style="display:flex;"><span>cd web-ui
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/browser-use/web-ui.git
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> web-ui
 </span></span></code></pre></div><h4 id="步驟-2-設定-python-環境">步驟 2: 設定 Python 環境</h4>
 <p>建議使用 <a href="https://docs.astral.sh/uv/">uv</a> 來管理 Python 環境。</p>
 <p>使用 uv (推薦):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>uv venv --python 3.11
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">uv venv --python 3.11
 </span></span></code></pre></div><p>啟動虛擬環境：</p>
 <ul>
 <li>Windows (命令提示字元):
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>.venv\Scripts\activate
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">.venv\Scripts\activate
 </span></span></code></pre></div></li>
 <li>Windows (PowerShell):
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>.\\.venv\\Scripts\\Activate.ps1
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="p">.\\.</span><span class="n">venv</span><span class="p">\\</span><span class="n">Scripts</span><span class="p">\\</span><span class="n">Activate</span><span class="p">.</span><span class="py">ps1</span>
 </span></span></code></pre></div></li>
 <li>macOS/Linux:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>source .venv/bin/activate
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">source</span> .venv/bin/activate
 </span></span></code></pre></div></li>
 </ul>
 <h4 id="步驟-3-安裝依賴項">步驟 3: 安裝依賴項</h4>
 <p>安裝 Python 套件：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>uv pip install -r requirements.txt
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">uv pip install -r requirements.txt
 </span></span></code></pre></div><p>在 playwright 中安裝瀏覽器。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>playwright install --with-deps
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">playwright install --with-deps
 </span></span></code></pre></div><p>或者您可以執行以下命令安裝特定的瀏覽器：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>playwright install chromium --with-deps
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">playwright install chromium --with-deps
 </span></span></code></pre></div><h4 id="步驟-4-配置環境">步驟 4: 配置環境</h4>
 <ol>
 <li>複製範例環境檔案：
 <ul>
 <li>Windows (命令提示字元):
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>copy .env.example .env
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">copy .env.example .env
 </span></span></code></pre></div></li>
 <li>macOS/Linux/Windows (PowerShell):
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cp .env.example .env
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp .env.example .env
 </span></span></code></pre></div></li>
 </ul>
 </li>
@@ -304,7 +304,7 @@
 <h4 id="步驟-5-享受-web-ui">步驟 5: 享受 web-ui</h4>
 <ol>
 <li><strong>運行 WebUI</strong>:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python webui.py --ip 127.0.0.1 --port <span style="color:#ae81ff">7788</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python webui.py --ip 127.0.0.1 --port <span class="m">7788</span>
 </span></span></code></pre></div></li>
 <li><strong>存取 WebUI</strong>: 開啟您的網頁瀏覽器並導航至 <code>http://127.0.0.1:7788</code>。</li>
 <li><strong>使用您自己的瀏覽器 (可選)</strong>:
@@ -312,14 +312,14 @@
 <li>將 <code>BROWSER_PATH</code> 設定為您瀏覽器的可執行檔路徑，將 <code>BROWSER_USER_DATA</code> 設定為您瀏覽器的使用者資料目錄。如果您想使用本地使用者資料，請將 <code>BROWSER_USER_DATA</code> 留空。
 <ul>
 <li>Windows
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-env" data-lang="env"><span style="display:flex;"><span> BROWSER_PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe&#34;</span>
-</span></span><span style="display:flex;"><span> BROWSER_USER_DATA<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;C:\\Users\\YourUsername\\AppData\\Local\\Google\\Chrome\\User Data&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-env" data-lang="env"><span class="line"><span class="cl"> <span class="nv">BROWSER_PATH</span><span class="o">=</span><span class="s2">&#34;C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe&#34;</span>
+</span></span><span class="line"><span class="cl"> <span class="nv">BROWSER_USER_DATA</span><span class="o">=</span><span class="s2">&#34;C:\\Users\\YourUsername\\AppData\\Local\\Google\\Chrome\\User Data&#34;</span>
 </span></span></code></pre></div><blockquote>
 <p>注意: 在 Windows 系統上，將 <code>YourUsername</code> 替換為您的實際 Windows 使用者名稱。</p></blockquote>
 </li>
 <li>Mac
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-env" data-lang="env"><span style="display:flex;"><span> BROWSER_PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/Applications/Google Chrome.app/Contents/MacOS/Google Chrome&#34;</span>
-</span></span><span style="display:flex;"><span> BROWSER_USER_DATA<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/Users/YourUsername/Library/Application Support/Google/Chrome&#34;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-env" data-lang="env"><span class="line"><span class="cl"> <span class="nv">BROWSER_PATH</span><span class="o">=</span><span class="s2">&#34;/Applications/Google Chrome.app/Contents/MacOS/Google Chrome&#34;</span>
+</span></span><span class="line"><span class="cl"> <span class="nv">BROWSER_USER_DATA</span><span class="o">=</span><span class="s2">&#34;/Users/YourUsername/Library/Application Support/Google/Chrome&#34;</span>
 </span></span></code></pre></div></li>
 </ul>
 </li>
@@ -341,26 +341,26 @@
 </ul>
 <h4 id="步驟-1-克隆儲存庫-1">步驟 1: 克隆儲存庫</h4>
 <p>開啟終端機並執行以下命令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/browser-use/web-ui.git
-</span></span><span style="display:flex;"><span>cd web-ui
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/browser-use/web-ui.git
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> web-ui
 </span></span></code></pre></div><h4 id="步驟-2-配置環境">步驟 2: 配置環境</h4>
 <ol>
 <li>複製範例環境檔案：
 <ul>
 <li>Windows (命令提示字元):
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>copy .env.example .env
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">copy .env.example .env
 </span></span></code></pre></div></li>
 <li>macOS/Linux/Windows (PowerShell):
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cp .env.example .env
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp .env.example .env
 </span></span></code></pre></div></li>
 </ul>
 </li>
 <li>使用您偏好的文字編輯器開啟 <code>.env</code> 檔案，並新增您的 API 金鑰和其他設定。</li>
 </ol>
 <h4 id="步驟-3-docker-建置和運行">步驟 3: Docker 建置和運行</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker compose up --build
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker compose up --build
 </span></span></code></pre></div><p>對於 ARM64 系統 (例如 Apple Silicon Macs)，請運行以下命令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>TARGETPLATFORM<span style="color:#f92672">=</span>linux/arm64 docker compose up --build
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">TARGETPLATFORM</span><span class="o">=</span>linux/arm64 docker compose up --build
 </span></span></code></pre></div><h4 id="步驟-4-享受-web-ui-和-vnc">步驟 4: 享受 web-ui 和 vnc</h4>
 <ul>
 <li>Web-UI: 在您的瀏覽器中開啟 <code>http://localhost:7788</code></li>
@@ -388,7 +388,9 @@
                     border border-neutral-200/80 dark:border-neutral-700/80
                     backdrop-blur-md
                     shadow-lg shadow-sky-100/20 dark:shadow-sky-900/20
-                    transition-all duration-300 ease-out"><div class="relative"><div id="toc">
+                    transition-all duration-300 ease-out">
+            
+          <div class="relative"><div id="toc">
   <div class="flex items-center justify-between mb-2 lg:mb-4">
     <h2 class="text-lg font-semibold text-neutral-900 dark:text-white">目錄</h2>
     <button
@@ -440,6 +442,90 @@
     </div>
   
 </div>
+</div><div class="border-b border-neutral-200/60 dark:border-neutral-700/60 my-4"></div><div class="relative">
+<div id="share"><h2 class="text-lg font-medium text-neutral-800 dark:text-neutral-200 mb-4">分享在</h2>
+    <div class="flex flex-wrap justify-between gap-1 items-center space-y-1"><a
+    href="https://reddit.com/submit?url=https%3A%2F%2Fspectrepro.pro%2Fposts%2Fusebrowser-use%2F&amp;title=%E4%BD%BF%E7%94%A8&#43;Browser-use&#43;Web&#43;UI"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline px-2 py-1 rounded-lg
+      text-sm font-medium
+      bg-white/60 dark:bg-neutral-800/60
+      text-neutral-700 dark:text-neutral-300
+      border border-neutral-200/50 dark:border-neutral-700/50
+      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
+      hover:border-blue-200 dark:hover:border-blue-800
+      hover:text-blue-700 dark:hover:text-blue-200
+      hover:scale-105
+      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
+      transform-gpu transition-all duration-200 ease-out
+      shadow-sm"
+    aria-label="share使用 Browser-use Web UIonReddit">Reddit</a><a
+    href="https://x.com/intent/tweet/?text=%E4%BD%BF%E7%94%A8&#43;Browser-use&#43;Web&#43;UI&amp;url=https%3A%2F%2Fspectrepro.pro%2Fposts%2Fusebrowser-use%2F&amp;hashtags=Browser-use%2CWeb&#43;UI%2CAI"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline px-2 py-1 rounded-lg
+      text-sm font-medium
+      bg-white/60 dark:bg-neutral-800/60
+      text-neutral-700 dark:text-neutral-300
+      border border-neutral-200/50 dark:border-neutral-700/50
+      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
+      hover:border-blue-200 dark:hover:border-blue-800
+      hover:text-blue-700 dark:hover:text-blue-200
+      hover:scale-105
+      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
+      transform-gpu transition-all duration-200 ease-out
+      shadow-sm"
+    aria-label="share使用 Browser-use Web UIonX.com">X.com</a><a
+    href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fspectrepro.pro%2Fposts%2Fusebrowser-use%2F"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline px-2 py-1 rounded-lg
+      text-sm font-medium
+      bg-white/60 dark:bg-neutral-800/60
+      text-neutral-700 dark:text-neutral-300
+      border border-neutral-200/50 dark:border-neutral-700/50
+      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
+      hover:border-blue-200 dark:hover:border-blue-800
+      hover:text-blue-700 dark:hover:text-blue-200
+      hover:scale-105
+      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
+      transform-gpu transition-all duration-200 ease-out
+      shadow-sm"
+    aria-label="share使用 Browser-use Web UIonFacebook">Facebook</a><a
+    href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fspectrepro.pro%2Fposts%2Fusebrowser-use%2F&amp;title=%E4%BD%BF%E7%94%A8&#43;Browser-use&#43;Web&#43;UI"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline px-2 py-1 rounded-lg
+      text-sm font-medium
+      bg-white/60 dark:bg-neutral-800/60
+      text-neutral-700 dark:text-neutral-300
+      border border-neutral-200/50 dark:border-neutral-700/50
+      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
+      hover:border-blue-200 dark:hover:border-blue-800
+      hover:text-blue-700 dark:hover:text-blue-200
+      hover:scale-105
+      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
+      transform-gpu transition-all duration-200 ease-out
+      shadow-sm"
+    aria-label="share使用 Browser-use Web UIonLinkedin">Linkedin</a><a
+    href="https://wa.me/?text=https%3A%2F%2Fspectrepro.pro%2Fposts%2Fusebrowser-use%2F%20%E4%BD%BF%E7%94%A8&#43;Browser-use&#43;Web&#43;UI"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline px-2 py-1 rounded-lg
+      text-sm font-medium
+      bg-white/60 dark:bg-neutral-800/60
+      text-neutral-700 dark:text-neutral-300
+      border border-neutral-200/50 dark:border-neutral-700/50
+      hover:bg-blue-50/90 dark:hover:bg-blue-900/30
+      hover:border-blue-200 dark:hover:border-blue-800
+      hover:text-blue-700 dark:hover:text-blue-200
+      hover:scale-105
+      focus:outline-none focus:ring-2 focus:ring-blue-200 dark:focus:ring-blue-800
+      transform-gpu transition-all duration-200 ease-out
+      shadow-sm"
+    aria-label="share使用 Browser-use Web UIonWhatsApp">WhatsApp</a></div></div>
+
 </div><div class="border-b border-neutral-200/60 dark:border-neutral-700/60 my-4 hidden md:block"></div><div
             class="flex flex-wrap gap-2 justify-between text-sm text-neutral-700 dark:text-neutral-400 hidden md:flex">
             <button

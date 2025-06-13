@@ -4,6 +4,10 @@ defaultContentLanguage: zh-tw
 title : SPECTRE's note
 theme: hugo-theme-fluidity
 hasCJKLanguage: true
+summaryLength: 100
+
+pygmentsUseClasses: true
+pygmentsCodefences: true
 
 menus:
   # Menu: Configure the menu items on the header.
@@ -52,3 +56,20 @@ params:
       </script>
 
   logo: '/favicon/web-app-manifest-512x512.png'
+
+  social:
+    github: 'SPECTRE-PRO'
+
+    share:
+      disabled: false
+      disableByType: # content type
+        - not-exist
+      platforms: # available inherit platform: [redidit, x, facebook, google, telegram]
+        - name: reddit # inherit platform just need the name
+        - name: x
+        - name: facebook
+        # - name: telegram # disable the inherit platform
+        - name: linkedin
+        - name: whatsapp
+
+  enableEmoji: true
