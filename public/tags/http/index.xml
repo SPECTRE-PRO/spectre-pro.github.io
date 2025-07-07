@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+  <channel>
+    <title>HTTP on SPECTRE&#39;s note</title>
+    <link>https://spectrepro.pro/tags/http/</link>
+    <description>Recent content in HTTP on SPECTRE&#39;s note</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://spectrepro.pro/tags/http/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>透過 frp 穿透內網：讓你的服務無遠弗屆</title>
+      <link>https://spectrepro.pro/posts/frp/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate><guid>https://spectrepro.pro/posts/frp/</guid>
+      <description>&lt;h2 id=&#34;什麼是-frp&#34;&gt;什麼是 frp？&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;frp&lt;/code&gt; (Fast Reverse Proxy) 是一個快速的反向代理工具，它能協助您將位於 NAT (網路位址轉換) 或防火牆後方的本地伺服器，透過一台具有公網 IP 的伺服器，將服務暴露到網際網路。這對於那些沒有公網 IP 但又希望外部能夠訪問其內網服務的用戶來說，是個極為實用的解決方案。&lt;/p&gt;</description></item></channel>
+</rss>

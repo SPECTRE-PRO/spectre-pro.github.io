@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+  <channel>
+    <title>專案管理 on SPECTRE&#39;s note</title>
+    <link>https://spectrepro.pro/tags/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/</link>
+    <description>Recent content in 專案管理 on SPECTRE&#39;s note</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://spectrepro.pro/tags/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>GitHub 專案成長趨勢分析利器：Star History 使用指南</title>
+      <link>https://spectrepro.pro/posts/star/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate><guid>https://spectrepro.pro/posts/star/</guid>
+      <description>&lt;h2 id=&#34;什麼是-star-history&#34;&gt;什麼是 Star History？&lt;/h2&gt;&#xA;&lt;p&gt;對於 GitHub 上的開源專案而言，星標（Stars）數量是衡量專案受歡迎程度和社群關注度的一個重要指標。然而，僅僅知道當前的星標數量是不足夠的，我們更需要了解一個專案的星標數量是如何隨時間變化的。這就是 &lt;strong&gt;Star History&lt;/strong&gt; 應運而生的原因！&lt;/p&gt;</description></item></channel>
+</rss>

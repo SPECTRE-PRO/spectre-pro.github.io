@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+  <channel>
+    <title>Gemini API on SPECTRE&#39;s note</title>
+    <link>https://spectrepro.pro/tags/gemini-api/</link>
+    <description>Recent content in Gemini API on SPECTRE&#39;s note</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 07 Jul 2025 14:00:00 +0800</lastBuildDate><atom:link href="https://spectrepro.pro/tags/gemini-api/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Gemini VPN 代理伺服器使用指南</title>
+      <link>https://spectrepro.pro/posts/gemini-vpn-proxy-guide/</link>
+      <pubDate>Mon, 07 Jul 2025 14:00:00 +0800</pubDate><guid>https://spectrepro.pro/posts/gemini-vpn-proxy-guide/</guid>
+      <description>&lt;h2 id=&#34;什麼是-gemini-vpn-代理伺服器&#34;&gt;什麼是 Gemini VPN 代理伺服器？&lt;/h2&gt;&#xA;&lt;p&gt;Gemini VPN 代理伺服器是一個簡單的 Node.js 代理伺服器，專為 Google Generative Language API (Gemini API) 設計。它允許您將對 Gemini API 的請求透過本地代理伺服器進行路由。這對於多種目的都非常有用，例如：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;偵錯與日誌記錄：&lt;/strong&gt; 您可以輕鬆地攔截和檢查所有進出 Gemini API 的請求和回應，這對於開發和偵錯應用程式非常有幫助。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;繞過網路限制：&lt;/strong&gt; 在某些網路環境下，直接存取 Gemini API 可能會受到限制。透過本地代理，您可以繞過這些限制，確保您的應用程式能夠順利與 API 通信。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;安全與隱私：&lt;/strong&gt; 雖然此代理伺服器主要用於開發目的，但它也可以在某些情況下提供額外的控制層，例如在內部網路中統一管理 API 流量。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;為什麼需要使用它&#34;&gt;為什麼需要使用它？&lt;/h2&gt;&#xA;&lt;p&gt;當您在開發使用 Gemini API 的應用程式時，可能會遇到以下情境：&lt;/p&gt;</description></item></channel>
+</rss>

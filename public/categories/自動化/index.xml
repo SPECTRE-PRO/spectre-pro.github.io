@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+  <channel>
+    <title>自動化 on SPECTRE&#39;s note</title>
+    <link>https://spectrepro.pro/categories/%E8%87%AA%E5%8B%95%E5%8C%96/</link>
+    <description>Recent content in 自動化 on SPECTRE&#39;s note</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 29 Jul 2024 10:00:00 +0800</lastBuildDate><atom:link href="https://spectrepro.pro/categories/%E8%87%AA%E5%8B%95%E5%8C%96/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>N8N：彈性與效率兼具的工作流自動化平台</title>
+      <link>https://spectrepro.pro/posts/n8n/</link>
+      <pubDate>Mon, 29 Jul 2024 10:00:00 +0800</pubDate><guid>https://spectrepro.pro/posts/n8n/</guid>
+      <description>&lt;p&gt;在現代的數位世界中，效率是成功的關鍵。無論您是開發者、運營人員還是技術團隊的一員，自動化重複性的任務都能極大地提升生產力。今天，我們要介紹一個強大的工具：&lt;strong&gt;n8n&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;h3 id=&#34;什麼是-n8n&#34;&gt;什麼是 n8n？&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/n8n-io/n8n&#34;&gt;n8n&lt;/a&gt; 是一個開源的工作流自動化平台，它結合了程式碼的靈活性與無程式碼（no-code）的便捷性。這意味著無論您是偏好視覺化操作的非開發者，還是需要撰寫程式碼來處理複雜邏輯的技術人員，n8n 都能滿足您的需求。它讓您能夠輕鬆地將不同的服務和應用程式連接起來，創建客製化的自動化流程。&lt;/p&gt;</description></item><item>
+      <title>探索 Browser_Use_WebUI：本地網頁介面自動化利器</title>
+      <link>https://spectrepro.pro/posts/browser_use_webui/</link>
+      <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate><guid>https://spectrepro.pro/posts/browser_use_webui/</guid>
+      <description>&lt;h2 id=&#34;什麼是-browser_use_webui&#34;&gt;什麼是 Browser_Use_WebUI？&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;Browser_Use_WebUI&lt;/code&gt; 是一個 &lt;a href=&#34;https://github.com/browser-use/web-ui&#34;&gt;GitHub&lt;/a&gt; 專案，旨在提供一種機制，用於程式化地控制瀏覽器，使其能夠開啟並與本地機器上運行的網頁使用者介面（WebUI）進行互動。簡單來說，它允許您透過程式碼來自動化對本地端 WebUI 的操作。&lt;/p&gt;</description></item></channel>
+</rss>

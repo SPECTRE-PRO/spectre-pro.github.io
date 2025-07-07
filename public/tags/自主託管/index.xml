@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+  <channel>
+    <title>自主託管 on SPECTRE&#39;s note</title>
+    <link>https://spectrepro.pro/tags/%E8%87%AA%E4%B8%BB%E8%A8%97%E7%AE%A1/</link>
+    <description>Recent content in 自主託管 on SPECTRE&#39;s note</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 29 Jul 2024 10:00:00 +0000</lastBuildDate><atom:link href="https://spectrepro.pro/tags/%E8%87%AA%E4%B8%BB%E8%A8%97%E7%AE%A1/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Open WebUI：您的個人化離線 AI 助手 — 深入解析與安裝指南</title>
+      <link>https://spectrepro.pro/posts/open-webui/</link>
+      <pubDate>Mon, 29 Jul 2024 10:00:00 +0000</pubDate><guid>https://spectrepro.pro/posts/open-webui/</guid>
+      <description>&lt;h2 id=&#34;什麼是-open-webui&#34;&gt;什麼是 Open WebUI？&lt;/h2&gt;&#xA;&lt;p&gt;在快速發展的 AI 領域中，Open WebUI 作為一個強大且用戶友好的開源平台脫穎而出。它是一個可擴展、功能豐富的自託管 AI 平台，專為完全離線操作而設計。無論您是開發者、研究人員，還是僅僅想在本地運行大型語言模型 (LLM) 的愛好者，Open WebUI 都提供了無與倫比的彈性和控制。它不僅支援 Ollama 和 OpenAI 相容的 API，更內建了 RAG (檢索增強生成) 推理引擎，使其成為一個功能全面的 AI 部署解決方案。&lt;/p&gt;</description></item></channel>
+</rss>

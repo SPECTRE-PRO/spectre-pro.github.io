@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+  <channel>
+    <title>Payloads on SPECTRE&#39;s note</title>
+    <link>https://spectrepro.pro/tags/payloads/</link>
+    <description>Recent content in Payloads on SPECTRE&#39;s note</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://spectrepro.pro/tags/payloads/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>充分利用 Payload：Payloads All The Things 資源庫深度解析</title>
+      <link>https://spectrepro.pro/posts/asdfjwe43o/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate><guid>https://spectrepro.pro/posts/asdfjwe43o/</guid>
+      <description>&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;&#xA;&lt;p&gt;在網路安全領域，尤其是 Web 應用程式滲透測試中，擁有豐富且實用的 Payload 是成功的關鍵。今天我們要介紹一個極其有價值的開源專案：&lt;code&gt;Payloads All The Things&lt;/code&gt; (GitHub 連結：&lt;a href=&#34;https://github.com/swisskyrepo/PayloadsAllTheThings&#34;&gt;https://github.com/swisskyrepo/PayloadsAllTheThings&lt;/a&gt;)。這個專案匯集了各種針對 Web 應用程式安全漏洞的有效 Payload 和繞過技術，是每個資安研究員和滲透測試工程師的寶藏。&lt;/p&gt;</description></item></channel>
+</rss>

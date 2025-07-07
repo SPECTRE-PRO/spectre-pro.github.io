@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+  <channel>
+    <title>本地部署 on SPECTRE&#39;s note</title>
+    <link>https://spectrepro.pro/categories/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/</link>
+    <description>Recent content in 本地部署 on SPECTRE&#39;s note</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://spectrepro.pro/categories/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>在本地運行大型語言模型：Ollama 指南</title>
+      <link>https://spectrepro.pro/posts/ollama/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate><guid>https://spectrepro.pro/posts/ollama/</guid>
+      <description>&lt;h2 id=&#34;為什麼您需要使用-ollama&#34;&gt;為什麼您需要使用 Ollama？&lt;/h2&gt;&#xA;&lt;p&gt;在當今快速發展的 AI 世界中，大型語言模型 (LLM) 已成為我們日常工作和生活中不可或缺的一部分。然而，許多強大的 LLM 服務通常需要雲端連結或訂閱。Ollama 提供了一個卓越的解決方案，讓您可以在&lt;strong&gt;本地電腦上運行大型語言模型&lt;/strong&gt;！&lt;/p&gt;</description></item></channel>
+</rss>

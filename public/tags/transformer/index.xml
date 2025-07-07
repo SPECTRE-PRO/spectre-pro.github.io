@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+  <channel>
+    <title>Transformer on SPECTRE&#39;s note</title>
+    <link>https://spectrepro.pro/tags/transformer/</link>
+    <description>Recent content in Transformer on SPECTRE&#39;s note</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 29 Jul 2024 10:00:00 +0800</lastBuildDate><atom:link href="https://spectrepro.pro/tags/transformer/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Happy-LLM：從零開始掌握大語言模型的核心原理與實踐</title>
+      <link>https://spectrepro.pro/posts/happy-llm/</link>
+      <pubDate>Mon, 29 Jul 2024 10:00:00 +0800</pubDate><guid>https://spectrepro.pro/posts/happy-llm/</guid>
+      <description>&lt;p&gt;大型語言模型（LLM）的興起正在以前所未有的速度改變我們的世界。無論您是學生、研究人員，還是對人工智慧充滿熱情的開發者，深入理解 LLM 的運作原理並親手實作將是您進入這個前沿領域的關鍵。今天，我們將介紹一個極佳的開源學習資源：&lt;strong&gt;Happy-LLM&lt;/strong&gt;。&lt;/p&gt;</description></item></channel>
+</rss>

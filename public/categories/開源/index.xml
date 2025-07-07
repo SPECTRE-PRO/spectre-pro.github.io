@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+  <channel>
+    <title>開源 on SPECTRE&#39;s note</title>
+    <link>https://spectrepro.pro/categories/%E9%96%8B%E6%BA%90/</link>
+    <description>Recent content in 開源 on SPECTRE&#39;s note</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 29 Jul 2024 10:00:00 +0000</lastBuildDate><atom:link href="https://spectrepro.pro/categories/%E9%96%8B%E6%BA%90/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Open WebUI：您的個人化離線 AI 助手 — 深入解析與安裝指南</title>
+      <link>https://spectrepro.pro/posts/open-webui/</link>
+      <pubDate>Mon, 29 Jul 2024 10:00:00 +0000</pubDate><guid>https://spectrepro.pro/posts/open-webui/</guid>
+      <description>&lt;h2 id=&#34;什麼是-open-webui&#34;&gt;什麼是 Open WebUI？&lt;/h2&gt;&#xA;&lt;p&gt;在快速發展的 AI 領域中，Open WebUI 作為一個強大且用戶友好的開源平台脫穎而出。它是一個可擴展、功能豐富的自託管 AI 平台，專為完全離線操作而設計。無論您是開發者、研究人員，還是僅僅想在本地運行大型語言模型 (LLM) 的愛好者，Open WebUI 都提供了無與倫比的彈性和控制。它不僅支援 Ollama 和 OpenAI 相容的 API，更內建了 RAG (檢索增強生成) 推理引擎，使其成為一個功能全面的 AI 部署解決方案。&lt;/p&gt;</description></item><item>
+      <title>N8N：彈性與效率兼具的工作流自動化平台</title>
+      <link>https://spectrepro.pro/posts/n8n/</link>
+      <pubDate>Mon, 29 Jul 2024 10:00:00 +0800</pubDate><guid>https://spectrepro.pro/posts/n8n/</guid>
+      <description>&lt;p&gt;在現代的數位世界中，效率是成功的關鍵。無論您是開發者、運營人員還是技術團隊的一員，自動化重複性的任務都能極大地提升生產力。今天，我們要介紹一個強大的工具：&lt;strong&gt;n8n&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;h3 id=&#34;什麼是-n8n&#34;&gt;什麼是 n8n？&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/n8n-io/n8n&#34;&gt;n8n&lt;/a&gt; 是一個開源的工作流自動化平台，它結合了程式碼的靈活性與無程式碼（no-code）的便捷性。這意味著無論您是偏好視覺化操作的非開發者，還是需要撰寫程式碼來處理複雜邏輯的技術人員，n8n 都能滿足您的需求。它讓您能夠輕鬆地將不同的服務和應用程式連接起來，創建客製化的自動化流程。&lt;/p&gt;</description></item></channel>
+</rss>

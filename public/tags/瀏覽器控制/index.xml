@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss
+  version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/">
+  <channel>
+    <title>瀏覽器控制 on SPECTRE&#39;s note</title>
+    <link>https://spectrepro.pro/tags/%E7%80%8F%E8%A6%BD%E5%99%A8%E6%8E%A7%E5%88%B6/</link>
+    <description>Recent content in 瀏覽器控制 on SPECTRE&#39;s note</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Thu, 16 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://spectrepro.pro/tags/%E7%80%8F%E8%A6%BD%E5%99%A8%E6%8E%A7%E5%88%B6/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>探索 Browser_Use_WebUI：本地網頁介面自動化利器</title>
+      <link>https://spectrepro.pro/posts/browser_use_webui/</link>
+      <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate><guid>https://spectrepro.pro/posts/browser_use_webui/</guid>
+      <description>&lt;h2 id=&#34;什麼是-browser_use_webui&#34;&gt;什麼是 Browser_Use_WebUI？&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;Browser_Use_WebUI&lt;/code&gt; 是一個 &lt;a href=&#34;https://github.com/browser-use/web-ui&#34;&gt;GitHub&lt;/a&gt; 專案，旨在提供一種機制，用於程式化地控制瀏覽器，使其能夠開啟並與本地機器上運行的網頁使用者介面（WebUI）進行互動。簡單來說，它允許您透過程式碼來自動化對本地端 WebUI 的操作。&lt;/p&gt;</description></item></channel>
+</rss>

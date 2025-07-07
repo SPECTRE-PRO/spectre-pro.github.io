@@ -8,7 +8,27 @@
     <description>Recent content in Posts on SPECTRE&#39;s note</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 10 Jun 2025 19:30:00 +0800</lastBuildDate><atom:link href="https://spectrepro.pro/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Mon, 07 Jul 2025 14:00:00 +0800</lastBuildDate><atom:link href="https://spectrepro.pro/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Gemini VPN 代理伺服器使用指南</title>
+      <link>https://spectrepro.pro/posts/gemini-vpn-proxy-guide/</link>
+      <pubDate>Mon, 07 Jul 2025 14:00:00 +0800</pubDate><guid>https://spectrepro.pro/posts/gemini-vpn-proxy-guide/</guid>
+      <description>&lt;h2 id=&#34;什麼是-gemini-vpn-代理伺服器&#34;&gt;什麼是 Gemini VPN 代理伺服器？&lt;/h2&gt;&#xA;&lt;p&gt;Gemini VPN 代理伺服器是一個簡單的 Node.js 代理伺服器，專為 Google Generative Language API (Gemini API) 設計。它允許您將對 Gemini API 的請求透過本地代理伺服器進行路由。這對於多種目的都非常有用，例如：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;偵錯與日誌記錄：&lt;/strong&gt; 您可以輕鬆地攔截和檢查所有進出 Gemini API 的請求和回應，這對於開發和偵錯應用程式非常有幫助。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;繞過網路限制：&lt;/strong&gt; 在某些網路環境下，直接存取 Gemini API 可能會受到限制。透過本地代理，您可以繞過這些限制，確保您的應用程式能夠順利與 API 通信。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;安全與隱私：&lt;/strong&gt; 雖然此代理伺服器主要用於開發目的，但它也可以在某些情況下提供額外的控制層，例如在內部網路中統一管理 API 流量。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;為什麼需要使用它&#34;&gt;為什麼需要使用它？&lt;/h2&gt;&#xA;&lt;p&gt;當您在開發使用 Gemini API 的應用程式時，可能會遇到以下情境：&lt;/p&gt;</description></item><item>
+      <title>GitHub 專案成長趨勢分析利器：Star History 使用指南</title>
+      <link>https://spectrepro.pro/posts/star/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate><guid>https://spectrepro.pro/posts/star/</guid>
+      <description>&lt;h2 id=&#34;什麼是-star-history&#34;&gt;什麼是 Star History？&lt;/h2&gt;&#xA;&lt;p&gt;對於 GitHub 上的開源專案而言，星標（Stars）數量是衡量專案受歡迎程度和社群關注度的一個重要指標。然而，僅僅知道當前的星標數量是不足夠的，我們更需要了解一個專案的星標數量是如何隨時間變化的。這就是 &lt;strong&gt;Star History&lt;/strong&gt; 應運而生的原因！&lt;/p&gt;</description></item><item>
+      <title>充分利用 Payload：Payloads All The Things 資源庫深度解析</title>
+      <link>https://spectrepro.pro/posts/asdfjwe43o/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate><guid>https://spectrepro.pro/posts/asdfjwe43o/</guid>
+      <description>&lt;h2 id=&#34;引言&#34;&gt;引言&lt;/h2&gt;&#xA;&lt;p&gt;在網路安全領域，尤其是 Web 應用程式滲透測試中，擁有豐富且實用的 Payload 是成功的關鍵。今天我們要介紹一個極其有價值的開源專案：&lt;code&gt;Payloads All The Things&lt;/code&gt; (GitHub 連結：&lt;a href=&#34;https://github.com/swisskyrepo/PayloadsAllTheThings&#34;&gt;https://github.com/swisskyrepo/PayloadsAllTheThings&lt;/a&gt;)。這個專案匯集了各種針對 Web 應用程式安全漏洞的有效 Payload 和繞過技術，是每個資安研究員和滲透測試工程師的寶藏。&lt;/p&gt;</description></item><item>
+      <title>在本地運行大型語言模型：Ollama 指南</title>
+      <link>https://spectrepro.pro/posts/ollama/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate><guid>https://spectrepro.pro/posts/ollama/</guid>
+      <description>&lt;h2 id=&#34;為什麼您需要使用-ollama&#34;&gt;為什麼您需要使用 Ollama？&lt;/h2&gt;&#xA;&lt;p&gt;在當今快速發展的 AI 世界中，大型語言模型 (LLM) 已成為我們日常工作和生活中不可或缺的一部分。然而，許多強大的 LLM 服務通常需要雲端連結或訂閱。Ollama 提供了一個卓越的解決方案，讓您可以在&lt;strong&gt;本地電腦上運行大型語言模型&lt;/strong&gt;！&lt;/p&gt;</description></item><item>
+      <title>透過 frp 穿透內網：讓你的服務無遠弗屆</title>
+      <link>https://spectrepro.pro/posts/frp/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate><guid>https://spectrepro.pro/posts/frp/</guid>
+      <description>&lt;h2 id=&#34;什麼是-frp&#34;&gt;什麼是 frp？&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;frp&lt;/code&gt; (Fast Reverse Proxy) 是一個快速的反向代理工具，它能協助您將位於 NAT (網路位址轉換) 或防火牆後方的本地伺服器，透過一台具有公網 IP 的伺服器，將服務暴露到網際網路。這對於那些沒有公網 IP 但又希望外部能夠訪問其內網服務的用戶來說，是個極為實用的解決方案。&lt;/p&gt;</description></item><item>
       <title>使用 Browser-use Web UI</title>
       <link>https://spectrepro.pro/posts/usebrowser-use/</link>
       <pubDate>Tue, 10 Jun 2025 19:30:00 +0800</pubDate><guid>https://spectrepro.pro/posts/usebrowser-use/</guid>
@@ -29,6 +49,22 @@
       <link>https://spectrepro.pro/posts/test/</link>
       <pubDate>Sat, 07 Jun 2025 20:03:55 +0800</pubDate><guid>https://spectrepro.pro/posts/test/</guid>
       <description>&lt;h2 id=&#34;如果你喜歡這些內容可以用微信掃下面這個碼贊助作者一杯咖啡&#34;&gt;如果你喜歡這些內容，可以用微信掃下面這個碼贊助作者一杯咖啡&lt;/h2&gt;</description></item><item>
+      <title>Open WebUI：您的個人化離線 AI 助手 — 深入解析與安裝指南</title>
+      <link>https://spectrepro.pro/posts/open-webui/</link>
+      <pubDate>Mon, 29 Jul 2024 10:00:00 +0000</pubDate><guid>https://spectrepro.pro/posts/open-webui/</guid>
+      <description>&lt;h2 id=&#34;什麼是-open-webui&#34;&gt;什麼是 Open WebUI？&lt;/h2&gt;&#xA;&lt;p&gt;在快速發展的 AI 領域中，Open WebUI 作為一個強大且用戶友好的開源平台脫穎而出。它是一個可擴展、功能豐富的自託管 AI 平台，專為完全離線操作而設計。無論您是開發者、研究人員，還是僅僅想在本地運行大型語言模型 (LLM) 的愛好者，Open WebUI 都提供了無與倫比的彈性和控制。它不僅支援 Ollama 和 OpenAI 相容的 API，更內建了 RAG (檢索增強生成) 推理引擎，使其成為一個功能全面的 AI 部署解決方案。&lt;/p&gt;</description></item><item>
+      <title>Happy-LLM：從零開始掌握大語言模型的核心原理與實踐</title>
+      <link>https://spectrepro.pro/posts/happy-llm/</link>
+      <pubDate>Mon, 29 Jul 2024 10:00:00 +0800</pubDate><guid>https://spectrepro.pro/posts/happy-llm/</guid>
+      <description>&lt;p&gt;大型語言模型（LLM）的興起正在以前所未有的速度改變我們的世界。無論您是學生、研究人員，還是對人工智慧充滿熱情的開發者，深入理解 LLM 的運作原理並親手實作將是您進入這個前沿領域的關鍵。今天，我們將介紹一個極佳的開源學習資源：&lt;strong&gt;Happy-LLM&lt;/strong&gt;。&lt;/p&gt;</description></item><item>
+      <title>N8N：彈性與效率兼具的工作流自動化平台</title>
+      <link>https://spectrepro.pro/posts/n8n/</link>
+      <pubDate>Mon, 29 Jul 2024 10:00:00 +0800</pubDate><guid>https://spectrepro.pro/posts/n8n/</guid>
+      <description>&lt;p&gt;在現代的數位世界中，效率是成功的關鍵。無論您是開發者、運營人員還是技術團隊的一員，自動化重複性的任務都能極大地提升生產力。今天，我們要介紹一個強大的工具：&lt;strong&gt;n8n&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;h3 id=&#34;什麼是-n8n&#34;&gt;什麼是 n8n？&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/n8n-io/n8n&#34;&gt;n8n&lt;/a&gt; 是一個開源的工作流自動化平台，它結合了程式碼的靈活性與無程式碼（no-code）的便捷性。這意味著無論您是偏好視覺化操作的非開發者，還是需要撰寫程式碼來處理複雜邏輯的技術人員，n8n 都能滿足您的需求。它讓您能夠輕鬆地將不同的服務和應用程式連接起來，創建客製化的自動化流程。&lt;/p&gt;</description></item><item>
+      <title>探索 Browser_Use_WebUI：本地網頁介面自動化利器</title>
+      <link>https://spectrepro.pro/posts/browser_use_webui/</link>
+      <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate><guid>https://spectrepro.pro/posts/browser_use_webui/</guid>
+      <description>&lt;h2 id=&#34;什麼是-browser_use_webui&#34;&gt;什麼是 Browser_Use_WebUI？&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;Browser_Use_WebUI&lt;/code&gt; 是一個 &lt;a href=&#34;https://github.com/browser-use/web-ui&#34;&gt;GitHub&lt;/a&gt; 專案，旨在提供一種機制，用於程式化地控制瀏覽器，使其能夠開啟並與本地機器上運行的網頁使用者介面（WebUI）進行互動。簡單來說，它允許您透過程式碼來自動化對本地端 WebUI 的操作。&lt;/p&gt;</description></item><item>
       <title>冷戰時期與香港發展</title>
       <link>https://spectrepro.pro/posts/history/</link>
       <pubDate>Tue, 01 Jul 1997 00:00:00 +0800</pubDate><guid>https://spectrepro.pro/posts/history/</guid>

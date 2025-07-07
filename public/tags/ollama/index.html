@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-tw" dir="ltr">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="color-scheme" content="dark light">
+<meta name="description" content="Moving up, way up. Moving up, stay up." />
+<meta name="author" content="">
+<meta name="keywords" content="">
+
+<link rel="canonical" href="https://spectrepro.pro/tags/ollama/" /><link rel="alternate" type="application/rss+xml" href="https://spectrepro.pro/tags/ollama/index.xml" title="SPECTRE's note"><!-- open graph --><meta property="og:type" content="website" />
+<meta property="og:description" content="Moving up, way up. Moving up, stay up." />
+<meta property="og:title" content="Ollama" />
+<meta property="og:site_name" content="SPECTRE&#39;s note" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:url" content="https://spectrepro.pro/tags/ollama/" />
+<meta property="og:locale" content="zh-tw" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Ollama | SPECTRE&#39;s note" />
+<meta name="twitter:description" content="Moving up, way up. Moving up, stay up." />
+<meta name="twitter:domain" content="https://spectrepro.pro/tags/ollama/" />
+
+<title>Ollama | SPECTRE&#39;s note</title>
+
+
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+<link rel="shortcut icon" href="/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="SPECTRE" />
+<link rel="manifest" href="/favicon/site.webmanifest" /><!-- Stylesheets ---><link
+          rel="stylesheet"
+          href="/css/style.min.3a7f1f7eb584fe6cc1b02b98664918359f66f5dd7bca30fab3c0214eff80ae19.css"
+          integrity="sha256-On8ffrWE/mzBsCuYZkkYNZ9m9d17yjD6s8AhTv&#43;Arhk="
+          crossorigin="anonymous" /><!-- Script --><script src="/js/main.63585bc5794edcd24854a2689ba8657b91d0641acf0f2af744b363d1a347ee3b.js" integrity="sha256-Y1hbxXlO3NJIVKJom6hle5HQZBrPDyr3RLNj0aNH7js=" crossorigin="anonymous"></script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4421097292963871"
+     crossorigin="anonymous"></script>
+<meta name="google-adsense-account" content="ca-pub-4421097292963871"><!-- Components -->
+</head>
+<body class="min-h-screen">
+  <div id="fluidity-theme-container">
+    <header class="relative z-50"><div
+  class="bg-white/70 dark:bg-neutral-900/70 backdrop-blur-md border-b border-blue-100 dark:border-blue-950 shadow-sm">
+  <div class="container mx-auto">
+    <div class="flex justify-between items-center py-5 px-4">
+      <div class="text-2xl">
+        <a href="https://spectrepro.pro/" class="flex items-center gap-2"><img src="/favicon/web-app-manifest-512x512.png" alt="SPECTRE&#39;s note" class="w-8 h-8" /><span class="font-semibold relative group">
+            <span
+              class="bg-clip-text text-transparent bg-gradient-to-r 
+              from-blue-600 via-cyan-500 to-blue-500
+              dark:from-blue-400 dark:via-cyan-400 dark:to-blue-300
+              hover:from-blue-500 hover:via-cyan-400 hover:to-blue-400
+              dark:hover:from-blue-300 dark:hover:via-cyan-300 dark:hover:to-blue-200
+              transition-all duration-300">SPECTRE&#39;s note</span>
+            <span
+              class="absolute -bottom-0.5 left-0 w-full h-[4px] 
+              bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent
+              dark:via-cyan-400/20
+              transform scale-x-0 group-hover:scale-x-100
+              transition-transform duration-500 ease-out
+              blur-[0.5px]"></span>
+          </span>
+        </a>
+      </div>
+
+      <div class="flex relative items-center gap-0.5"><nav class="relative isolate" role="navigation">
+    <ul class="hidden md:flex items-center gap-2"><li class="relative group">
+      <a
+        class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/" title="SPECTRE's note">首頁</a></li><li class="relative group">
+      <a
+        class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/posts/" title="Posts">文章</a></li><li class="relative group">
+      <a
+        class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/tags/" title="Tags">標籤</a></li><li class="relative group">
+      <a
+        class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/archives/" title="Archives">歸檔</a></li><li class="relative group">
+      <a
+        class="flex items-center relative px-4 py-2.5 rounded-lg text-base font-medium bg-transparent text-neutral-700 dark:text-neutral-200 hover:text-sky-600 dark:hover:text-sky-300 hover:bg-sky-50/80 dark:hover:bg-sky-900/20 active:bg-sky-100 dark:active:bg-sky-900/30 transform-gpu transition-all duration-300 ease-in-out motion-safe:hover:scale-[1.02] before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-transparent before:opacity-0 hover:before:from-sky-50/50 hover:before:to-sky-100/50 dark:hover:before:from-sky-900/30 dark:hover:before:to-sky-800/30 before:transition-opacity before:duration-300" href="/search/" title="Search">搜尋</a></li></ul>
+
+    
+    <div class="relative md:hidden " dir="rtl">
+      <ul
+        id="mobile-menu"
+        class="absolute top-0 -right-4 py-1 w-48
+          transform opacity-0 scale-95 
+          transition-all duration-200 ease-out
+          bg-white dark:bg-neutral-900
+          border border-neutral-200/80 dark:border-neutral-800/80
+          rounded-xl divide-y divide-neutral-100 dark:divide-neutral-900/50
+          shadow-lg shadow-neutral-100/20 dark:shadow-neutral-900/30
+          backdrop-blur-md text-left	
+          z-50"><li class="relative group">
+      <a
+        class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200" href="/" title="SPECTRE's note">首頁</a></li><li class="relative group">
+      <a
+        class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200" href="/posts/" title="Posts">文章</a></li><li class="relative group">
+      <a
+        class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200" href="/tags/" title="Tags">標籤</a></li><li class="relative group">
+      <a
+        class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200" href="/archives/" title="Archives">歸檔</a></li><li class="relative group">
+      <a
+        class="block px-4 py-2 text-sm text-neutral-700 dark:text-neutral-200 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/80 active:bg-neutral-200 dark:active:bg-neutral-700 transition-colors duration-200" href="/search/" title="Search">搜尋</a></li></ul>
+    </div>
+  </nav><button id="mobile-menu-button" class="fluidity-header-icon block md:hidden" aria-label="Toggle menu" aria-expanded="false"><svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  xmlns="http://www.w3.org/2000/svg"ZgotmplZZgotmplZ><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
+</button>
+        <button id="theme-toggle" aria-label="Toggle theme" class="fluidity-header-icon">
+          <div id="theme-toggle-dark-icon" class="hidden"><svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  xmlns="http://www.w3.org/2000/svg"ZgotmplZZgotmplZ><path
+      d="M20.0258 17.0014C17.2639 21.7851 11.1471 23.4241 6.3634 20.6622C5.06068 19.9101 3.964 18.8926 3.12872 17.6797C2.84945 17.2741 3.0301 16.7141 3.49369 16.5482C7.26112 15.1997 9.27892 13.6372 10.4498 11.4021C11.6825 9.04908 12.001 6.47162 11.1387 2.93862C11.0195 2.45008 11.4053 1.98492 11.9075 2.01186C13.4645 2.09539 14.9856 2.54263 16.3649 3.33903C21.1486 6.10088 22.7876 12.2177 20.0258 17.0014ZM11.7785 12.0981C10.5272 14.4867 8.46706 16.1972 4.96104 17.597C5.5693 18.2929 6.29275 18.8894 7.1134 19.3632C11.1796 21.7108 16.3791 20.3176 18.7267 16.2514C21.0744 12.1852 19.6812 6.98571 15.6149 4.63807C14.7379 4.1317 13.7951 3.79168 12.8228 3.62253C13.4699 7.00652 13.0525 9.66622 11.7785 12.0981Z" /></svg>
+</div>
+          <div id="theme-toggle-light-icon" class="hidden"><svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  xmlns="http://www.w3.org/2000/svg"ZgotmplZZgotmplZ><path
+      d="M12 2C12.4142 2 12.75 2.33579 12.75 2.75V4.25C12.75 4.66421 12.4142 5 12 5C11.5858 5 11.25 4.66421 11.25 4.25V2.75C11.25 2.33579 11.5858 2 12 2ZM12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17ZM12 15.5C10.067 15.5 8.5 13.933 8.5 12C8.5 10.067 10.067 8.5 12 8.5C13.933 8.5 15.5 10.067 15.5 12C15.5 13.933 13.933 15.5 12 15.5ZM21.25 12.75C21.6642 12.75 22 12.4142 22 12C22 11.5858 21.6642 11.25 21.25 11.25H19.75C19.3358 11.25 19 11.5858 19 12C19 12.4142 19.3358 12.75 19.75 12.75H21.25ZM12 19C12.4142 19 12.75 19.3358 12.75 19.75V21.25C12.75 21.6642 12.4142 22 12 22C11.5858 22 11.25 21.6642 11.25 21.25V19.75C11.25 19.3358 11.5858 19 12 19ZM4.25 12.75C4.66421 12.75 5 12.4142 5 12C5 11.5858 4.66421 11.25 4.25 11.25H2.75C2.33579 11.25 2 11.5858 2 12C2 12.4142 2.33579 12.75 2.75 12.75H4.25ZM4.21967 4.22004C4.51256 3.92715 4.98744 3.92715 5.28033 4.22004L6.78033 5.72004C7.07322 6.01294 7.07322 6.48781 6.78033 6.7807C6.48744 7.0736 6.01256 7.0736 5.71967 6.7807L4.21967 5.2807C3.92678 4.98781 3.92678 4.51294 4.21967 4.22004ZM5.28033 19.7807C4.98744 20.0736 4.51256 20.0736 4.21967 19.7807C3.92678 19.4878 3.92678 19.0129 4.21967 18.72L5.71967 17.22C6.01256 16.9271 6.48744 16.9271 6.78033 17.22C7.07322 17.5129 7.07322 17.9878 6.78033 18.2807L5.28033 19.7807ZM19.7803 4.22004C19.4874 3.92715 19.0126 3.92715 18.7197 4.22004L17.2197 5.72004C16.9268 6.01294 16.9268 6.48781 17.2197 6.7807C17.5126 7.0736 17.9874 7.0736 18.2803 6.7807L19.7803 5.2807C20.0732 4.98781 20.0732 4.51294 19.7803 4.22004ZM18.7197 19.7807C19.0126 20.0736 19.4874 20.0736 19.7803 19.7807C20.0732 19.4878 20.0732 19.0129 19.7803 18.72L18.2803 17.22C17.9874 16.9271 17.5126 16.9271 17.2197 17.22C16.9268 17.5129 16.9268 17.9878 17.2197 18.2807L18.7197 19.7807Z" /></svg>
+</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+    <main class="flex-1 relative z-[1]"><div class="fluidity-container-1">
+    
+    <div class="mb-4 lg:mb-8">
+      <h1 class="fluidity-page-title text-3xl group flex items-center gap-2 mb-1">
+        <span class="fluidity-page-title-icon"><svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  xmlns="http://www.w3.org/2000/svg"ZgotmplZZgotmplZ><path
+      d="m11.066 8.004.184-.005h7.5a3.25 3.25 0 0 1 3.245 3.065l.005.185v7.5a3.25 3.25 0 0 1-3.066 3.245l-.184.005h-7.5a3.25 3.25 0 0 1-3.245-3.066L8 18.75v-7.5a3.25 3.25 0 0 1 3.066-3.245Zm7.684 1.495h-7.5a1.75 1.75 0 0 0-1.744 1.606l-.006.144v7.5a1.75 1.75 0 0 0 1.607 1.744l.143.006h7.5a1.75 1.75 0 0 0 1.744-1.607l.006-.143v-7.5a1.75 1.75 0 0 0-1.75-1.75ZM15 11a.75.75 0 0 1 .75.75v2.498h2.5a.75.75 0 0 1 0 1.5h-2.5v2.502a.75.75 0 0 1-1.5 0v-2.502h-2.5a.75.75 0 1 1 0-1.5h2.5V11.75A.75.75 0 0 1 15 11Zm.582-6.767.052.177.693 2.588h-1.553l-.588-2.2a1.75 1.75 0 0 0-2.144-1.238L4.798 5.502a1.75 1.75 0 0 0-1.27 1.995l.032.148 1.942 7.244A1.75 1.75 0 0 0 7 16.176v1.506a3.252 3.252 0 0 1-2.895-2.228l-.052-.176-1.941-7.245a3.25 3.25 0 0 1 2.12-3.928l.178-.052 7.244-1.941a3.25 3.25 0 0 1 3.928 2.12Z" /></svg>
+</span>
+        <span class="relative">Ollama<span class="fluidity-page-title-line"></span>
+        </span>
+      </h1>
+      <p class="fluidity-page-desc">總共 2 篇文章</p>
+    </div>
+
+    
+    <div class="space-y-4">
+      <h2 class="sr-only">Ollama total 2 篇文章</h2><div class="fluidity-box-1"><div class="group relative">
+  <a href="/posts/ollama/" class="block relative">
+    <div
+      class="
+        px-4 py-2 lg:px-6 lg:py-4
+        border-b border-neutral-200/80 dark:border-neutral-800/80
+        transition-all duration-300 ease-out
+        hover:bg-gradient-to-r from-sky-50/50 via-blue-50/40 to-neutral-50/30
+        dark:hover:bg-gradient-to-r dark:from-sky-900/30 dark:via-blue-900/20 dark:to-neutral-900/10
+        last:border-b-0
+        before:absolute before:inset-0
+        before:bg-gradient-to-r before:from-transparent
+        before:opacity-0 group-hover:before:opacity-100
+        before:transition-all before:duration-500">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 lg:gap-6">
+        
+        <div class="space-y-2 md:space-y-3 flex-grow">
+          <h3
+            class="
+              text-lg font-medium inline-block lg:block
+              text-neutral-900 dark:text-neutral-100
+              group-hover:text-sky-600 dark:group-hover:text-sky-300
+              transform transition-all duration-300 ease-out
+            ">在本地運行大型語言模型：Ollama 指南</h3><div class="flex flex-col sm:flex-row items-start sm:items-center flex-wrap gap-x-3 gap-y-2">
+            <div class="flex flex-wrap gap-2"><span
+                    class="fluidity-category inline-flex items-center text-sm">AI</span><span
+                    class="fluidity-category inline-flex items-center text-sm">LLM</span><span
+                    class="fluidity-category inline-flex items-center text-sm">本地部署</span></div><div class="flex flex-wrap gap-2"><span
+                    class="fluidity-tag inline-flex items-center text-sm">Ollama</span><span
+                    class="fluidity-tag inline-flex items-center text-sm">大型語言模型</span><span
+                    class="fluidity-tag inline-flex items-center text-sm">本地AI</span><span
+                    class="fluidity-tag inline-flex items-center text-sm">開源</span></div></div>
+        </div>
+        
+        <time
+          datetime="2025-07-07"
+          class="text-base font-normal
+                text-neutral-500 dark:text-neutral-400
+                whitespace-nowrap italic
+                group-hover:text-sky-600 dark:group-hover:text-sky-400
+                transform transition-all duration-300
+                ">July 07, 2025</time>
+      </div>
+    </div>
+  </a>
+</div>
+
+          <div class="group relative">
+  <a href="/posts/open-webui/" class="block relative">
+    <div
+      class="
+        px-4 py-2 lg:px-6 lg:py-4
+        border-b border-neutral-200/80 dark:border-neutral-800/80
+        transition-all duration-300 ease-out
+        hover:bg-gradient-to-r from-sky-50/50 via-blue-50/40 to-neutral-50/30
+        dark:hover:bg-gradient-to-r dark:from-sky-900/30 dark:via-blue-900/20 dark:to-neutral-900/10
+        last:border-b-0
+        before:absolute before:inset-0
+        before:bg-gradient-to-r before:from-transparent
+        before:opacity-0 group-hover:before:opacity-100
+        before:transition-all before:duration-500">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-3 lg:gap-6">
+        
+        <div class="space-y-2 md:space-y-3 flex-grow">
+          <h3
+            class="
+              text-lg font-medium inline-block lg:block
+              text-neutral-900 dark:text-neutral-100
+              group-hover:text-sky-600 dark:group-hover:text-sky-300
+              transform transition-all duration-300 ease-out
+            ">Open WebUI：您的個人化離線 AI 助手 — 深入解析與安裝指南</h3><div class="flex flex-col sm:flex-row items-start sm:items-center flex-wrap gap-x-3 gap-y-2">
+            <div class="flex flex-wrap gap-2"><span
+                    class="fluidity-category inline-flex items-center text-sm">AI</span><span
+                    class="fluidity-category inline-flex items-center text-sm">大語言模型</span><span
+                    class="fluidity-category inline-flex items-center text-sm">開源</span></div><div class="flex flex-wrap gap-2"><span
+                    class="fluidity-tag inline-flex items-center text-sm">OpenWebUI</span><span
+                    class="fluidity-tag inline-flex items-center text-sm">Ollama</span><span
+                    class="fluidity-tag inline-flex items-center text-sm">AI</span><span
+                    class="fluidity-tag inline-flex items-center text-sm">自主託管</span><span
+                    class="fluidity-tag inline-flex items-center text-sm">RAG</span><span
+                    class="fluidity-tag inline-flex items-center text-sm">Docker</span></div></div>
+        </div>
+        
+        <time
+          datetime="2024-07-29"
+          class="text-base font-normal
+                text-neutral-500 dark:text-neutral-400
+                whitespace-nowrap italic
+                group-hover:text-sky-600 dark:group-hover:text-sky-400
+                transform transition-all duration-300
+                ">July 29, 2024</time>
+      </div>
+    </div>
+  </a>
+</div>
+
+          
+        </div>
+      
+    </div>
+
+    </div></main>
+    <footer class="relative z-50"><div
+  class="mt-16 border-t border-neutral-200/80 dark:border-neutral-800/20 
+            bg-gradient-to-b from-white/80 via-sky-50/30 to-blue-50/20
+            dark:from-neutral-900/90 dark:via-neutral-900/50 dark:to-neutral-800/30 
+            backdrop-blur-md">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 lg:gap-8">
+      
+      <div class="col-span-1 md:col-span-2">
+        <h3 class="text-lg sm:text-xl font-semibold text-neutral-900 dark:text-neutral-50 mb-4">關於</h3>
+        <p class="text-slate-600 dark:text-slate-300 italic text-sm sm:text-base">Moving up, way up. Moving up, stay up.</p>
+      </div>
+
+      
+      <div>
+        <h3 class="text-lg sm:text-xl font-semibold text-neutral-900 dark:text-neutral-50 mb-4">欄目</h3><ul class="space-y-2 text-slate-600 dark:text-slate-300 text-sm sm:text-base"><li>
+              <a
+                href="/posts/"
+                class="group flex items-center gap-2
+                        hover:text-sky-600 dark:hover:text-sky-300 
+                        transition-all duration-300 ease-in-out">
+                <span class="transform group-hover:translate-x-1 transition-transform duration-300">Posts</span>
+                <span
+                  class="text-sm text-neutral-500 dark:text-neutral-400
+                           group-hover:text-sky-500 dark:group-hover:text-sky-400
+                           transition-colors duration-300">
+                  (15)
+                </span>
+              </a>
+            </li></ul>
+      </div>
+
+      
+      <div>
+        <h3 class="text-lg sm:text-xl font-semibold text-neutral-900 dark:text-neutral-50 mb-4">聯繫</h3>
+        <ul class="space-y-2"><li>
+    <a
+      href="/index.xml"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="group flex items-center gap-2 
+            text-slate-600 hover:text-sky-600 
+            dark:text-slate-300 dark:hover:text-sky-300 
+            transition-all duration-300 ease-in-out">
+      <span class="transform group-hover:scale-110 transition-transform duration-300"><svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  xmlns="http://www.w3.org/2000/svg"ZgotmplZZgotmplZ><path
+      d="M3 3C12.9411 3 21 11.0589 21 21H18C18 12.7157 11.2843 6 3 6V3ZM3 10C9.07513 10 14 14.9249 14 21H11C11 16.5817 7.41828 13 3 13V10ZM3 17C5.20914 17 7 18.7909 7 21H3V17Z"></path></svg>
+</span>
+      <span class="transform group-hover:translate-x-1 transition-transform duration-300">RSS Feed</span>
+    </a>
+  </li></ul>
+      </div>
+    </div>
+
+    <div class="relative flex justify-center my-4">
+      <div
+        class="absolute inset-x-0 top-1/2 h-[1px] -translate-y-1/2 bg-gradient-to-r from-transparent via-sky-200 dark:via-sky-800 to-transparent opacity-50 blur-[0.5px]"></div>
+      <span
+        class="relative z-10 rounded-full 
+                   bg-sky-50 dark:bg-neutral-900
+                   px-4 py-0.5
+                   text-neutral-600 dark:text-neutral-400 
+                   text-xs font-mono italic">
+        Site built with
+        <a
+          rel="nofollow"
+          class="underline decoration-neutral-300 
+                  hover:text-sky-600 dark:hover:text-sky-400 
+                  transition-colors duration-300"
+          target="_blank"
+          href="https://github.com/SPECTRE-PRO/spectre-pro.github.io">
+          SPECTRE
+        </a>
+      </span>
+    </div>
+
+    
+    <div class="text-center text-neutral-600 dark:text-neutral-400 font-sans text-sm sm:text-base">
+      <p>
+        &copy; 2025 SPECTRE&#39;s note.版權所有</p>
+    </div>
+  </div>
+</div>
+</footer>
+  </div>
+</body>
+</html>
