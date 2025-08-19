@@ -29,7 +29,7 @@ menus:
       weight: 50
 
 params:
-  description: 'Moving up, way up. Moving up, stay up.'
+  description: '不要定太小的目標，也不要抱太大的期望'
 
   search:
     provider: pagefind
